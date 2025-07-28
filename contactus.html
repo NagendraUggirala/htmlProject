@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <meta charset="UTF-8" />
+        <title>Edupath - Online Courses & Education HTML5 Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta content="Real Estate Website Landing Page" name="description" />
+        <meta content="Real Estate, buy, sell, Rent, tailwind Css" name="keywords" />
+        <meta name="author" content="Shreethemes" />
+        <meta name="website" content="../../index.html" />
+        <meta name="email" content="support@shreethemes.in" />
+        <meta name="version" content="1.0.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+        <!-- Css -->
+        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+        <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+        <!-- Main Css -->
+        <link href="assets/libs/iconoir/css/iconoir.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/%40mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+
+    </head>
+ <body class="dark:bg-slate-900">
+        <!-- Loader Start -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader End -->
+        <!-- Start Navbar -->
+        <nav id="topnav" class="defaultscroll is-sticky">
+            <div class="container relative">
+                <!-- Start Logo container-->
+                <a class="logo" href="index.html">
+                    <span class="inline-block dark:hidden">
+                        <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
+                        <img src="assets/images/logo-light.png" class="l-light" height="24" alt="">
+                    </span>
+                    <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
+                </a>
+                <!-- End Logo container-->
+
+                <!-- Start Mobile Toggle -->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- End Mobile Toggle -->
+
+                <!--Login button Start-->
+                
+                <!--Login button End-->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu justify-start nav-light">
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="home.html">Home</a>   
+                        </li>
+
+                        <li class="has-submenu parent-parent-menu-item">
+                        <a href="courses.html">Courses</a></li>
+                        <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>     
+                        <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </nav><!--end header-->
+        <!-- End Navbar -->
+
+        <!-- Searchbar modal -->
+        <dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
+            <div class="relative w-full h-auto">
+                <form method="dialog" class="modal-backdrop">
+                    <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost"><i data-feather="x" class="size-4"></i></button>
+                </form>
+                <div class="p-6 text-center">
+                    <form class="relative">
+                        <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
+                        <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10" name="s" id="searchItem" placeholder="Search...">
+                    </form>
+                </div>
+            </div>
+        </dialog>
+        <!-- Searchbar modal -->
+
+        <!-- Start Hero -->
+        <section class="relative table w-full py-32 lg:py-44 bg-[url('../../assets/images/bg/3.html')] bg-no-repeat bg-center bg-cover">
+            <div class="absolute inset-0 bg-slate-900 opacity-80"></div>
+            <div class="container relative">
+                <div class="grid grid-cols-1 text-center mt-10">
+                    <h3 class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-white"> Contact Us</h3>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <div class="relative">
+            <div class="shape overflow-hidden z-1 text-white dark:text-slate-900">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="../../../www.w3.org/2000/svg.html">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- End Hero -->
+             <dialog id="navbarSearch"
+        class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
+        <div class="relative w-full h-auto">
+            <form method="dialog" class="modal-backdrop">
+                <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost"><i
+                        data-feather="x" class="size-4"></i></button>
+            </form>
+            <div class="p-6 text-center">
+                <form class="relative">
+                    <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
+                    <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10"
+                        name="s" id="searchItem" placeholder="Search...">
+                </form>
+            </div>
+        </div>
+    </dialog>
+    <!-- Searchbar modal -->
+
+
+
+    <!-- Contact Section with Map and Form Side-by-Side -->
+<section class="relative lg:py-24 py-16">
+  <div class="container relative">
+    <div class="grid md:grid-cols-2 grid-cols-1 gap-6 items-center">
+      
+      <!-- Google Map -->
+      <div class="w-full h-full">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          class="w-full h-[500px] rounded-md shadow">
+        </iframe>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="w-full">
+        <div class="bg-white dark:bg-slate-900 rounded-md shadow-sm dark:shadow-gray-700 p-6">
+          <h3 class="mb-6 md:text-3xl text-2xl font-semibold">Get in touch!</h3>
+          <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
+            <p class="mb-0 text-red-500" id="error-msg"></p>
+            <div id="simple-msg"></div>
+            <div class="grid lg:grid-cols-2 gap-4">
+              <div>
+                <label for="name" class="font-medium">Your Name:</label>
+                <input name="name" id="name" type="text"
+                  class="w-full py-2 px-3 border border-slate-300 focus:border-violet-600 focus:outline-none rounded-md mt-2"
+                  placeholder="Name">
+              </div>
+              <div>
+                <label for="email" class="font-medium">Your Email:</label>
+                <input name="email" id="email" type="email"
+                  class="w-full py-2 px-3 border border-slate-300 focus:border-violet-600 focus:outline-none rounded-md mt-2"
+                  placeholder="Email">
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <label for="subject" class="font-medium">Your Question:</label>
+              <input name="subject" id="subject" type="text"
+                class="w-full py-2 px-3 border border-slate-300 focus:border-violet-600 focus:outline-none rounded-md mt-2"
+                placeholder="Subject">
+            </div>
+
+            <div class="mt-4">
+              <label for="comments" class="font-medium">Your Comment:</label>
+              <textarea name="comments" id="comments"
+                class="w-full py-2 px-3 border border-slate-300 focus:border-violet-600 focus:outline-none rounded-md h-28 mt-2"
+                placeholder="Message"></textarea>
+            </div>
+
+            <div class="mt-4">
+              <button type="submit" id="submit" name="send"
+                class="h-10 px-5 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600 text-white hover:bg-violet-700 transition">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+        <!-- Start Footer -->
+        <footer class="relative bg-slate-900 dark:bg-slate-800">
+            <div class="container relative">
+                <div class="grid grid-cols-1">
+                    <div class="relative py-16">
+                        <!-- Subscribe -->
+                        <div class="relative w-full">
+                            <div class="grid md:grid-cols-12 grid-cols-1 gap-6">
+                                <div class="lg:col-span-4 md:col-span-12">
+                                    <a href="#" class="text-[22px] focus:outline-none">
+                                        <img src="assets/images/logo-light.png" alt="">
+                                    </a>
+                                    <p class="mt-6 text-gray-300">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+
+                                    <div class="flex mt-6">
+                                        <i class="iconoir-map-pin align-middle text-2xl text-violet-600 me-2"></i>
+                                        <div class="">
+                                            <h6 class="text-gray-300">C/54 Northwest Freeway, <br> Houston, USA 485</h6>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="flex mt-4">
+                                        <i class="iconoir-phone align-middle text-2xl text-violet-600 me-2"></i>
+                                        <div class="">
+                                            <a href="tel:+152534-468-854" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">+152 534-468-854</a>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                        
+                                <div class="lg:col-span-2 md:col-span-3">
+                                    <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Usefull Links</h5>
+
+                                    <ul class="list-none footer-list mt-6">
+                                        <li><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Course</a></li>
+                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Mission & Vision</a></li>
+                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Join a Career</a></li>
+                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Zoom Meeting</a></li>
+                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Pricing Plan</a></li>
+                                    </ul>
+                                </div><!--end col-->
+                        
+                                <div class="lg:col-span-2 md:col-span-3">
+                                    <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Our Institute</h5>
+
+                                    <ul class="list-none footer-list mt-6">
+                                        <li><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Contact Us</a></li>
+                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Technology</a></li>
+                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Instructors</a></li>
+                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Pricing</a></li>
+                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Services</a></li>
+                                    </ul>
+                                </div><!--end col-->
+    
+                             <!--end col-->
+                            </div><!--end grid-->
+                        </div>
+                        <!-- Subscribe -->
+                    </div>
+                </div>
+            </div><!--end container-->
+
+            <div class="py-[30px] px-0 border-t border-gray-800 dark:border-gray-700">
+                <div class="container relative text-center">
+                    <div class="grid md:grid-cols-2 items-center gap-6">
+                        <div class="md:text-start text-center">
+                            <p class="mb-0 text-gray-300">CopyRight © <script>document.write(new Date().getFullYear())</script> Edupath. Design  <i class="mdi mdi-heart text-red-600"></i>  by <a class="text-reset">Levitica</a>.</p>
+                        </div>
+
+                        <ul class="list-disc footer-list md:text-end text-center space-x-3">
+                            <li class="inline-block"><i class="mdi mdi-circle-medium text-gray-400"></i> <a href="terms.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Terms</a></li>
+                            <li class="inline-block mt-[10px] md:mt-0"><i class="mdi mdi-circle-medium text-gray-400"></i> <a href="privacy.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Privacy</a></li>
+                            <li class="inline-block mt-[10px] md:mt-0"><i class="mdi mdi-circle-medium text-gray-400"></i> <a href="login.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Login</a></li>
+                        </ul><!--end icon-->
+                    </div><!--end grid-->
+                </div><!--end container-->
+            </div>
+        </footer>
+        <!--end footer-->
+        <!-- End Footer -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fixed hidden rounded-full z-10 bottom-5 end-5 size-8 text-center bg-violet-600 text-white justify-center items-center"><i data-feather="arrow-up" class="size-4"></i></a>
+        <!-- Back to top -->
+        <!-- Switcher -->
+        <div class="fixed top-1/4 -right-2 z-3">
+            <span class="relative inline-block rotate-90">
+                <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
+                <label class="label bg-slate-900 dark:bg-white shadow-sm dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-[60px] h-8" for="chk">
+                    <i class="iconoir-half-moon text-yellow-500 align-middle ps-1 text-[16px] relative z-1"></i>
+                    <i class="iconoir-sun-light text-yellow-500 align-middle pe-1 text-[16px] relative z-1"></i>
+                    <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] size-7"></span>
+                </label>
+            </span>
+        </div>
+        <!-- Switcher -->
+
+ 
+        <!-- LTR & RTL Mode Code -->
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+        <script src="assets/libs/tobii/js/tobii.min.js"></script>
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/js/plugins.init.js"></script>
+        <script src="assets/js/app.js"></script>
+        <!-- JAVASCRIPTS -->
+    </body>
+</html>

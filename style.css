@@ -1,0 +1,138 @@
+/* Wrapper for each card */
+.tiny-slide .group {
+  width: 280px;       /* same width for all cards */
+  height: 350px;      /* fixed height for uniformity */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Image container height */
+.tiny-slide .group img {
+  width: 100%;
+  height: 160px;       /* same height for all images */
+  object-fit: cover;   /* keeps image aspect ratio cropped */
+  border-radius: 6px;
+}
+
+/* Card content alignment */
+.tiny-slide .p-6 {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+/* Title styling */
+.tiny-slide .p-6 a {
+  font-size: 18px;
+  display: block;
+  min-height: 50px; /* keep height consistent even if text differs */
+}
+
+/* Description spacing */
+.tiny-slide .p-6 p {
+  font-size: 14px;
+  color: #64748b; /* slate color */
+  margin-top: 8px;
+}
+/* Center the image */
+.image-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+   margin: 0;       /* remove default margins */
+  padding: 0;
+}
+
+/* Full width container */
+.image-container {
+  width: 200%;
+}
+
+
+/* Make image fill full screen width and small height */
+.wide-short-image {
+  width: 98%;          /* leaves ~1% space each side */
+  height: 300px;       /* controlled height */
+  object-fit: cover;   /* crop to fit nicely */
+  display: block;
+  margin: 0 auto;      /* center image */
+  border-radius: 15px; /* rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* optional shadow */
+}
+
+/* Navbar background white */
+#topnav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Make logo always show dark version */
+#topnav .logo img.l-dark {
+    display: inline-block !important;
+}
+#topnav .logo img.l-light,
+#topnav .logo img.hidden.dark\:inline-block {
+    display: none !important;
+}
+
+/* Menu text black */
+#topnav .navigation-menu > li > a {
+    color: #000000;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect - light blue */
+#topnav .navigation-menu > li > a:hover {
+    color: #3b82f6; /* Tailwind light blue */
+}
+
+/* Search icon color black */
+#topnav .buy-button button i {
+    
+}
+
+/* Force navbar background white */
+
+
+/* Force menu text black */
+#topnav .navigation-menu > li > a {
+   
+    font-weight: 500 !important;
+}
+
+
+/* Hover search icon light blue */
+#topnav .buy-button button:hover i {
+    color: #3b82f6 !important;
+}
+
+
+
+/* Force navbar background white (normal + sticky) */
+nav#topnav,
+nav#topnav.is-sticky {
+    font-family: "roboto";
+    
+}
+
+/* Force text black (normal + sticky) */
+nav#topnav .navigation-menu > li > a,
+nav#topnav.is-sticky .navigation-menu > li > a {
+    
+    transition: color 0.3s ease-in-out;
+}
+
+/* Force hover light blue (normal + sticky) */
+nav#topnav .navigation-menu > li > a:hover,
+nav#topnav.is-sticky .navigation-menu > li > a:hover {
+    color: #3b82f6 !important;
+}
+
+/* Search icon force black + hover blue */
+
+nav#topnav .buy-button button:hover i,
+nav#topnav.is-sticky .buy-button button:hover i {
+    color: #3b82f6 !important;
+}
+
