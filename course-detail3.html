@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Edupath - Online Courses & Education HTML5 Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta content="Real Estate Website Landing Page" name="description" />
+        <meta content="Real Estate, buy, sell, Rent, tailwind Css" name="keywords" />
+        <meta name="author" content="Shreethemes" />
+        <meta name="website" content="../../index.html" />
+        <meta name="email" content="support@shreethemes.in" />
+        <meta name="version" content="1.0.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <link rel="stylesheet" href="style.css"> 
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+        <!-- Css -->
+        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+        <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+        <!-- Main Css -->
+        <link href="assets/libs/iconoir/css/iconoir.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/%40mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+
+    </head>
+    
+    <body class="dark:bg-slate-900">
+        <!-- Loader Start -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader End -->
+        <!-- Start Navbar -->
+        <nav id="topnav" class="defaultscroll is-sticky">
+            <div class="container relative">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                    <img src="assets/images/logo-dark.png" class="inline-block dark:hidden" alt="">
+                    <img src="assets/images/logo-light.png" class="hidden dark:inline-block" alt="">
+                </a>
+                <!-- End Logo container-->
+
+                <!-- Start Mobile Toggle -->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- End Mobile Toggle -->
+
+                <!--Login button Start-->
+                <ul class="buy-button list-none mb-0">
+                    <li class="inline-block relative me-1">
+                        <button class="text-[20px]" onclick="navbarSearch.showModal()" type="button">
+                            <i class="iconoir-search align-middle"></i>
+                        </button>                
+                    </li>
+
+                    
+    
+                    
+                </ul>
+                <!--Login button End-->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu justify-start">
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="./index-two.html">Home</a><span class="menu-arrow"></span>
+
+                          
+                        </li>
+
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Courses</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Grid Courses </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="grid.html" class="sub-menu-item">Grid Listing</a></li>
+                                        <li><a href="grid-sidebar.html" class="sub-menu-item">Grid Sidebar </a></li>
+                                    </ul> 
+                                </li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> List Courses </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="list.html" class="sub-menu-item">List Listing</a></li>
+                                        <li><a href="list-sidebar.html" class="sub-menu-item">List Sidebar </a></li>
+                                    </ul>  
+                                </li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Video Courses </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="youtube-listing.html" class="sub-menu-item">Youtube Listing</a></li>
+                                        <li><a href="video-listing.html" class="sub-menu-item">Video Listing</a></li>
+                                    </ul>  
+                                </li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Courses Detail</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="course-detail.html" class="sub-menu-item">Courses Detail</a></li>
+                                        <li><a href="course-detail-two.html" class="sub-menu-item">Courses Detail Two</a></li>
+                                    </ul>  
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>
+
+                       
+                
+                        <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </nav><!--end header-->
+        <!-- End Navbar -->
+
+        <!-- Searchbar modal -->
+        <dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
+            <div class="relative w-full h-auto">
+                <form method="dialog" class="modal-backdrop">
+                    <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost"><i data-feather="x" class="size-4"></i></button>
+                </form>
+                <div class="p-6 text-center">
+                    <form class="relative">
+                        <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
+                        <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10" name="s" id="searchItem" placeholder="Search...">
+                    </form>
+                </div>
+            </div>
+        </dialog>
+        <!-- Searchbar modal -->
+
+        <!-- Start -->
+        <section class="relative pt-32 md:pb-24 pb-16">
+            <div class="container">
+                <div class="md:flex justify-center">
+                   <div class="lg:w-3/5 mx-auto text-center">
+  <h3 class="text-3xl leading-normal font-medium">
+    Become a Professional Graphic Designer
+  </h3>
+</div>
+
+                </div>
+
+                <div class="md:flex justify-center text-center">
+                    <div class="lg:w-4/5">
+                        <ul class="tracking-[0.5px] mb-0 inline-block mt-4">
+                            <li class="inline-flex items-center mt-2 me-5">
+                                <i class="iconoir-clock text-lg"></i>
+                                <span class="text-slate-400 ms-2">10 Weeks</span>
+                            </li>
+        
+                            <li class="inline-flex items-center mt-2 me-5">
+                                <i class="iconoir-wifi text-lg"></i>
+                                <span class="text-slate-400 ms-2">All Levels</span>
+                            </li>
+                            
+                            <li class="inline-flex items-center mt-2 me-5">
+                                <i class="iconoir-book text-lg"></i>
+                                <span class="text-slate-400 ms-2">16 Lessons</span>
+                            </li>
+                            
+                            <li class="inline-flex items-center mt-2 me-5">
+                                <i class="iconoir-cube text-lg"></i>
+                                <span class="text-slate-400 ms-2">0 Quiz</span>
+                            </li>
+                            
+                            <li class="inline-flex items-center mt-2 me-5">
+                                <i class="iconoir-open-book text-lg"></i>
+                                <span class="text-slate-400 ms-2">5 Students</span>
+                            </li>
+                            
+                            <li class="inline-flex items-center mt-2">
+                                <i class="iconoir-cart text-lg"></i>
+                                <a href="../../../www.ojrq.net/p/index26d6.html" target="_blank" class="text-violet-600 ms-2">Enroll Now</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="image-section">
+  <div class="image-container">
+    <img src="assets/images/course/c2.jpg" alt="Course Image" class="wide-short-image">
+  </div>
+</div>
+                <div class="md:flex justify-center mt-10">
+                    <div class="lg:w-3/5">
+                        <h5 class="text-2xl font-semibold mb-4">Overview</h5>
+
+                        <p class="text-slate-400 mb-3">Welcome to our comprehensive course designed to help you master essential skills step-by-step. This program is tailored for beginners as well as those looking to strengthen their fundamentals and advance to higher levels of expertise.</p>
+                        <p class="text-slate-400 mb-3">Throughout this course, you will gain hands-on experience with real-world projects, practical exercises, and clear explanations of each topic. Our instructors ensure every concept is easy to understand and applicable to your future career goals.</p>
+                        <p class="text-slate-400 mb-3">The curriculum is structured to provide a balanced combination of theory and practice. You’ll not only learn core principles but also apply them in practical scenarios, building confidence as you progress.</p>
+
+                        <p class="text-slate-400 mb-3">With lifetime access and regular updates, this course will always keep you ahead of industry trends. Interactive sessions and community support make learning more engaging and effective.</p>
+
+                        <p class="text-slate-400">By the end of this course, you will be fully prepared to take on professional challenges, complete projects independently, and showcase your skills confidently in your portfolio.</p>
+
+                        <img src="./assets/images/course/22.jpg" class="rounded-md shadow-sm mt-4" alt="">
+
+                        <div class="mt-6">
+                            <h5 class="text-2xl font-semibold">Root Map</h5>
+                        </div>
+
+<div class="mt-6">
+    <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
+        <summary class="px-4 py-5 text-lg font-semibold cursor-pointer" style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #2563EB;">
+            Introduction
+        </summary>
+
+        <table class="w-full text-start">
+            <thead>
+                <tr>
+                    <th class="px-4 py-5 text-start">Lessons</th>
+                    <th class="px-4 py-5 text-end">Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-t border-slate-100 dark:border-slate-800">
+                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Basics of Back-End Development</td>
+                    <td class="p-4 text-end"><span class="bg-blue-600/10 text-blue-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
+                </tr>
+                <tr class="border-t border-slate-100 dark:border-slate-800">
+                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Client-Server Architecture</td>
+                    <td class="p-4 text-end"><span class="bg-blue-600/10 text-blue-600 text-[12px] px-2.5 py-1 rounded-md h-4">4 days</span></td>
+                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                </tr>
+                <tr class="border-t border-slate-100 dark:border-slate-800">
+                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Setting up Development Environment</td>
+                    <td class="p-4 text-end"><span class="bg-blue-600/10 text-blue-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
+                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                </tr>
+                <tr class="border-t border-slate-100 dark:border-slate-800">
+                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Introduction to APIs</td>
+                    <td class="p-4 text-end"><span class="bg-blue-600/10 text-blue-600 text-[12px] px-2.5 py-1 rounded-md h-4">4 days</span></td>
+                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+</div>
+
+
+<div class="mt-6">
+    <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
+        <summary class="px-4 py-5 text-lg font-semibold cursor-pointer" style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #2563EB;">
+            Mastery 
+        </summary>
+
+        <table class="w-full text-start">
+            <thead>
+                <tr>
+                    <th class="px-4 py-5 text-start">Lessons</th>
+                    <th class="px-4 py-5 text-end">Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-t border-slate-100 dark:border-slate-800">
+                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> REST API Design with Node.js & Express</td>
+                    <td class="p-4 text-end"><span class="bg-green-600/10 text-green-600 text-[12px] px-2.5 py-1 rounded-md h-4">6 days</span></td>
+                </tr>
+                <tr class="border-t border-slate-100 dark:border-slate-800">
+                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Authentication & Authorization (JWT/OAuth)</td>
+                    <td class="p-4 text-end"><span class="bg-green-600/10 text-green-600 text-[12px] px-2.5 py-1 rounded-md h-4">5 days</span></td>
+                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                </tr>
+                <tr class="border-t border-slate-100 dark:border-slate-800">
+                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Database Integration (MongoDB & SQL)</td>
+                    <td class="p-4 text-end"><span class="bg-green-600/10 text-green-600 text-[12px] px-2.5 py-1 rounded-md h-4">7 days</span></td>
+                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                </tr>
+                <tr class="border-t border-slate-100 dark:border-slate-800">
+                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Error Handling & Middleware</td>
+                    <td class="p-4 text-end"><span class="bg-green-600/10 text-green-600 text-[12px] px-2.5 py-1 rounded-md h-4">5 days</span></td>
+                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+</div>
+
+
+<div class="mt-6">
+    <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
+        <summary class="px-4 py-5 text-lg font-semibold cursor-pointer" style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #2563EB;">
+            Final Thoughts
+        </summary>
+
+        <table class="w-full text-start">
+            <thead>
+                <tr>
+                    <th class="px-4 py-5 text-start">Lessons</th>
+                    <th class="px-4 py-5 text-end">Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-t border-slate-100 dark:border-slate-800">
+                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Optimizing API Performance</td>
+                    <td class="p-4 text-end"><span class="bg-yellow-600/10 text-yellow-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
+                </tr>
+                <tr class="border-t border-slate-100 dark:border-slate-800">
+                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Secure Coding Best Practices</td>
+                    <td class="p-4 text-end"><span class="bg-yellow-600/10 text-yellow-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
+                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                </tr>
+                <tr class="border-t border-slate-100 dark:border-slate-800">
+                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Deploying Back-End Applications</td>
+                    <td class="p-4 text-end"><span class="bg-yellow-600/10 text-yellow-600 text-[12px] px-2.5 py-1 rounded-md h-4">4 days</span></td>
+                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                </tr>
+                <tr class="border-t border-slate-100 dark:border-slate-800">
+                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Scaling Applications for Production</td>
+                    <td class="p-4 text-end"><span class="bg-yellow-600/10 text-yellow-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
+                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+</div>
+
+                       
+                        
+    <div class="mt-6">
+    <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
+        <summary class="px-4 py-5 text-lg font-semibold cursor-pointer" style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #2563EB;">
+            Bonus Section
+        </summary>
+
+        <table class="w-full text-start">
+            <thead>
+                <tr>
+                    <th class="px-4 py-5 text-start">Lessons</th>
+                    <th class="px-4 py-5 text-end">Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-t border-slate-100 dark:border-slate-800">
+                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Caching Strategies (Redis)</td>
+                    <td class="p-4 text-end"><span class="bg-red-600/10 text-red-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
+                </tr>
+                <tr class="border-t border-slate-100 dark:border-slate-800">
+                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> WebSockets & Real-Time Communication</td>
+                    <td class="p-4 text-end"><span class="bg-red-600/10 text-red-600 text-[12px] px-2.5 py-1 rounded-md h-4">4 days</span></td>
+                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                </tr>
+                <tr class="border-t border-slate-100 dark:border-slate-800">
+                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Testing APIs (Postman & Jest)</td>
+                    <td class="p-4 text-end"><span class="bg-red-600/10 text-red-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
+                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                </tr>
+                <tr class="border-t border-slate-100 dark:border-slate-800">
+                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> CI/CD for Back-End Projects</td>
+                    <td class="p-4 text-end"><span class="bg-red-600/10 text-red-600 text-[12px] px-2.5 py-1 rounded-md h-4">5 days</span></td>
+                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+</div>
+
+        </div>
+            </div><!--end container-->
+
+             <div class="container relative md:mt-24 mt-16">
+                <div class="grid grid-cols-1 pb-6 text-center">
+                    
+                    <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Recent Courses</h4>
+
+                    <p class="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+                </div><!--end grid-->
+
+                <div class="grid grid-cols-1 relative mt-3">
+                    <div class="tiny-home-slide-three">
+                        <div class="tiny-slide">
+                            <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
+                                <div class="p-3 pb-0 relative">
+                                    <div class="relative overflow-hidden rounded-md">
+                                <img src="assets/images/course/14.jpg" class="group-hover:scale-105 duration-500" alt="">
+                            </div>
+                                   
+
+                                    <div class="absolute -bottom-5 end-6">
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="p-6">
+                                   
+
+                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">The Ultimate Course Bundle</a>
+
+                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+
+                                   
+                                </div>
+                            </div>
+                        </div><!--end content-->
+
+                        <div class="tiny-slide">
+                            <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
+                                <div class="p-3 pb-0 relative">
+                                    <div class="relative overflow-hidden rounded-md">
+                                <img src="assets/images/course/13.jpg" class="group-hover:scale-105 duration-500" alt="">
+                            </div>
+                                   
+
+                                    <div class="absolute -bottom-5 end-6">
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="p-6">
+                                    
+
+                                    <a href="course-detail1.html" class="text-lg hover:text-violet-600 font-medium">App Development Course</a>
+
+                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+
+                                   
+                                </div>
+                            </div>
+                        </div><!--end content-->
+
+                        <div class="tiny-slide">
+                            <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
+                                <div class="p-3 pb-0 relative">
+                                    <div class="relative overflow-hidden rounded-md">
+                                <img src="assets/images/course/19.jpg" class="group-hover:scale-105 duration-500" alt="">
+                            </div>
+                                   
+
+                                    
+                                </div>
+
+                                <div class="p-6">
+                                   
+
+                                    <a href="course-detail2.html" class="text-lg hover:text-violet-600 font-medium">Spoken English Popular Course</a>
+
+                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+
+                                </div>
+                            </div>
+                        </div><!--end content-->
+
+                        <div class="tiny-slide">
+                            <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
+                                <div class="p-3 pb-0 relative">
+                                    <div class="relative overflow-hidden rounded-md">
+                                <img src="assets/images/course/15.webp" class="group-hover:scale-105 duration-500" alt="">
+                            </div>
+                                    
+
+                                   
+                                </div>
+
+                                <div class="p-6">
+                                  
+
+                                    <a href="course-detail3.html" class="text-lg hover:text-violet-600 font-medium">Back-end Development Course</a>
+
+                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+
+                                   
+                                </div>
+                            </div>
+                        </div><!--end content-->
+
+                        <div class="tiny-slide">
+                            <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
+                                <div class="p-3 pb-0 relative">
+                                    <div class="relative overflow-hidden rounded-md">
+                                <img src="assets/images/course/16.webp" class="group-hover:scale-105 duration-500" alt="">
+                            </div>
+                                   
+                                </div>
+
+                                <div class="p-6">
+
+
+                                    <a href="course-detail4.html" class="text-lg hover:text-violet-600 font-medium">Front-end Development Course</a>
+
+                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+
+                                   
+                                </div>
+                            </div>
+                        </div><!--end content-->
+
+                        <div class="tiny-slide">
+                            <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
+                                <div class="p-3 pb-0 relative">
+                                    <div class="relative overflow-hidden rounded-md">
+                                <img src="assets/images/course/17.jpg" class="group-hover:scale-105 duration-500" alt="">
+                            </div>
+                                    
+                                </div>
+
+                                <div class="p-6">
+                                  
+
+                                    <a href="course-detail5.html" class="text-lg hover:text-violet-600 font-medium">Full stack Project in Nextjs Course</a>
+
+                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+
+                                   
+                                </div>
+                            </div>
+                        </div><!--end content-->
+                    </div><!--end tiny slider-->
+                </div><!--end grid-->
+            <div class="container relative md:mt-24 mt-16">
+                <div class="md:flex justify-center">
+                    <div class="lg:w-2/3 text-center">
+                        <h3 class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold mb-6">Subscribe our weekly subscription</h3>
+
+                        <p class="text-slate-400 max-w-xl mx-auto">Add some text to explain benefits of subscripton on your services. We'll send you the best of our blog just once a weekly.</p>
+
+                        <div class="mt-6">
+                            <div class="text-center subcribe-form">
+                                <form class="relative mx-auto max-w-xl">
+                                    <input type="email" id="subemail" name="name" class="pt-4 pe-40 pb-4 ps-6 w-full h-[50px] outline-none text-slate-900 dark:text-white rounded-full bg-white/70 dark:bg-slate-900/70 border border-slate-100 dark:border-slate-800" placeholder="Enter your email id..">
+                                    <button type="submit" class="h-12 px-6 tracking-wide items-center justify-center font-medium bg-violet-600 text-white rounded-full absolute top-[1px] end-[1px]">Subcribe Now</button>
+                                </form><!--end form-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Start Footer -->
+        <footer class="relative bg-slate-900 dark:bg-slate-800">
+            <div class="container relative">
+                <div class="grid grid-cols-1">
+                    <div class="relative py-16">
+                        <!-- Subscribe -->
+                        <div class="relative w-full">
+                            <div class="grid md:grid-cols-12 grid-cols-1 gap-6">
+                                <div class="lg:col-span-4 md:col-span-12">
+                                    <a href="#" class="text-[22px] focus:outline-none">
+                                        <img src="assets/images/logo-light.png" alt="">
+                                    </a>
+                                    <p class="mt-6 text-gray-300">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+
+                                    <div class="flex mt-6">
+                                        <i class="iconoir-map-pin align-middle text-2xl text-violet-600 me-2"></i>
+                                        <div class="">
+                                            <h6 class="text-gray-300">C/54 Northwest Freeway, <br> Houston, USA 485</h6>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="flex mt-4">
+                                        <i class="iconoir-phone align-middle text-2xl text-violet-600 me-2"></i>
+                                        <div class="">
+                                            <a href="tel:+152534-468-854" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">+152 534-468-854</a>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                        
+                                <div class="lg:col-span-2 md:col-span-3">
+                                    <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Usefull Links</h5>
+
+                                    <ul class="list-none footer-list mt-6">
+                                        <li><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Course</a></li>
+                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Mission & Vision</a></li>
+                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Join a Career</a></li>
+                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Zoom Meeting</a></li>
+                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Pricing Plan</a></li>
+                                    </ul>
+                                </div><!--end col-->
+                        
+                                <div class="lg:col-span-2 md:col-span-3">
+                                    <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Our Institute</h5>
+
+                                    <ul class="list-none footer-list mt-6">
+                                        <li><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Contact Us</a></li>
+                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Technology</a></li>
+                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Instructors</a></li>
+                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Pricing</a></li>
+                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Services</a></li>
+                                    </ul>
+                                </div><!--end col-->
+    
+                                <div class="lg:col-span-4 md:col-span-6">
+                                    <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Get In Touch</h5>
+                            
+                                    <div class="mt-6">
+                                        <a href="#"><img src="assets/images/app.png" class="h-12 inline-block mb-1" alt=""></a>
+                                        <a href="#"><img src="assets/images/play.png" class="h-12 inline-block mb-1" alt=""></a>
+                                    </div>
+
+                                    <ul class="list-none mt-4">
+                                        <li class="inline"><a href="../../../www.ojrq.net/p/index26d6.html" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600"><i class="iconoir-cart"></i></a></li>
+                                        <li class="inline"><a href="../../../dribbble.com/shreethemes.html" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600"><i class="iconoir-dribbble"></i></a></li>
+                                        <li class="inline"><a href="../../../www.behance.net/shreethemes.html" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600"><i class="iconoir-behance align-baseline"></i></a></li>
+                                        <li class="inline"><a href="../../../www.linkedin.com/company/shreethemes.html" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600"><i class="iconoir-linkedin"></i></a></li>
+                                        <li class="inline"><a href="../../../www.facebook.com/unsupportedbrowser.html" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600"><i class="iconoir-facebook"></i></a></li>
+                                        <li class="inline"><a href="../../../www.instagram.com/shreethemes/index.html" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600"><i class="iconoir-instagram"></i></a></li>
+                                        <li class="inline"><a href="../../../twitter.com/shreethemes" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600"><i class="iconoir-x"></i></a></li>
+                                        <li class="inline"><a href="mailto:support@shreethemes.in" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600"><i class="iconoir-mail"></i></a></li>
+                                    </ul><!--end icon-->
+                                </div><!--end col-->
+                            </div><!--end grid-->
+                        </div>
+                        <!-- Subscribe -->
+                    </div>
+                </div>
+            </div><!--end container-->
+
+            <div class="py-[30px] px-0 border-t border-gray-800 dark:border-gray-700">
+                <div class="container relative text-center">
+                    <div class="grid md:grid-cols-2 items-center gap-6">
+                        <div class="md:text-start text-center">
+                            <p class="mb-0 text-gray-300">© <script>document.write(new Date().getFullYear())</script> Edupath. Design with <i class="mdi mdi-heart text-red-600"></i> by <a href="../../index.html" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                        </div>
+
+                        <ul class="list-disc footer-list md:text-end text-center space-x-3">
+                            <li class="inline-block"><i class="mdi mdi-circle-medium text-gray-400"></i> <a href="terms.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Terms</a></li>
+                            <li class="inline-block mt-[10px] md:mt-0"><i class="mdi mdi-circle-medium text-gray-400"></i> <a href="privacy.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Privacy</a></li>
+                            <li class="inline-block mt-[10px] md:mt-0"><i class="mdi mdi-circle-medium text-gray-400"></i> <a href="login.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Login</a></li>
+                        </ul><!--end icon-->
+                    </div><!--end grid-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- End Footer -->
+ 
+<div id="chat-container" class="fixed bottom-6 z-50" style="right: 1.5rem;">
+    <!-- Chat content -->
+<!-- Chat Button -->
+    <button id="chat-toggle" class="bg-violet-600 hover:bg-violet-700 text-white p-3 rounded-full shadow-lg focus:outline-none">
+        <i class="iconoir-chat-bubble text-2xl"></i>
+    </button>
+
+    <!-- Chat Popup -->
+    <div id="chat-popup" class="hidden bg-white dark:bg-slate-900 shadow-lg w-80 rounded-xl overflow-hidden mt-2 border border-gray-300 dark:border-gray-700">
+        <!-- Header -->
+        <div class="bg-violet-600 text-white p-3 font-semibold flex justify-between items-center">
+            Chat with us
+            <button id="chat-close" class="text-white text-xl leading-none">&times;</button>
+        </div>
+        <!-- Messages -->
+        <div class="p-3 h-64 overflow-y-auto text-gray-700 dark:text-gray-300" id="chat-messages">
+            <p class="text-sm text-gray-400">Hi! How can we help you today?</p>
+        </div>
+        <!-- Input -->
+        <div class="border-t border-gray-300 dark:border-gray-700 p-2 flex">
+            <input id="chat-input" type="text" placeholder="Type a message..." 
+                class="flex-1 px-2 py-1 border rounded-l-md text-sm focus:outline-none">
+            <button id="chat-send" class="bg-violet-600 hover:bg-violet-700 text-white px-3 rounded-r-md text-sm">Send</button>
+        </div>
+    </div>
+</div>
+        <!-- Switcher -->
+        <div class="fixed top-1/4 -right-2 z-3">
+            <span class="relative inline-block rotate-90">
+                <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
+                <label class="label bg-slate-900 dark:bg-white shadow-sm dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-[60px] h-8" for="chk">
+                    <i class="iconoir-half-moon text-yellow-500 align-middle ps-1 text-[16px] relative z-1"></i>
+                    <i class="iconoir-sun-light text-yellow-500 align-middle pe-1 text-[16px] relative z-1"></i>
+                    <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] size-7"></span>
+                </label>
+            </span>
+        </div>
+        <!-- Switcher -->
+
+        <!-- LTR & RTL Mode Code -->
+        <div class="fixed top-[40%] -right-3 z-50">
+            <a href="#" id="switchRtl">
+                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow-sm dark:shadow-gray-800 font-semibold rtl:block ltr:hidden" >LTR</span>
+                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow-sm dark:shadow-gray-800 font-semibold ltr:block rtl:hidden">RTL</span>
+            </a>
+        </div>
+        <!-- LTR & RTL Mode Code -->
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+        <script src="assets/libs/tobii/js/tobii.min.js"></script>
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/js/plugins.init.js"></script>
+        <script src="assets/js/app.js"></script>
+        <!-- JAVASCRIPTS -->
+    </body>
+</html>
