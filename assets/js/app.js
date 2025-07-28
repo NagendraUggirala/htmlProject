@@ -82,6 +82,73 @@ function getClosest(elem, selector) {
 
 };
 
+
+
+
+
+
+
+
+const chatToggle = document.getElementById('chat-toggle');
+const chatPopup = document.getElementById('chat-popup');
+const chatClose = document.getElementById('chat-close');
+const chatSend = document.getElementById('chat-send');
+const chatInput = document.getElementById('chat-input');
+const chatMessages = document.getElementById('chat-messages');
+
+// Toggle chatbox open/close
+chatToggle.addEventListener('click', () => {
+    chatPopup.classList.toggle('hidden');
+});
+
+// Close chatbox
+chatClose.addEventListener('click', () => {
+    chatPopup.classList.add('hidden');
+});
+
+
+  // Send message
+  function sendMessage() {
+      const msg = chatInput.value.trim();
+      if (msg) {
+          // Create user message
+          const userMsg = document.createElement('p');
+          userMsg.className = "text-sm text-gray-800 dark:text-gray-200 mt-2";
+          userMsg.textContent = "You: " + msg;
+
+          chatMessages.appendChild(userMsg);
+          chatMessages.scrollTop = chatMessages.scrollHeight; // auto scroll
+
+          chatInput.value = ''; // clear input
+
+          // Simulate bot reply
+          setTimeout(() => {
+              const botMsg = document.createElement('p');
+              botMsg.className = "text-sm text-violet-600 mt-1";
+              botMsg.textContent = "Bot: Thanks for your message!";
+              chatMessages.appendChild(botMsg);
+              chatMessages.scrollTop = chatMessages.scrollHeight;
+          }, 1000);
+      }
+  }
+
+  // Send button click
+  chatSend.addEventListener('click', sendMessage);
+
+  // Enter key press
+  chatInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+          e.preventDefault();
+          sendMessage();
+      }
+  });
+
+
+
+
+
+
+
 function activateMenu() {
     var menuItems = document.getElementsByClassName("sub-menu-item");
     if (menuItems) {

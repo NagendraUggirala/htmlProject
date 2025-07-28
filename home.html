@@ -74,7 +74,9 @@
                         <li class="has-submenu parent-parent-menu-item"><a href="home.html">Home</a></li>
                         <li class="has-submenu parent-parent-menu-item">
                         <a href="courses.html">Courses</a></li>
-                        <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>     
+                        <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li> 
+                         <li><a href="core.html" class="sub-menu-item my-core">My Core</a></li>
+    
                         <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
                     </ul><!--end navigation menu-->
                 </div><!--end navigation-->
@@ -509,9 +511,33 @@
         <!--end footer-->
         <!-- End Footer -->
 
-        <!-- Back to top -->
-        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fixed hidden rounded-full z-10 bottom-5 end-5 size-8 text-center bg-violet-600 text-white justify-center items-center"><i data-feather="arrow-up" class="size-4"></i></a>
-        <!-- Back to top -->
+        <div id="chat-container" class="fixed bottom-6 z-50" style="right: 1.5rem;">
+   <!-- Chat Icon using uploaded image -->
+<img id="chat-toggle" src="../../../../../../assets/images/bg/chb.jpg"
+     alt="Chat Icon" 
+     class="w-8 h-8 cursor-pointer rounded-full shadow-lg border border-gray-300 bg-white p-1" />
+
+
+
+    <!-- Chat Popup -->
+    <div id="chat-popup" class="hidden bg-white dark:bg-slate-900 shadow-lg w-80 rounded-xl overflow-hidden mt-2 border border-gray-300 dark:border-gray-700">
+        <!-- Header -->
+        <div class="bg-violet-600 text-white p-3 font-semibold flex justify-between items-center">
+            Chat with us
+            <button id="chat-close" class="text-white text-xl leading-none">&times;</button>
+        </div>
+        <!-- Messages -->
+        <div class="p-3 h-64 overflow-y-auto text-gray-700 dark:text-gray-300" id="chat-messages">
+            <p class="text-sm text-gray-400">Hi! How can we help you today?</p>
+        </div>
+        <!-- Input -->
+        <div class="border-t border-gray-300 dark:border-gray-700 p-2 flex">
+            <input id="chat-input" type="text" placeholder="Type a message..." 
+                class="flex-1 px-2 py-1 border rounded-l-md text-sm focus:outline-none">
+            <button id="chat-send" class="bg-violet-600 hover:bg-violet-700 text-white px-3 rounded-r-md text-sm">Send</button>
+        </div>
+    </div>
+</div>
         <!-- Switcher -->
         <div class="fixed top-1/4 -right-2 z-3">
             <span class="relative inline-block rotate-90">
