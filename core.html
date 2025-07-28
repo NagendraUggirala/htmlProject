@@ -79,50 +79,56 @@
                     <!-- Navigation Menu-->   
                     <ul class="navigation-menu justify-start">
                         <li class="has-submenu parent-parent-menu-item">
-                            <a href="home.html">Home</a><span class="menu-arrow"></span>
+                            <a href="home.html">Home</a></span>
 
                           
                         </li>
 
-                        <li class="has-submenu parent-parent-menu-item">
-                            <a href="javascript:void(0)">Courses</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Grid Courses </a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="grid.html" class="sub-menu-item">Grid Listing</a></li>
-                                        <li><a href="grid-sidebar.html" class="sub-menu-item">Grid Sidebar </a></li>
-                                    </ul> 
-                                </li>
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> List Courses </a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="list.html" class="sub-menu-item">List Listing</a></li>
-                                        <li><a href="list-sidebar.html" class="sub-menu-item">List Sidebar </a></li>
-                                    </ul>  
-                                </li>
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Video Courses </a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="youtube-listing.html" class="sub-menu-item">Youtube Listing</a></li>
-                                        <li><a href="video-listing.html" class="sub-menu-item">Video Listing</a></li>
-                                    </ul>  
-                                </li>
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Courses Detail</a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="course-detail.html" class="sub-menu-item">Courses Detail</a></li>
-                                        <li><a href="course-detail-two.html" class="sub-menu-item">Courses Detail Two</a></li>
-                                    </ul>  
-                                </li>
-                            </ul>
-                        </li>
-
+                         <li><a href="courses.html" class="sub-menu-item">Courses</a></li>
+                            
                         <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>
 
                        
-                
+                <li><a href="core.html" class="sub-menu-item my-core">My Core</a></li>
+    
                         <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
                     </ul><!--end navigation menu-->
                 </div><!--end navigation-->
             </div><!--end container-->
-        </nav><!--end header--><br><br>
+        </nav><!--end header-->
+
+
+
+         <dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
+            <div class="relative w-full h-auto">
+                <form method="dialog" class="modal-backdrop">
+                    <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost"><i data-feather="x" class="size-4"></i></button>
+                </form>
+                <div class="p-6 text-center">
+                    <form class="relative">
+                        <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
+                        <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10" name="s" id="searchItem" placeholder="Search...">
+                    </form>
+                </div>
+            </div>
+        </dialog>
+         <section class="relative table w-full py-32 lg:py-44 bg-[url('../../assets/images/bg/3.html')] bg-no-repeat bg-center bg-cover">
+            <div class="absolute inset-0 bg-slate-900 opacity-80"></div>
+            <div class="container relative">
+                <div class="grid grid-cols-1 text-center mt-10">
+                    <h3 class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-white">My Core</h3>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <div class="relative">
+            <div class="shape overflow-hidden z-1 text-white dark:text-slate-900">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="../../../www.w3.org/2000/svg.html">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- End Hero -->
+
         <!-- End Navbar -->
 <section class="ceo-message">
   <div class="container">
@@ -173,17 +179,8 @@
   </div>
 </section>
 
-
-
-
-
-
-                               
-
-                                  
-
         <!-- Start Footer -->
-        <footer class="relative bg-slate-900 dark:bg-slate-800">
+       <footer class="relative bg-slate-900 dark:bg-slate-800">
             <div class="container relative">
                 <div class="grid grid-cols-1">
                     <div class="relative py-16">
@@ -233,27 +230,7 @@
                                         <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Pricing</a></li>
                                         <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Services</a></li>
                                     </ul>
-                                </div><!--end col-->
-    
-                                <div class="lg:col-span-4 md:col-span-6">
-                                    <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Get In Touch</h5>
-                            
-                                    <div class="mt-6">
-                                        <a href="#"><img src="assets/images/app.png" class="h-12 inline-block mb-1" alt=""></a>
-                                        <a href="#"><img src="assets/images/play.png" class="h-12 inline-block mb-1" alt=""></a>
-                                    </div>
-
-                                    <ul class="list-none mt-4">
-                                        <li class="inline"><a href="../../../www.ojrq.net/p/index26d6.html" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600"><i class="iconoir-cart"></i></a></li>
-                                        <li class="inline"><a href="../../../dribbble.com/shreethemes.html" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600"><i class="iconoir-dribbble"></i></a></li>
-                                        <li class="inline"><a href="../../../www.behance.net/shreethemes.html" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600"><i class="iconoir-behance align-baseline"></i></a></li>
-                                        <li class="inline"><a href="../../../www.linkedin.com/company/shreethemes.html" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600"><i class="iconoir-linkedin"></i></a></li>
-                                        <li class="inline"><a href="../../../www.facebook.com/unsupportedbrowser.html" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600"><i class="iconoir-facebook"></i></a></li>
-                                        <li class="inline"><a href="../../../www.instagram.com/shreethemes/index.html" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600"><i class="iconoir-instagram"></i></a></li>
-                                        <li class="inline"><a href="../../../twitter.com/shreethemes" target="_blank" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600"><i class="iconoir-x"></i></a></li>
-                                        <li class="inline"><a href="mailto:support@shreethemes.in" class="size-7 inline-flex justify-center items-center text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600"><i class="iconoir-mail"></i></a></li>
-                                    </ul><!--end icon-->
-                                </div><!--end col-->
+                                </div><!--end col-->                         
                             </div><!--end grid-->
                         </div>
                         <!-- Subscribe -->
@@ -265,7 +242,7 @@
                 <div class="container relative text-center">
                     <div class="grid md:grid-cols-2 items-center gap-6">
                         <div class="md:text-start text-center">
-                            <p class="mb-0 text-gray-300">© <script>document.write(new Date().getFullYear())</script> Edupath. Design with <i class="mdi mdi-heart text-red-600"></i> by <a href="../../index.html" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                            <p class="mb-0 text-gray-300">CopyRight © <script>document.write(new Date().getFullYear())</script> Edupath. Design  <i class="mdi mdi-heart text-red-600"></i>  by <a class="text-reset">Levitica</a>.</p>
                         </div>
 
                         <ul class="list-disc footer-list md:text-end text-center space-x-3">
@@ -276,7 +253,7 @@
                     </div><!--end grid-->
                 </div><!--end container-->
             </div>
-        </footer><!--end footer-->
+        </footer>
 <div id="chat-container" class="fixed bottom-6 z-50" style="right: 1.5rem;">
    <!-- Chat Icon using uploaded image -->
 <img id="chat-toggle" src="../../../../../../assets/images/bg/chb.jpg"
@@ -326,15 +303,6 @@
             </span>
         </div>
         <!-- Switcher -->
-
-        <!-- LTR & RTL Mode Code -->
-        <div class="fixed top-[40%] -right-3 z-50">
-            <a href="#" id="switchRtl">
-                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow-sm dark:shadow-gray-800 font-semibold rtl:block ltr:hidden" >LTR</span>
-                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow-sm dark:shadow-gray-800 font-semibold ltr:block rtl:hidden">RTL</span>
-            </a>
-        </div>
-        <!-- LTR & RTL Mode Code -->
 
         <!-- JAVASCRIPTS -->
         <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>

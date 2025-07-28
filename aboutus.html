@@ -37,15 +37,12 @@
         </div> -->
         <!-- Loader End -->
         <!-- Start Navbar -->
-        <nav id="topnav" class="defaultscroll is-sticky">
+       <nav id="topnav" class="defaultscroll is-sticky">
             <div class="container relative">
-                <!-- Start Logo container-->
+                <!-- Logo container-->
                 <a class="logo" href="index.html">
-                    <span class="inline-block dark:hidden">
-                        <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
-                        <img src="assets/images/logo-light.png" class="l-light" height="24" alt="">
-                    </span>
-                    <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
+                    <img src="assets/images/logo-dark.png" class="inline-block dark:hidden" alt="">
+                    <img src="assets/images/logo-light.png" class="hidden dark:inline-block" alt="">
                 </a>
                 <!-- End Logo container-->
 
@@ -64,29 +61,43 @@
                 <!-- End Mobile Toggle -->
 
                 <!--Login button Start-->
-                
+                <ul class="buy-button list-none mb-0">
+                    <li class="inline-block relative me-1">
+                        <button class="text-[20px]" onclick="navbarSearch.showModal()" type="button">
+                            <i class="iconoir-search align-middle"></i>
+                        </button>                
+                    </li>
+
+                    
+    
+                    
+                </ul>
                 <!--Login button End-->
 
                 <div id="navigation">
                     <!-- Navigation Menu-->   
-                    <ul class="navigation-menu justify-start nav-light">
+                    <ul class="navigation-menu justify-start">
                         <li class="has-submenu parent-parent-menu-item">
-                            <a href="home.html">Home</a>   
-                        </li>
+                            <a href="home.html">Home</a></span>
 
-                        <li class="has-submenu parent-parent-menu-item">
-                        <a href="courses.html">Courses</a></li>
-                        <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>     
+                          
+                        </li>
+<li><a href="courses.html" class="sub-menu-item">Courses</a></li>
+
+                        <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>
+
+                       
+                <li><a href="core.html" class="sub-menu-item my-core">My Core</a></li>
+    
                         <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
-                        <li><a href="info.html" class="sub-menu-item">info</a></li>
                     </ul><!--end navigation menu-->
                 </div><!--end navigation-->
             </div><!--end container-->
         </nav><!--end header-->
-        <!-- End Navbar -->
 
-        <!-- Searchbar modal -->
-        <dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
+
+
+         <dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
             <div class="relative w-full h-auto">
                 <form method="dialog" class="modal-backdrop">
                     <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost"><i data-feather="x" class="size-4"></i></button>
@@ -99,10 +110,7 @@
                 </div>
             </div>
         </dialog>
-        <!-- Searchbar modal -->
-
-        <!-- Start Hero -->
-        <section class="relative table w-full py-32 lg:py-44 bg-[url('../../assets/images/bg/3.html')] bg-no-repeat bg-center bg-cover">
+         <section class="relative table w-full py-32 lg:py-44 bg-[url('../../assets/images/bg/3.html')] bg-no-repeat bg-center bg-cover">
             <div class="absolute inset-0 bg-slate-900 opacity-80"></div>
             <div class="container relative">
                 <div class="grid grid-cols-1 text-center mt-10">
@@ -110,6 +118,11 @@
                 </div><!--end grid-->
             </div><!--end container-->
         </section><!--end section-->
+                
+                
+
+        
+      
         <div class="relative">
             <div class="shape overflow-hidden z-1 text-white dark:text-slate-900">
                 <svg viewBox="0 0 2880 48" fill="none" xmlns="../../../www.w3.org/2000/svg.html">
@@ -120,54 +133,65 @@
         <!-- End Hero -->
 
         <!-- Start -->
-        <section class="relative lg:py-24 py-16">
-            <div class="container relative">
+       
+
+             
+            <div class="container relative md:mt-24 mt-16">
                 <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
                     <div class="lg:col-span-6 md:col-span-7">
                         <div class="relative">
-                            <div class="relative md:shrink-0 lg:me-0 me-10">
-                                <img class="object-cover md:w-96 w-84 h-[500px] rounded-lg shadow-md dark:shadow-gyay-700" src="assets/images/course/1.jpg" alt="">
-                            </div>
-
-                            <div class="absolute bottom-10 lg:end-6 end-0">
-                                <div class="relative z-1 top-10 xl:text-start lg:text-end text-end">
-                                    <a href="#!" data-type="youtube" data-id="yba7hPeTSjk" class="lightbox size-20 rounded-full shadow-md dark:shadow-gyay-700 inline-flex items-center justify-center bg-violet-600 text-white">
-                                        <i class="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
-                                    </a>
-                                </div>
+                            <div class="relative md:shrink-0 lg:me-0 me-10 mb-12">
+    <img class="object-cover w-[98%] h-[500px] rounded-lg shadow-md dark:shadow-gray-600 mx-auto" 
+         src="assets/images/home/home.jpg" alt="">
+</div> </div> </div>
+<div class="lg:col-span-6 md:col-span-5">
     
-                                <div class="relative md:shrink-0">
-                                    <img class="object-cover size-48 rounded-lg shadow-md dark:shadow-gyay-700" src="assets/images/course/4.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
+    <h4 class="mb-4 md:text-4xl text-3xl md:leading-relaxed leading-relaxed font-semibold">
+    Access to Learning <br> Anytime & Anywhere
+</h4>
+<p class="text-slate-400 max-w-xl mx-auto text-lg md:text-xl">
+    We believe education should be available to everyone, no matter where they are. 
+    Our platform offers high-quality courses created by experts, helping learners gain practical 
+    skills at their own pace. Learn anytime, on any device, and transform your career with ease.
+</p>
 
-                    <div class="lg:col-span-6 md:col-span-5">
-                        <h4 class="mb-4 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Access to Learning <br> Anytime & Anyware</h4>
-                        <p class="text-slate-400 max-w-xl mx-auto">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
 
-                        <div class="grid md:grid-cols-2 mt-4">
-                            <ul class="list-none">
-                                <li class="mt-2 text-[16px]"><i class="mdi mdi-circle-medium"></i> <span class="text-slate-400">Flexible Timing</span></li>
-                                <li class="mt-2 text-[16px]"><i class="mdi mdi-circle-medium"></i> <span class="text-slate-400">Easy Learning</span></li>
-                            </ul>
+   <div class="grid md:grid-cols-2 mt-4">
+    <ul class="list-none">
+        <li class="mt-2 text-[16px]">
+            <i class="mdi mdi-circle-medium"></i> 
+            <span class="text-slate-400">Self-Paced Learning</span>
+        </li>
+        <li class="mt-2 text-[16px]">
+            <i class="mdi mdi-circle-medium"></i> 
+            <span class="text-slate-400">Live Expert Sessions</span>
+        </li>
+    </ul>
 
-                            <ul class="list-none">
-                                <li class="mt-2 text-[16px]"><i class="mdi mdi-circle-medium"></i> <span class="text-slate-400">Affordable</span></li>
-                                <li class="mt-2 text-[16px]"><i class="mdi mdi-circle-medium"></i> <span class="text-slate-400">World Class</span></li>
-                            </ul>
-                        </div>
+    <ul class="list-none">
+        <li class="mt-2 text-[16px]">
+            <i class="mdi mdi-circle-medium"></i> 
+            <span class="text-slate-400">Affordable & Flexible Plans</span>
+        </li>
+        <li class="mt-2 text-[16px]">
+            <i class="mdi mdi-circle-medium"></i> 
+            <span class="text-slate-400">Join a Global Network</span>
+        </li>
+    </ul>
+</div>
 
-                        <div class="mt-6">
-                            <a href="#" class="h-10 px-5 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white">Learn More <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
-                        </div>
-                    </div><!--end col-->
+
+
+    <div class="mt-6">
+        <a href="#" class="h-10 px-5 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white">
+            Learn More <i class="mdi mdi-arrow-right align-middle ms-1"></i>
+        </a>
+    </div>
+</div><!--end col-->
+
                 </div><!--end grid-->
             </div><!--end container-->
-
-           <!--end container-->
-        </section><!--end section-->
+       
         <!-- End -->
 
         <!-- Start CTA -->
@@ -274,9 +298,33 @@
         <!--end footer-->
         <!-- End Footer -->
 
-        <!-- Back to top -->
-        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fixed hidden rounded-full z-10 bottom-5 end-5 size-8 text-center bg-violet-600 text-white justify-center items-center"><i data-feather="arrow-up" class="size-4"></i></a>
-        <!-- Back to top -->
+        <div id="chat-container" class="fixed bottom-6 z-50" style="right: 1.5rem;">
+   <!-- Chat Icon using uploaded image -->
+<img id="chat-toggle" src="../../../../../../assets/images/bg/chb.jpg"
+     alt="Chat Icon" 
+     class="w-8 h-8 cursor-pointer rounded-full shadow-lg border border-gray-300 bg-white p-1" />
+
+
+
+    <!-- Chat Popup -->
+    <div id="chat-popup" class="hidden bg-white dark:bg-slate-900 shadow-lg w-80 rounded-xl overflow-hidden mt-2 border border-gray-300 dark:border-gray-700">
+        <!-- Header -->
+        <div class="bg-violet-600 text-white p-3 font-semibold flex justify-between items-center">
+            Chat with us
+            <button id="chat-close" class="text-white text-xl leading-none">&times;</button>
+        </div>
+        <!-- Messages -->
+        <div class="p-3 h-64 overflow-y-auto text-gray-700 dark:text-gray-300" id="chat-messages">
+            <p class="text-sm text-gray-400">Hi! How can we help you today?</p>
+        </div>
+        <!-- Input -->
+        <div class="border-t border-gray-300 dark:border-gray-700 p-2 flex">
+            <input id="chat-input" type="text" placeholder="Type a message..." 
+                class="flex-1 px-2 py-1 border rounded-l-md text-sm focus:outline-none">
+            <button id="chat-send" class="bg-violet-600 hover:bg-violet-700 text-white px-3 rounded-r-md text-sm">Send</button>
+        </div>
+    </div>
+</div>
         <!-- Switcher -->
         <div class="fixed top-1/4 -right-2 z-3">
             <span class="relative inline-block rotate-90">
