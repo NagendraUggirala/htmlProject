@@ -160,7 +160,15 @@
                 color: #4a5670;
                 margin-top: 2px;
             }
-        
+  
+            .course-image {
+    width: 100%;        /* Fill full card width */
+    height: 250px;      /* Adjust height as per design */
+    object-fit: cover;  /* Keeps aspect ratio, crops if needed */
+    display: block;
+}
+
+
 .tiny-slide .group {
   display: flex;
   flex-direction: column;
