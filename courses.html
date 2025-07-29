@@ -68,46 +68,50 @@
 
             <!--Login button End-->
 
-            <div id="navigation">
-                <!-- Navigation Menu-->
-                <ul class="navigation-menu justify-start nav-light">
-                    <li class="has-submenu parent-parent-menu-item"><a href="home.html">Home</a></li>
-                    <li class="has-submenu parent-parent-menu-item">
-                        <a href="courses.html">Courses</a>
-                    </li>
-                    <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>
-                    <li><a href="core.html" class="sub-menu-item my-core">My Core</a></li>
+            
+<div id="navigation">
+    <!-- Navigation Menu-->   
+    <ul class="navigation-menu justify-start nav-light">
+        <li class="has-submenu parent-parent-menu-item"><a href="home.html">Home</a></li>
+        <li class="has-submenu parent-parent-menu-item"><a href="courses.html">Courses</a></li>
+        <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>    
+        <li><a href="core.html" class="sub-menu-item my-core">My Core</a></li>
+        <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
+    </ul><!--end navigation menu-->
+</div><!--end navigation-->
+</div><!--end container-->
+</nav><!--end header-->
 
-                    <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
 
-                </ul><!--end navigation menu-->
-            </div><!--end navigation-->
-        </div><!--end container-->
-    </nav><!--end header-->
-    <!-- End Navbar -->
+<dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
+    <div class="relative w-full h-auto">
+        <form method="dialog" class="modal-backdrop">
+            <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost">
+                <i data-feather="x" class="size-4"></i>
+            </button>
+        </form>
+        <div class="p-6 text-center">
+            <form class="relative">
+                <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
+                <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10" name="s" id="searchItem" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+</dialog>
 
-    <!-- Searchbar modal -->
-     <dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
-            <div class="relative w-full h-auto">
-                <form method="dialog" class="modal-backdrop">
-                    <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost"><i data-feather="x" class="size-4"></i></button>
-                </form>
-                <div class="p-6 text-center">
-                    <form class="relative">
-                        <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
-                        <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10" name="s" id="searchItem" placeholder="Search...">
-                    </form>
-                </div>
-            </div>
-        </dialog>
-         <section class="relative table w-full py-16 lg:py-24 bg-[url('../../assets/images/bg/3.html')] bg-no-repeat bg-center bg-cover">
-            <div class="absolute inset-0 bg-slate-900 opacity-80"></div>
-            <div class="container relative">
-                <div class="grid grid-cols-1 text-center mt-10">
-                    <h3 class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-white">Courses</h3>
-                </div><!--end grid-->
-            </div><!--end container-->
-        </section><!--end section-->
+<!-- Banner Section -->
+<section class="relative table w-full py-16 lg:py-24 bg-[url('../../assets/images/bg/3.html')] bg-no-repeat bg-center bg-cover">
+    <!-- Darker overlay -->
+    <div class="absolute inset-0 bg-slate-900 opacity-95"></div>
+    <div class="container relative">
+        <div class="grid grid-cols-1 text-center mt-10">
+            <h3 class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-white">
+                Courses
+            </h3>
+        </div><!--end grid-->
+    </div><!--end container-->
+</section><!--end section-->
+
         <div class="relative">
             <div class="shape overflow-hidden z-1 text-white dark:text-slate-900">
                 <svg viewBox="0 0 2880 48" fill="none" xmlns="../../../www.w3.org/2000/svg.html">
