@@ -138,15 +138,17 @@
                 min-width: 260px;
                 text-align: center;
             }
-            .about-profile-pic img {
-                width: 320px;
-                height: 420px;
-                object-fit: cover;
-                border-radius: 16px;
-                box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-                background: #fff;
-                max-width: 100%;
-            }
+                        .about-profile-pic img {
+                          width: 320px;
+                height: auto;
+                object-fit: contain;
+                          border-radius: 16px;
+                          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                          background: linear-gradient(145deg, #f0f0f0, #ffffff);
+                          padding: 6px;
+                          border: 1px solid #ddd;
+                          transition: transform 0.3s ease, box-shadow 0.3s ease;
+                        }
             .about-profile-name {
                 margin-top: 18px;
                 font-size: 1.25em;
@@ -174,3 +176,79 @@
                     max-width: 320px;
                 }
             }
+
+            .vision-section {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background-color: #fff;
+  color: #1f2937;
+}
+
+.dark .vision-section {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+.vision-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.vision-section p {
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.vision-section ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+.vision-section li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.vision-section li::before {
+  content: '✔';
+  color: #10b981;
+}
+.dark .vision-section li::before {
+  color: #34d399;
+}
+
+.vision-section {
+    background: linear-gradient(to bottom right, #f0f4f8, #ffffff);
+    border-radius: 12px;
+}
+
+.vision-section h2 {
+    color: #0f172a;
+}
+
+.vision-section p {
+    font-size: 1.125rem;
+    color: #475569;
+}
+
+.core-values .value-item {
+    background: #f1f5f9;
+    padding: 12px 16px;
+    border-left: 4px solid #3b82f6;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.core-values .value-item:hover {
+    background: #e0f2fe;
+    transform: translateX(4px);
+}
