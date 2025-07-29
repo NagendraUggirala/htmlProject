@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-        <meta charset="UTF-8" />
-        <title>Edupath - Online Courses & Education HTML5 Template</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta content="Real Estate Website Landing Page" name="description" />
-        <meta content="Real Estate, buy, sell, Rent, tailwind Css" name="keywords" />
-        <meta name="author" content="Shreethemes" />
-        <meta name="website" content="../../index.html" />
-        <meta name="email" content="support@shreethemes.in" />
-        <meta name="version" content="1.0.0" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <!-- favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico" />
+<head>
+    <meta charset="UTF-8" />
+    <title>Edupath - Online Courses & Education HTML5 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta content="Real Estate Website Landing Page" name="description" />
+    <meta content="Real Estate, buy, sell, Rent, tailwind Css" name="keywords" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="website" content="../../index.html" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="version" content="1.0.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <!-- Css -->
-        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
-        <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
-        <!-- Main Css -->
-        <link href="assets/libs/iconoir/css/iconoir.css" rel="stylesheet" type="text/css" />
-        <link href="assets/libs/%40mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
-    </head>
+    <!-- Css -->
+    <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+    <!-- Main Css -->
+    <link href="assets/libs/iconoir/css/iconoir.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/%40mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+
+</head>
+
 <body class="dark:bg-slate-900">
-        <!-- Loader Start -->
-        <!-- <div id="preloader">
+    <!-- Loader Start -->
+    <!-- <div id="preloader">
             <div id="status">
                 <div class="spinner">
                     <div class="double-bounce1"></div>
@@ -34,590 +36,687 @@
                 </div>
             </div>
         </div> -->
-        <!-- Loader End -->
-        <!-- Start Navbar -->
-        <nav id="topnav" class="defaultscroll is-sticky">
-            <div class="container relative">
-                <!-- Start Logo container-->
-                <a class="logo" href="home.html">
-                    <span class="inline-block dark:hidden">
-                        <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
-                        <img src="assets/images/logo-light.png" class="l-light" height="24" alt="">
-                    </span>
-                    <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
-                </a>
-                <!-- End Logo container-->
+    <!-- Loader End -->
+    <!-- Start Navbar -->
+    <nav id="topnav" class="defaultscroll is-sticky">
+        <div class="container relative">
+            <!-- Start Logo container-->
+            <a class="logo" href="home.html">
+                <span class="inline-block dark:hidden">
+                    <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
+                    <img src="assets/images/logo-light.png" class="l-light" height="24" alt="">
+                </span>
+                <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
+            </a>
+            <!-- End Logo container-->
 
-                <!-- Start Mobile Toggle -->
-                <div class="menu-extras">
-                    <div class="menu-item">
-                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
-                            <div class="lines">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </a>
-                    </div>
+            <!-- Start Mobile Toggle -->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
                 </div>
-                <!-- End Mobile Toggle -->
+            </div>
+            <!-- End Mobile Toggle -->
 
-                <!--Login button Start-->
-                
-                <!--Login button End-->
+            <!--Login button Start-->
 
-                <div id="navigation">
-                    <!-- Navigation Menu-->   
-                    <ul class="navigation-menu justify-start nav-light">
-                        <li class="has-submenu parent-parent-menu-item"><a href="home.html">Home</a></li>
-                        <li class="has-submenu parent-parent-menu-item">
-                        <a href="courses.html">Courses</a></li>
-                        <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>    
-                        <li><a href="core.html" class="sub-menu-item my-core">My Core</a></li>
-     
-                        <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
-                     
-                    </ul><!--end navigation menu-->
-                </div><!--end navigation-->
-            </div><!--end container-->
-        </nav><!--end header-->
-        <!-- End Navbar -->
+            <!--Login button End-->
 
-        <!-- Searchbar modal -->
-        <dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
-            <div class="relative w-full h-auto">
-                <form method="dialog" class="modal-backdrop">
-                    <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost"><i data-feather="x" class="size-4"></i></button>
+            <div id="navigation">
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu justify-start nav-light">
+                    <li class="has-submenu parent-parent-menu-item"><a href="home.html">Home</a></li>
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="courses.html">Courses</a>
+                    </li>
+                    <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>
+                    <li><a href="core.html" class="sub-menu-item my-core">My Core</a></li>
+
+                    <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
+
+                </ul><!--end navigation menu-->
+            </div><!--end navigation-->
+        </div><!--end container-->
+    </nav><!--end header-->
+    <!-- End Navbar -->
+
+    <!-- Searchbar modal -->
+    <dialog id="navbarSearch"
+        class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
+        <div class="relative w-full h-auto">
+            <form method="dialog" class="modal-backdrop">
+                <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost"><i
+                        data-feather="x" class="size-4"></i></button>
+            </form>
+            <div class="p-6 text-center">
+                <form class="relative">
+                    <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
+                    <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10"
+                        name="s" id="searchItem" placeholder="Search...">
                 </form>
-                <div class="p-6 text-center">
-                    <form class="relative">
-                        <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
-                        <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10" name="s" id="searchItem" placeholder="Search...">
-                    </form>
-                </div>
-            </div>
-        </dialog>
-        <!-- Searchbar modal -->
-
-        <!-- Start Hero -->
-        <section class="relative table w-full py-32 lg:py-44 bg-[url('../../assets/images/bg/3.html')] bg-no-repeat bg-center bg-cover">
-            <div class="absolute inset-0 bg-slate-900 opacity-80"></div>
-            <div class="container relative">
-                <div class="grid grid-cols-1 text-center mt-10">
-                    <h3 class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-white">Courses</h3>
-                </div><!--end grid-->
-            </div><!--end container-->
-        </section><!--end section-->
-        <div class="relative">
-            <div class="shape overflow-hidden z-1 text-white dark:text-slate-900">
-                <svg viewBox="0 0 2880 48" fill="none" xmlns="../../../www.w3.org/2000/svg.html">
-                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
-                </svg>
             </div>
         </div>
-      <section class="relative py-12">
-            <div class="container relative">
-                <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 gap-6">
-                    <div class="lg:col-span-8 md:order-1 order-2">
-                        <div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
-                            <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
-                                <div class="p-3 pb-0 relative">
-                                    <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/1.jpg" class="group-hover:scale-105 duration-500" alt="">
-                            </div>
-                                    <div class="absolute start-6 top-6">
-                                        <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Free</span>
-                                        <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Event</span>
-                                    </div>
-        
-                                    <div class="absolute -bottom-5 end-6">
-                                        <span class="bg-violet-600 text-white size-10 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold">$0</span>
-                                    </div>
-                                </div>
-        
-                                <div class="p-6">
-                                    <div class="flex mb-3">
-                                        <span class="text-slate-400 text-sm flex items-center"><i data-feather="book" class="text-slate-900 dark:text-white size-[14px] me-1"></i>10 Lessons</span>
-                                        <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users" class="text-slate-900 dark:text-white size-[14px] me-1"></i>49 Students</span>
-                                    </div>
-        
-                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">The Ultimate Course Bundle</a>
-        
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
-        
-                                    <div class="flex justify-between mt-3">
-                                        <span class="flex items-center"><img src="assets/images/team/2.jpg" class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2" alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin Carlo</a></span>
-                                        <a href="#" class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
-                                    </div>
-                                </div>
-                            </div><!--end content-->
-        
-        
-        
-        
-                            <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
-                                <div class="p-3 pb-0 relative">
-                                    <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/5.jpg" class="group-hover:scale-105 duration-500" alt="">
-                            </div>
-                                    <div class="absolute start-6 top-6">
-                                        <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Free</span>
-                                        <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Event</span>
-                                    </div>
-        
-                                    <div class="absolute -bottom-5 end-6">
-                                        <span class="bg-violet-600 text-white size-10 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold">$24</span>
-                                    </div>
-                                </div>
-        
-                                <div class="p-6">
-                                    <div class="flex mb-3">
-                                        <span class="text-slate-400 text-sm flex items-center"><i data-feather="book" class="text-slate-900 dark:text-white size-[14px] me-1"></i>10 Lessons</span>
-                                        <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users" class="text-slate-900 dark:text-white size-[14px] me-1"></i>49 Students</span>
-                                    </div>
-        
-                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Front-end Development Course</a>
-        
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
-        
-                                    <div class="flex justify-between mt-3">
-                                        <span class="flex items-center"><img src="assets/images/team/2.jpg" class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2" alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin Carlo</a></span>
-                                        <a href="#" class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
-                                    </div>
-                                </div>
-                            </div><!--end content-->
-        
-                            <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
-                                <div class="p-3 pb-0 relative">
-                                    <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/6.jpg" class="group-hover:scale-105 duration-500" alt="">
-                            </div>
-                                    <div class="absolute start-6 top-6">
-                                        <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Free</span>
-                                        <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Event</span>
-                                    </div>
-        
-                                    <div class="absolute -bottom-5 end-6">
-                                        <span class="bg-violet-600 text-white size-10 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold">$29</span>
-                                    </div>
-                                </div>
-        
-                                <div class="p-6">
-                                    <div class="flex mb-3">
-                                        <span class="text-slate-400 text-sm flex items-center"><i data-feather="book" class="text-slate-900 dark:text-white size-[14px] me-1"></i>10 Lessons</span>
-                                        <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users" class="text-slate-900 dark:text-white size-[14px] me-1"></i>49 Students</span>
-                                    </div>
-        
-                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Full stack Project in Nextjs Course</a>
-        
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
-        
-                                    <div class="flex justify-between mt-3">
-                                        <span class="flex items-center"><img src="assets/images/team/2.jpg" class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2" alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin Carlo</a></span>
-                                        <a href="#" class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
-                                    </div>
-                                </div>
-                            </div><!--end content-->
-            
-                            <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
-                                <div class="p-3 pb-0 relative">
-                                    <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/7.jpg" class="group-hover:scale-105 duration-500" alt="">
-                            </div>
-                                    <div class="absolute start-6 top-6">
-                                        <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Free</span>
-                                        <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Event</span>
-                                    </div>
-        
-                                    <div class="absolute -bottom-5 end-6">
-                                        <span class="bg-violet-600 text-white size-10 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold">$15</span>
-                                    </div>
-                                </div>
-        
-                                <div class="p-6">
-                                    <div class="flex mb-3">
-                                        <span class="text-slate-400 text-sm flex items-center"><i data-feather="book" class="text-slate-900 dark:text-white size-[14px] me-1"></i>10 Lessons</span>
-                                        <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users" class="text-slate-900 dark:text-white size-[14px] me-1"></i>49 Students</span>
-                                    </div>
-        
-                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Why Is Education So Famous?</a>
-        
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
-        
-                                    <div class="flex justify-between mt-3">
-                                        <span class="flex items-center"><img src="assets/images/team/2.jpg" class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2" alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin Carlo</a></span>
-                                        <a href="#" class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
-                                    </div>
-                                </div>
-                            </div><!--end content-->
-        
-                            <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
-                                <div class="p-3 pb-0 relative">
-                                    <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/8.jpg" class="group-hover:scale-105 duration-500" alt="">
-                            </div>
-                                    <div class="absolute start-6 top-6">
-                                        <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Free</span>
-                                        <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Event</span>
-                                    </div>
-        
-                                    <div class="absolute -bottom-5 end-6">
-                                        <span class="bg-violet-600 text-white size-10 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold">$24</span>
-                                    </div>
-                                </div>
-        
-                                <div class="p-6">
-                                    <div class="flex mb-3">
-                                        <span class="text-slate-400 text-sm flex items-center"><i data-feather="book" class="text-slate-900 dark:text-white size-[14px] me-1"></i>10 Lessons</span>
-                                        <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users" class="text-slate-900 dark:text-white size-[14px] me-1"></i>49 Students</span>
-                                    </div>
-        
-                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Difficult Things About Education.</a>
-        
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
-        
-                                    <div class="flex justify-between mt-3">
-                                        <span class="flex items-center"><img src="assets/images/team/2.jpg" class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2" alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin Carlo</a></span>
-                                        <a href="#" class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
-                                    </div>
-                                </div>
-                            </div><!--end content-->
-        
-                            <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
-                                <div class="p-3 pb-0 relative">
-                                    <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/9.jpg" class="group-hover:scale-105 duration-500" alt="">
-                            </div>
-                                    <div class="absolute start-6 top-6">
-                                        <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Free</span>
-                                        <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Event</span>
-                                    </div>
-        
-                                    <div class="absolute -bottom-5 end-6">
-                                        <span class="bg-violet-600 text-white size-10 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold">$29</span>
-                                    </div>
-                                </div>
-        
-                                <div class="p-6">
-                                    <div class="flex mb-3">
-                                        <span class="text-slate-400 text-sm flex items-center"><i data-feather="book" class="text-slate-900 dark:text-white size-[14px] me-1"></i>10 Lessons</span>
-                                        <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users" class="text-slate-900 dark:text-white size-[14px] me-1"></i>49 Students</span>
-                                    </div>
-        
-                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Online Courses from Edupath</a>
-        
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
-        
-                                    <div class="flex justify-between mt-3">
-                                        <span class="flex items-center"><img src="assets/images/team/2.jpg" class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2" alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin Carlo</a></span>
-                                        <a href="#" class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
-                                    </div>
-                                </div>
-                            </div><!--end content-->
-                        </div><!--edit grid-->
+    </dialog>
+    <!-- Searchbar modal -->
 
-                        <div class="grid md:grid-cols-12 grid-cols-1 mt-6">
-                            <div class="md:col-span-12 text-center">
-                                <nav>
-                                    <ul class="inline-flex items-center -space-x-px">
-                                        <li>
-                                            <a href="#" class="size-8 inline-flex justify-center items-center mx-1 rounded-full text-slate-400 bg-white dark:bg-slate-900 hover:text-white shadow-sm shadow-slate-100 dark:shadow-slate-800 hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600">
-                                                <i class="mdi mdi-chevron-left text-[20px]"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="size-8 inline-flex justify-center items-center mx-1 rounded-full text-slate-400 hover:text-white bg-white dark:bg-slate-900 shadow-sm shadow-slate-100 dark:shadow-slate-800 hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600">1</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="size-8 inline-flex justify-center items-center mx-1 rounded-full text-slate-400 hover:text-white bg-white dark:bg-slate-900 shadow-sm shadow-slate-100 dark:shadow-slate-800 hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600">2</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" aria-current="page" class="z-10 size-8 inline-flex justify-center items-center mx-1 rounded-full text-white bg-violet-600 shadow-sm shadow-slate-100 dark:shadow-slate-800">3</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="size-8 inline-flex justify-center items-center mx-1 rounded-full text-slate-400 hover:text-white bg-white dark:bg-slate-900 shadow-sm shadow-slate-100 dark:shadow-slate-800 hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600">4</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="size-8 inline-flex justify-center items-center mx-1 rounded-full text-slate-400 bg-white dark:bg-slate-900 hover:text-white shadow-sm shadow-slate-100 dark:shadow-slate-800 hover:border-violet-600 dark:hover:border-violet-600 hover:bg-violet-600 dark:hover:bg-violet-600">
-                                                <i class="mdi mdi-chevron-right text-[20px]"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div><!--end grid-->
-                    </div><!--end col-->
-
-                    <div class="lg:col-span-4 md:order-2 order-1">
-                        <div class="p-6 bg-white dark:bg-slate-900 rounded-md shadow-sm shadow-slate-100 dark:shadow-slate-800 sticky top-20">
-                            <form>
-                                <div>
-                                    <label for="searchname" class="font-semibold">Search Course</label>
-                                    <div class="relative mt-2">
-                                        <i data-feather="search" class="absolute top-[10px] start-3 size-5"></i>
-                                        <input name="search" id="searchname" type="text" class="w-full py-2 px-3 border border-slate-100 dark:border-slate-800 focus:border-violet-600/30 dark:focus:border-violet-600/30 bg-transparent focus:outline-none rounded-md h-10 ps-10" placeholder="Search">
-                                    </div>
-                                </div>
-                            </form>
-
-                            <div class="mt-6">
-                                <label class="font-semibold">Categories</label>
-                                <div class="block">
-                                    <div class="flex justify-between mt-2">
-                                        <div class="inline-flex items-center mb-0">
-                                            <input class="form-checkbox size-4 appearance-none rounded border border-gray-200 dark:border-gray-800 accent-violet-600 checked:appearance-auto dark:accent-violet-600 focus:border-violet-300 focus:ring-0 focus:ring-offset-0 focus:ring-violet-200 focus:ring-opacity-50 me-2" type="checkbox" value="" id="Designing">
-                                            <label class="form-checkbox-label text-slate-400" for="Designing">Web Designing</label>
-                                        </div>
-
-                                        <span class="bg-violet-600/10 text-violet-600 text-xs px-2.5 py-0.5 font-semibold rounded-full h-5">3</span>
-                                    </div>
-
-                                    <div class="flex justify-between mt-2">
-                                        <div class="inline-flex items-center mb-0">
-                                            <input class="form-checkbox size-4 appearance-none rounded border border-gray-200 dark:border-gray-800 accent-violet-600 checked:appearance-auto dark:accent-violet-600 focus:border-violet-300 focus:ring-0 focus:ring-offset-0 focus:ring-violet-200 focus:ring-opacity-50 me-2" type="checkbox" value="" id="Development">
-                                            <label class="form-checkbox-label text-slate-400" for="Development">Web Development</label>
-                                        </div>
-
-                                        <span class="bg-violet-600/10 text-violet-600 text-xs px-2.5 py-0.5 font-semibold rounded-full h-5">7</span>
-                                    </div>
-
-                                    <div class="flex justify-between mt-2">
-                                        <div class="inline-flex items-center mb-0">
-                                            <input class="form-checkbox size-4 appearance-none rounded border border-gray-200 dark:border-gray-800 accent-violet-600 checked:appearance-auto dark:accent-violet-600 focus:border-violet-300 focus:ring-0 focus:ring-offset-0 focus:ring-violet-200 focus:ring-opacity-50 me-2" type="checkbox" value="" id="Freelancing">
-                                            <label class="form-checkbox-label text-slate-400" for="Freelancing">Freelancing</label>
-                                        </div>
-
-                                        <span class="bg-violet-600/10 text-violet-600 text-xs px-2.5 py-0.5 font-semibold rounded-full h-5">4</span>
-                                    </div>
-
-                                    <div class="flex justify-between mt-2">
-                                        <div class="inline-flex items-center mb-0">
-                                            <input class="form-checkbox size-4 appearance-none rounded border border-gray-200 dark:border-gray-800 accent-violet-600 checked:appearance-auto dark:accent-violet-600 focus:border-violet-300 focus:ring-0 focus:ring-offset-0 focus:ring-violet-200 focus:ring-opacity-50 me-2" type="checkbox" value="" id="Marketing">
-                                            <label class="form-checkbox-label text-slate-400" for="Marketing">Marketing</label>
-                                        </div>
-
-                                        <span class="bg-violet-600/10 text-violet-600 text-xs px-2.5 py-0.5 font-semibold rounded-full h-5">6</span>
-                                    </div>
-
-                                    <div class="flex justify-between mt-2">
-                                        <div class="inline-flex items-center mb-0">
-                                            <input class="form-checkbox size-4 appearance-none rounded border border-gray-200 dark:border-gray-800 accent-violet-600 checked:appearance-auto dark:accent-violet-600 focus:border-violet-300 focus:ring-0 focus:ring-offset-0 focus:ring-violet-200 focus:ring-opacity-50 me-2" type="checkbox" value="" id="Meditation">
-                                            <label class="form-checkbox-label text-slate-400" for="Meditation">Meditation</label>
-                                        </div>
-
-                                        <span class="bg-violet-600/10 text-violet-600 text-xs px-2.5 py-0.5 font-semibold rounded-full h-5">7</span>
-                                    </div>
-
-                                    <div class="flex justify-between mt-2">
-                                        <div class="inline-flex items-center mb-0">
-                                            <input class="form-checkbox size-4 appearance-none rounded border border-gray-200 dark:border-gray-800 accent-violet-600 checked:appearance-auto dark:accent-violet-600 focus:border-violet-300 focus:ring-0 focus:ring-offset-0 focus:ring-violet-200 focus:ring-opacity-50 me-2" type="checkbox" value="" id="Music">
-                                            <label class="form-checkbox-label text-slate-400" for="Music">Music</label>
-                                        </div>
-
-                                        <span class="bg-violet-600/10 text-violet-600 text-xs px-2.5 py-0.5 font-semibold rounded-full h-5">44</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mt-6">
-                                <label class="font-semibold">Pricing</label>
-
-                                <div class="range-slider mt-3">
-                                    <span class="flex justify-between pb-2">
-                                        <span>
-                                            <label for="" class="text-lg">$</label>
-                                            <input type="number" class="text-slate-400" value="50" min="0" max="200"/>
-                                        </span>
-
-                                        <span>
-                                            <label for="" class="text-lg">$</label>
-                                            <input type="number" class="text-slate-400" value="120" min="0" max="200"/>
-                                        </span>
-                                    </span>
-                                    <input value="50" min="0" max="200" step="5" type="range"/>
-                                    <input value="120" min="0" max="200" step="5" type="range"/>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div><!--end col-->
-                </div><!--end grid-->
-            </div><!--end container-->
-
-            <div class="container relative md:mt-24 mt-16">
-                <div class="grid grid-cols-1">
-                    <div class="relative bg-white dark:bg-slate-900 lg:px-8 px-6 py-10 rounded-lg shadow-sm shadow-slate-200 dark:shadow-slate-800 overflow-hidden">
-                        <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-6">
-                            <div class="md:text-start text-center z-1">
-                                <h3 class="mb-2 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Subscribe to Newsletter!</h3>
-                                <p class="text-slate-400 max-w-xl mx-auto">Subscribe to get latest updates and information.</p>
-                            </div>
-            
-                            <div class="z-1">
-                                <form class="relative mx-auto max-w-xl">
-                                    <input type="email" id="subemail" name="name" class="pt-4 pe-40 pb-4 ps-6 w-full h-[50px] outline-none text-slate-900 dark:text-white rounded-full bg-white/70 dark:bg-slate-900/70 border border-slate-100 dark:border-slate-800" placeholder="Enter your email id..">
-                                    <button type="submit" class="h-12 px-6 tracking-wide items-center justify-center font-medium bg-violet-600 text-white rounded-full absolute top-[1px] end-[1px]">Subcribe Now</button>
-                                </form><!--end form-->
-                            </div>
-                        </div>
-            
-                        <div class="absolute -top-5 -start-5">
-                            <div class="iconoir-mail lg:text-[150px] text-7xl text-slate-900/5 dark:text-white/5 ltr:-rotate-45 rtl:rotate-45"></div>
-                        </div>
-            
-                        <div class="absolute -bottom-5 -end-5">
-                            <div class="iconoir-edit-pencil lg:text-[150px] text-7xl text-slate-900/5 dark:text-white/5 rtl:-rotate-90"></div>
-                        </div>
-                    </div>
-                </div><!--end grid-->
-            </div><!--end container-->
-        </section><!--end section-->
-        <!-- End -->
-
-       
-        <!-- Back to top -->
-        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fixed hidden rounded-full z-10 bottom-5 end-5 size-8 text-center bg-violet-600 text-white justify-center items-center"><i data-feather="arrow-up" class="size-4"></i></a>
-        <!-- Back to top -->
-        <!-- Switcher -->
-        <div class="fixed top-1/4 -right-2 z-3">
-            <span class="relative inline-block rotate-90">
-                <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
-                <label class="label bg-slate-900 dark:bg-white shadow-sm dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-[60px] h-8" for="chk">
-                    <i class="iconoir-half-moon text-yellow-500 align-middle ps-1 text-[16px] relative z-1"></i>
-                    <i class="iconoir-sun-light text-yellow-500 align-middle pe-1 text-[16px] relative z-1"></i>
-                    <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] size-7"></span>
-                </label>
-            </span>
-        </div>
-        <!-- Switcher -->
-
-        <!-- LTR & RTL Mode Code -->
-
-        <!-- Start Footer -->
-        <footer class="relative bg-slate-900 dark:bg-slate-800">
-            <div class="container relative">
-                <div class="grid grid-cols-1">
-                    <div class="relative py-16">
-                        <!-- Subscribe -->
-                        <div class="relative w-full">
-                            <div class="grid md:grid-cols-12 grid-cols-1 gap-6">
-                                <div class="lg:col-span-4 md:col-span-12">
-                                    <a href="#" class="text-[22px] focus:outline-none">
-                                        <img src="assets/images/logo-light.png" alt="">
-                                    </a>
-                                    <p class="mt-6 text-gray-300">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
-
-                                    <div class="flex mt-6">
-                                        <i class="iconoir-map-pin align-middle text-2xl text-violet-600 me-2"></i>
-                                        <div class="">
-                                            <h6 class="text-gray-300">C/54 Northwest Freeway, <br> Houston, USA 485</h6>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="flex mt-4">
-                                        <i class="iconoir-phone align-middle text-2xl text-violet-600 me-2"></i>
-                                        <div class="">
-                                            <a href="tel:+152534-468-854" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">+152 534-468-854</a>
-                                        </div>
-                                    </div>
-                                </div><!--end col-->
-                        
-                                <div class="lg:col-span-2 md:col-span-3">
-                                    <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Usefull Links</h5>
-
-                                    <ul class="list-none footer-list mt-6">
-                                        <li><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Course</a></li>
-                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Mission & Vision</a></li>
-                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Join a Career</a></li>
-                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Zoom Meeting</a></li>
-                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Pricing Plan</a></li>
-                                    </ul>
-                                </div><!--end col-->
-                        
-                                <div class="lg:col-span-2 md:col-span-3">
-                                    <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Our Institute</h5>
-
-                                    <ul class="list-none footer-list mt-6">
-                                        <li><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Contact Us</a></li>
-                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Technology</a></li>
-                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Instructors</a></li>
-                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Pricing</a></li>
-                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Services</a></li>
-                                    </ul>
-                                </div><!--end col-->
-    
-                                
-                            </div><!--end grid-->
-                        </div>
-                        <!-- Subscribe -->
-                    </div>
-                </div>
-            </div><!--end container-->
-
-            <div class="py-[30px] px-0 border-t border-gray-800 dark:border-gray-700">
-                <div class="container relative text-center">
-                    <div class="grid md:grid-cols-2 items-center gap-6">
-                        <div class="md:text-start text-center">
-                            <p class="mb-0 text-gray-300">CopyRight © <script>document.write(new Date().getFullYear())</script> Edupath. Design  <i class="mdi mdi-heart text-red-600"></i>  by <a class="text-reset">Levitica</a>.</p>
-                        </div>
-
-                        <ul class="list-disc footer-list md:text-end text-center space-x-3">
-                            <li class="inline-block"><i class="mdi mdi-circle-medium text-gray-400"></i> <a href="terms.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Terms</a></li>
-                            <li class="inline-block mt-[10px] md:mt-0"><i class="mdi mdi-circle-medium text-gray-400"></i> <a href="privacy.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Privacy</a></li>
-                            <li class="inline-block mt-[10px] md:mt-0"><i class="mdi mdi-circle-medium text-gray-400"></i> <a href="login.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Login</a></li>
-                        </ul><!--end icon-->
-                    </div><!--end grid-->
-                </div><!--end container-->
-            </div>
-        </footer>
-        <!--end footer-->
-        <!-- End Footer -->
-
-        <div id="chat-container" class="fixed bottom-6 z-50" style="right: 1.5rem;">
-   <!-- Chat Icon using uploaded image -->
-<img id="chat-toggle" src="../../../../../../assets/images/bg/chb.jpg"
-     alt="Chat Icon" 
-     class="w-8 h-8 cursor-pointer rounded-full shadow-lg border border-gray-300 bg-white p-1" />
-
-
-
-    <!-- Chat Popup -->
-    <div id="chat-popup" class="hidden bg-white dark:bg-slate-900 shadow-lg w-80 rounded-xl overflow-hidden mt-2 border border-gray-300 dark:border-gray-700">
-        <!-- Header -->
-        <div class="bg-violet-600 text-white p-3 font-semibold flex justify-between items-center">
-            Chat with us
-            <button id="chat-close" class="text-white text-xl leading-none">&times;</button>
-        </div>
-        <!-- Messages -->
-        <div class="p-3 h-64 overflow-y-auto text-gray-700 dark:text-gray-300" id="chat-messages">
-            <p class="text-sm text-gray-400">Hi! How can we help you today?</p>
-        </div>
-        <!-- Input -->
-        <div class="border-t border-gray-300 dark:border-gray-700 p-2 flex">
-            <input id="chat-input" type="text" placeholder="Type a message..." 
-                class="flex-1 px-2 py-1 border rounded-l-md text-sm focus:outline-none">
-            <button id="chat-send" class="bg-violet-600 hover:bg-violet-700 text-white px-3 rounded-r-md text-sm">Send</button>
+    <!-- Start Hero -->
+    <section
+        class="relative table w-full py-32 lg:py-44 bg-[url('../../assets/images/bg/3.html')] bg-no-repeat bg-center bg-cover">
+        <div class="absolute inset-0 bg-slate-900 opacity-80"></div>
+        <div class="container relative">
+            <div class="grid grid-cols-1 text-center mt-10">
+                <h3 class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-white">Courses</h3>
+            </div><!--end grid-->
+        </div><!--end container-->
+    </section><!--end section-->
+    <div class="relative">
+        <div class="shape overflow-hidden z-1 text-white dark:text-slate-900">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="../../../www.w3.org/2000/svg.html">
+                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+            </svg>
         </div>
     </div>
-</div>
-        <!-- Switcher -->
-        <div class="fixed top-1/4 -right-2 z-3">
-            <span class="relative inline-block rotate-90">
-                <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
-                <label class="label bg-slate-900 dark:bg-white shadow-sm dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-[60px] h-8" for="chk">
-                    <i class="iconoir-half-moon text-yellow-500 align-middle ps-1 text-[16px] relative z-1"></i>
-                    <i class="iconoir-sun-light text-yellow-500 align-middle pe-1 text-[16px] relative z-1"></i>
-                    <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] size-7"></span>
-                </label>
-            </span>
+    <section class="relative py-12">
+        <div class="container relative">
+            <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 gap-6">
+                <div class="lg:col-span-8 md:order-1 order-2">
+                    <div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
+                        <div
+                            class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
+                            <div class="p-3 pb-0 relative">
+                                <div class="relative overflow-hidden rounded-md">
+                                    <img src="assets/images/course/1.jpg" class="group-hover:scale-105 duration-500"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="p-6">
+                                <div class="flex mb-3">
+                                    <span class="text-slate-400 text-sm flex items-center"><i data-feather="book"
+                                            class="text-slate-900 dark:text-white size-[14px] me-1"></i>10
+                                        Lessons</span>
+                                    <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users"
+                                            class="text-slate-900 dark:text-white size-[14px] me-1"></i>49
+                                        Students</span>
+                                </div>
+
+                                <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">The
+                                    Ultimate Course Bundle</a>
+
+                                <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+
+                                <div class="flex justify-between mt-3">
+                                    <span class="flex items-center"><img src="assets/images/team/2.jpg"
+                                            class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2"
+                                            alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin
+                                            Carlo</a></span>
+                                    <a href="#"
+                                        class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore
+                                        <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div><!--end content-->
+
+
+
+
+                        <div
+                            class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
+                            <div class="p-3 pb-0 relative">
+                                <div class="relative overflow-hidden rounded-md">
+                                    <img src="assets/images/course/5.jpg" class="group-hover:scale-105 duration-500"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="p-6">
+                                <div class="flex mb-3">
+                                    <span class="text-slate-400 text-sm flex items-center"><i data-feather="book"
+                                            class="text-slate-900 dark:text-white size-[14px] me-1"></i>10
+                                        Lessons</span>
+                                    <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users"
+                                            class="text-slate-900 dark:text-white size-[14px] me-1"></i>49
+                                        Students</span>
+                                </div>
+
+                                <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Front-end
+                                    Development Course</a>
+
+                                <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+
+                                <div class="flex justify-between mt-3">
+                                    <span class="flex items-center"><img src="assets/images/team/2.jpg"
+                                            class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2"
+                                            alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin
+                                            Carlo</a></span>
+                                    <a href="#"
+                                        class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore
+                                        <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div><!--end content-->
+
+                        <div
+                            class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
+                            <div class="p-3 pb-0 relative">
+                                <div class="relative overflow-hidden rounded-md">
+                                    <img src="assets/images/course/6.jpg" class="group-hover:scale-105 duration-500"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="p-6">
+                                <div class="flex mb-3">
+                                    <span class="text-slate-400 text-sm flex items-center"><i data-feather="book"
+                                            class="text-slate-900 dark:text-white size-[14px] me-1"></i>10
+                                        Lessons</span>
+                                    <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users"
+                                            class="text-slate-900 dark:text-white size-[14px] me-1"></i>49
+                                        Students</span>
+                                </div>
+
+                                <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Full
+                                    stack Project in Nextjs Course</a>
+
+                                <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+
+                                <div class="flex justify-between mt-3">
+                                    <span class="flex items-center"><img src="assets/images/team/2.jpg"
+                                            class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2"
+                                            alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin
+                                            Carlo</a></span>
+                                    <a href="#"
+                                        class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore
+                                        <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div><!--end content-->
+
+                        <div
+                            class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
+                            <div class="p-3 pb-0 relative">
+                                <div class="relative overflow-hidden rounded-md">
+                                    <img src="assets/images/course/7.jpg" class="group-hover:scale-105 duration-500"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="p-6">
+                                <div class="flex mb-3">
+                                    <span class="text-slate-400 text-sm flex items-center"><i data-feather="book"
+                                            class="text-slate-900 dark:text-white size-[14px] me-1"></i>10
+                                        Lessons</span>
+                                    <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users"
+                                            class="text-slate-900 dark:text-white size-[14px] me-1"></i>49
+                                        Students</span>
+                                </div>
+
+                                <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Why Is
+                                    Education So Famous?</a>
+
+                                <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+
+                                <div class="flex justify-between mt-3">
+                                    <span class="flex items-center"><img src="assets/images/team/2.jpg"
+                                            class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2"
+                                            alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin
+                                            Carlo</a></span>
+                                    <a href="#"
+                                        class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore
+                                        <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div><!--end content-->
+
+                        <div
+                            class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
+                            <div class="p-3 pb-0 relative">
+                                <div class="relative overflow-hidden rounded-md">
+                                    <img src="assets/images/course/8.jpg" class="group-hover:scale-105 duration-500"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="p-6">
+                                <div class="flex mb-3">
+                                    <span class="text-slate-400 text-sm flex items-center"><i data-feather="book"
+                                            class="text-slate-900 dark:text-white size-[14px] me-1"></i>10
+                                        Lessons</span>
+                                    <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users"
+                                            class="text-slate-900 dark:text-white size-[14px] me-1"></i>49
+                                        Students</span>
+                                </div>
+
+                                <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Difficult
+                                    Things About Education.</a>
+
+                                <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+
+                                <div class="flex justify-between mt-3">
+                                    <span class="flex items-center"><img src="assets/images/team/2.jpg"
+                                            class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2"
+                                            alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin
+                                            Carlo</a></span>
+                                    <a href="#"
+                                        class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore
+                                        <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div><!--end content-->
+
+                        <div
+                            class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
+                            <div class="p-3 pb-0 relative">
+                                <div class="relative overflow-hidden rounded-md">
+                                    <img src="assets/images/course/9.jpg" class="group-hover:scale-105 duration-500"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="p-6">
+                                <div class="flex mb-3">
+                                    <span class="text-slate-400 text-sm flex items-center"><i data-feather="book"
+                                            class="text-slate-900 dark:text-white size-[14px] me-1"></i>10
+                                        Lessons</span>
+                                    <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users"
+                                            class="text-slate-900 dark:text-white size-[14px] me-1"></i>49
+                                        Students</span>
+                                </div>
+
+                                <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Online
+                                    Courses from Edupath</a>
+
+                                <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+
+                                <div class="flex justify-between mt-3">
+                                    <span class="flex items-center"><img src="assets/images/team/2.jpg"
+                                            class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2"
+                                            alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin
+                                            Carlo</a></span>
+                                    <a href="#"
+                                        class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore
+                                        <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div><!--end content-->
+                    </div><!--edit grid-->
+
+                    <div class="grid md:grid-cols-12 grid-cols-1 mt-6">
+                        
+                    </div><!--end grid-->
+                </div><!--end col-->
+
+                <div class="lg:col-span-4 md:order-2 order-1">
+                    <div
+                        class="p-6 bg-white dark:bg-slate-900 rounded-md shadow-sm shadow-slate-100 dark:shadow-slate-800 sticky top-20">
+                        <form>
+                            <div>
+                                <label for="searchname" class="font-semibold">Search Course</label>
+                                <div class="relative mt-2">
+                                    <i data-feather="search" class="absolute top-[10px] start-3 size-5"></i>
+                                    <input name="search" id="searchname" type="text"
+                                        class="w-full py-2 px-3 border border-slate-100 dark:border-slate-800 focus:border-violet-600/30 dark:focus:border-violet-600/30 bg-transparent focus:outline-none rounded-md h-10 ps-10"
+                                        placeholder="Search">
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="mt-6">
+                            <label class="font-semibold">Categories</label>
+                            <div class="block">
+                                <div class="flex justify-between mt-2">
+                                    <div class="inline-flex items-center mb-0">
+                                        <input
+                                            class="form-checkbox size-4 appearance-none rounded border border-gray-200 dark:border-gray-800 accent-violet-600 checked:appearance-auto dark:accent-violet-600 focus:border-violet-300 focus:ring-0 focus:ring-offset-0 focus:ring-violet-200 focus:ring-opacity-50 me-2"
+                                            type="checkbox" value="" id="Designing">
+                                        <label class="form-checkbox-label text-slate-400" for="Designing">Web
+                                            Designing</label>
+                                    </div>
+
+                                    <span
+                                        class="bg-violet-600/10 text-violet-600 text-xs px-2.5 py-0.5 font-semibold rounded-full h-5">3</span>
+                                </div>
+
+                                <div class="flex justify-between mt-2">
+                                    <div class="inline-flex items-center mb-0">
+                                        <input
+                                            class="form-checkbox size-4 appearance-none rounded border border-gray-200 dark:border-gray-800 accent-violet-600 checked:appearance-auto dark:accent-violet-600 focus:border-violet-300 focus:ring-0 focus:ring-offset-0 focus:ring-violet-200 focus:ring-opacity-50 me-2"
+                                            type="checkbox" value="" id="Development">
+                                        <label class="form-checkbox-label text-slate-400" for="Development">Web
+                                            Development</label>
+                                    </div>
+
+                                    <span
+                                        class="bg-violet-600/10 text-violet-600 text-xs px-2.5 py-0.5 font-semibold rounded-full h-5">7</span>
+                                </div>
+
+                                <div class="flex justify-between mt-2">
+                                    <div class="inline-flex items-center mb-0">
+                                        <input
+                                            class="form-checkbox size-4 appearance-none rounded border border-gray-200 dark:border-gray-800 accent-violet-600 checked:appearance-auto dark:accent-violet-600 focus:border-violet-300 focus:ring-0 focus:ring-offset-0 focus:ring-violet-200 focus:ring-opacity-50 me-2"
+                                            type="checkbox" value="" id="Freelancing">
+                                        <label class="form-checkbox-label text-slate-400"
+                                            for="Freelancing">Freelancing</label>
+                                    </div>
+
+                                    <span
+                                        class="bg-violet-600/10 text-violet-600 text-xs px-2.5 py-0.5 font-semibold rounded-full h-5">4</span>
+                                </div>
+
+                                <div class="flex justify-between mt-2">
+                                    <div class="inline-flex items-center mb-0">
+                                        <input
+                                            class="form-checkbox size-4 appearance-none rounded border border-gray-200 dark:border-gray-800 accent-violet-600 checked:appearance-auto dark:accent-violet-600 focus:border-violet-300 focus:ring-0 focus:ring-offset-0 focus:ring-violet-200 focus:ring-opacity-50 me-2"
+                                            type="checkbox" value="" id="Marketing">
+                                        <label class="form-checkbox-label text-slate-400"
+                                            for="Marketing">Marketing</label>
+                                    </div>
+
+                                    <span
+                                        class="bg-violet-600/10 text-violet-600 text-xs px-2.5 py-0.5 font-semibold rounded-full h-5">6</span>
+                                </div>
+
+                                <div class="flex justify-between mt-2">
+                                    <div class="inline-flex items-center mb-0">
+                                        <input
+                                            class="form-checkbox size-4 appearance-none rounded border border-gray-200 dark:border-gray-800 accent-violet-600 checked:appearance-auto dark:accent-violet-600 focus:border-violet-300 focus:ring-0 focus:ring-offset-0 focus:ring-violet-200 focus:ring-opacity-50 me-2"
+                                            type="checkbox" value="" id="Meditation">
+                                        <label class="form-checkbox-label text-slate-400"
+                                            for="Meditation">Meditation</label>
+                                    </div>
+
+                                    <span
+                                        class="bg-violet-600/10 text-violet-600 text-xs px-2.5 py-0.5 font-semibold rounded-full h-5">7</span>
+                                </div>
+
+                                <div class="flex justify-between mt-2">
+                                    <div class="inline-flex items-center mb-0">
+                                        <input
+                                            class="form-checkbox size-4 appearance-none rounded border border-gray-200 dark:border-gray-800 accent-violet-600 checked:appearance-auto dark:accent-violet-600 focus:border-violet-300 focus:ring-0 focus:ring-offset-0 focus:ring-violet-200 focus:ring-opacity-50 me-2"
+                                            type="checkbox" value="" id="Music">
+                                        <label class="form-checkbox-label text-slate-400" for="Music">Music</label>
+                                    </div>
+
+                                    <span
+                                        class="bg-violet-600/10 text-violet-600 text-xs px-2.5 py-0.5 font-semibold rounded-full h-5">44</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <label class="font-semibold">Pricing</label>
+
+                            <div class="range-slider mt-3">
+                                <span class="flex justify-between pb-2">
+                                    <span>
+                                        <label for="" class="text-lg">$</label>
+                                        <input type="number" class="text-slate-400" value="50" min="0" max="200" />
+                                    </span>
+
+                                    <span>
+                                        <label for="" class="text-lg">$</label>
+                                        <input type="number" class="text-slate-400" value="120" min="0" max="200" />
+                                    </span>
+                                </span>
+                                <input value="50" min="0" max="200" step="5" type="range" />
+                                <input value="120" min="0" max="200" step="5" type="range" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!--end col-->
+            </div><!--end grid-->
+        </div><!--end container-->
+
+        <div class="container relative md:mt-24 mt-16">
+            <div class="grid grid-cols-1">
+                <div
+                    class="relative bg-white dark:bg-slate-900 lg:px-8 px-6 py-10 rounded-lg shadow-sm shadow-slate-200 dark:shadow-slate-800 overflow-hidden">
+                    <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-6">
+                        <div class="md:text-start text-center z-1">
+                            <h3 class="mb-2 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
+                                Subscribe to Newsletter!</h3>
+                            <p class="text-slate-400 max-w-xl mx-auto">Subscribe to get latest updates and information.
+                            </p>
+                        </div>
+
+                        <div class="z-1">
+                            <form class="relative mx-auto max-w-xl">
+                                <input type="email" id="subemail" name="name"
+                                    class="pt-4 pe-40 pb-4 ps-6 w-full h-[50px] outline-none text-slate-900 dark:text-white rounded-full bg-white/70 dark:bg-slate-900/70 border border-slate-100 dark:border-slate-800"
+                                    placeholder="Enter your email id..">
+                                <button type="submit"
+                                    class="h-12 px-6 tracking-wide items-center justify-center font-medium bg-violet-600 text-white rounded-full absolute top-[1px] end-[1px]">Subcribe
+                                    Now</button>
+                            </form><!--end form-->
+                        </div>
+                    </div>
+
+                    <div class="absolute -top-5 -start-5">
+                        <div
+                            class="iconoir-mail lg:text-[150px] text-7xl text-slate-900/5 dark:text-white/5 ltr:-rotate-45 rtl:rotate-45">
+                        </div>
+                    </div>
+
+                    <div class="absolute -bottom-5 -end-5">
+                        <div
+                            class="iconoir-edit-pencil lg:text-[150px] text-7xl text-slate-900/5 dark:text-white/5 rtl:-rotate-90">
+                        </div>
+                    </div>
+                </div>
+            </div><!--end grid-->
+        </div><!--end container-->
+    </section><!--end section-->
+    <!-- End -->
+
+
+    <!-- Back to top -->
+    <a href="#" onclick="topFunction()" id="back-to-top"
+        class="back-to-top fixed hidden rounded-full z-10 bottom-5 end-5 size-8 text-center bg-violet-600 text-white justify-center items-center"><i
+            data-feather="arrow-up" class="size-4"></i></a>
+    <!-- Back to top -->
+    <!-- Switcher -->
+    <div class="fixed top-1/4 -right-2 z-3">
+        <span class="relative inline-block rotate-90">
+            <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
+            <label
+                class="label bg-slate-900 dark:bg-white shadow-sm dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-[60px] h-8"
+                for="chk">
+                <i class="iconoir-half-moon text-yellow-500 align-middle ps-1 text-[16px] relative z-1"></i>
+                <i class="iconoir-sun-light text-yellow-500 align-middle pe-1 text-[16px] relative z-1"></i>
+                <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] size-7"></span>
+            </label>
+        </span>
+    </div>
+    <!-- Switcher -->
+
+    <!-- LTR & RTL Mode Code -->
+
+    <!-- Start Footer -->
+    <footer class="relative bg-slate-900 dark:bg-slate-800">
+        <div class="container relative">
+            <div class="grid grid-cols-1">
+                <div class="relative py-16">
+                    <!-- Subscribe -->
+                    <div class="relative w-full">
+                        <div class="grid md:grid-cols-12 grid-cols-1 gap-6">
+                            <div class="lg:col-span-4 md:col-span-12">
+                                <a href="#" class="text-[22px] focus:outline-none">
+                                    <img src="assets/images/logo-light.png" alt="">
+                                </a>
+                                <p class="mt-6 text-gray-300">Discover a world of knowledge and opportunities with our
+                                    online education platform pursue a new career.</p>
+
+                                <div class="flex mt-6">
+                                    <i class="iconoir-map-pin align-middle text-2xl text-violet-600 me-2"></i>
+                                    <div class="">
+                                        <h6 class="text-gray-300">C/54 Northwest Freeway, <br> Houston, USA 485</h6>
+                                    </div>
+                                </div>
+
+                                <div class="flex mt-4">
+                                    <i class="iconoir-phone align-middle text-2xl text-violet-600 me-2"></i>
+                                    <div class="">
+                                        <a href="tel:+152534-468-854"
+                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">+152
+                                            534-468-854</a>
+                                    </div>
+                                </div>
+                            </div><!--end col-->
+
+                            <div class="lg:col-span-2 md:col-span-3">
+                                <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Usefull Links</h5>
+
+                                <ul class="list-none footer-list mt-6">
+                                    <li><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
+                                            href="#"
+                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Course</a>
+                                    </li>
+                                    <li class="mt-[10px]"><i
+                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
+                                            href="#"
+                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Mission &
+                                            Vision</a></li>
+                                    <li class="mt-[10px]"><i
+                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
+                                            href="#"
+                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Join a
+                                            Career</a></li>
+                                    <li class="mt-[10px]"><i
+                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
+                                            href="#"
+                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Zoom
+                                            Meeting</a></li>
+                                    <li class="mt-[10px]"><i
+                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
+                                            href="#"
+                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Pricing
+                                            Plan</a></li>
+                                </ul>
+                            </div><!--end col-->
+
+                            <div class="lg:col-span-2 md:col-span-3">
+                                <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Our Institute</h5>
+
+                                <ul class="list-none footer-list mt-6">
+                                    <li><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
+                                            href="#"
+                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Contact
+                                            Us</a></li>
+                                    <li class="mt-[10px]"><i
+                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
+                                            href="#"
+                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Technology</a>
+                                    </li>
+                                    <li class="mt-[10px]"><i
+                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
+                                            href="#"
+                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Instructors</a>
+                                    </li>
+                                    <li class="mt-[10px]"><i
+                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
+                                            href="#"
+                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Pricing</a>
+                                    </li>
+                                    <li class="mt-[10px]"><i
+                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
+                                            href="#"
+                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Services</a>
+                                    </li>
+                                </ul>
+                            </div><!--end col-->
+
+
+                        </div><!--end grid-->
+                    </div>
+                    <!-- Subscribe -->
+                </div>
+            </div>
+        </div><!--end container-->
+
+        <div class="py-[30px] px-0 border-t border-gray-800 dark:border-gray-700">
+            <div class="container relative text-center">
+                <div class="grid md:grid-cols-2 items-center gap-6">
+                    <div class="md:text-start text-center">
+                        <p class="mb-0 text-gray-300">CopyRight ©
+                            <script>document.write(new Date().getFullYear())</script> Edupath. Design <i
+                                class="mdi mdi-heart text-red-600"></i> by <a class="text-reset">Levitica</a>.
+                        </p>
+                    </div>
+
+                    <ul class="list-disc footer-list md:text-end text-center space-x-3">
+                        <li class="inline-block"><i class="mdi mdi-circle-medium text-gray-400"></i> <a
+                                href="terms.html"
+                                class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Terms</a></li>
+                        <li class="inline-block mt-[10px] md:mt-0"><i class="mdi mdi-circle-medium text-gray-400"></i>
+                            <a href="privacy.html"
+                                class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Privacy</a></li>
+                        <li class="inline-block mt-[10px] md:mt-0"><i class="mdi mdi-circle-medium text-gray-400"></i>
+                            <a href="login.html"
+                                class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Login</a></li>
+                    </ul><!--end icon-->
+                </div><!--end grid-->
+            </div><!--end container-->
         </div>
-        
-        <!-- JAVASCRIPTS -->
-        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
-        <script src="assets/libs/tobii/js/tobii.min.js"></script>
-        <script src="assets/libs/feather-icons/feather.min.js"></script>
-        <script src="assets/js/plugins.init.js"></script>
-        <script src="assets/js/app.js"></script>
-        <!-- JAVASCRIPTS -->
-    </body>
+    </footer>
+    <!--end footer-->
+    <!-- End Footer -->
+
+    <div id="chat-container" class="fixed bottom-6 z-50" style="right: 1.5rem;">
+        <!-- Chat Icon using uploaded image -->
+        <img id="chat-toggle" src="../../../../../../assets/images/bg/chb.jpg" alt="Chat Icon"
+            class="w-8 h-8 cursor-pointer rounded-full shadow-lg border border-gray-300 bg-white p-1" />
+
+
+
+        <!-- Chat Popup -->
+        <div id="chat-popup"
+            class="hidden bg-white dark:bg-slate-900 shadow-lg w-80 rounded-xl overflow-hidden mt-2 border border-gray-300 dark:border-gray-700">
+            <!-- Header -->
+            <div class="bg-violet-600 text-white p-3 font-semibold flex justify-between items-center">
+                Chat with us
+                <button id="chat-close" class="text-white text-xl leading-none">&times;</button>
+            </div>
+            <!-- Messages -->
+            <div class="p-3 h-64 overflow-y-auto text-gray-700 dark:text-gray-300" id="chat-messages">
+                <p class="text-sm text-gray-400">Hi! How can we help you today?</p>
+            </div>
+            <!-- Input -->
+            <div class="border-t border-gray-300 dark:border-gray-700 p-2 flex">
+                <input id="chat-input" type="text" placeholder="Type a message..."
+                    class="flex-1 px-2 py-1 border rounded-l-md text-sm focus:outline-none">
+                <button id="chat-send"
+                    class="bg-violet-600 hover:bg-violet-700 text-white px-3 rounded-r-md text-sm">Send</button>
+            </div>
+        </div>
+    </div>
+    <!-- Switcher -->
+    <div class="fixed top-1/4 -right-2 z-3">
+        <span class="relative inline-block rotate-90">
+            <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
+            <label
+                class="label bg-slate-900 dark:bg-white shadow-sm dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-[60px] h-8"
+                for="chk">
+                <i class="iconoir-half-moon text-yellow-500 align-middle ps-1 text-[16px] relative z-1"></i>
+                <i class="iconoir-sun-light text-yellow-500 align-middle pe-1 text-[16px] relative z-1"></i>
+                <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] size-7"></span>
+            </label>
+        </span>
+    </div>
+
+    <!-- JAVASCRIPTS -->
+    <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+    <script src="assets/libs/tobii/js/tobii.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/plugins.init.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- JAVASCRIPTS -->
+</body>
+
 </html>
