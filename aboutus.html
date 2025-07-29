@@ -39,10 +39,13 @@
         <!-- Start Navbar -->
        <nav id="topnav" class="defaultscroll is-sticky">
             <div class="container relative">
-                <!-- Logo container-->
-                <a class="logo" href="index.html">
-                    <img src="assets/images/logo-dark.png" class="inline-block dark:hidden" alt="">
-                    <img src="assets/images/logo-light.png" class="hidden dark:inline-block" alt="">
+                <!-- Start Logo container-->
+                <a class="logo" href="home.html">
+                    <span class="inline-block dark:hidden">
+                        <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
+                        <img src="assets/images/logo-light.png" class="l-light" height="24" alt="">
+                    </span>
+                    <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
                 </a>
                 <!-- End Logo container-->
 
@@ -61,35 +64,20 @@
                 <!-- End Mobile Toggle -->
 
                 <!--Login button Start-->
-                <ul class="buy-button list-none mb-0">
-                    <li class="inline-block relative me-1">
-                        <button class="text-[20px]" onclick="navbarSearch.showModal()" type="button">
-                            <i class="iconoir-search align-middle"></i>
-                        </button>                
-                    </li>
-
-                    
-    
-                    
-                </ul>
+                
                 <!--Login button End-->
 
                 <div id="navigation">
                     <!-- Navigation Menu-->   
-                    <ul class="navigation-menu justify-start">
+                    <ul class="navigation-menu justify-start nav-light">
+                        <li class="has-submenu parent-parent-menu-item"><a href="home.html">Home</a></li>
                         <li class="has-submenu parent-parent-menu-item">
-                            <a href="home.html">Home</a></span>
-
-                          
-                        </li>
-<li><a href="courses.html" class="sub-menu-item">Courses</a></li>
-
-                        <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>
-
-                       
-                <li><a href="core.html" class="sub-menu-item my-core">My Core</a></li>
-    
+                        <a href="courses.html">Courses</a></li>
+                        <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>    
+                        <li><a href="core.html" class="sub-menu-item my-core">My Core</a></li>
+     
                         <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
+                     
                     </ul><!--end navigation menu-->
                 </div><!--end navigation-->
             </div><!--end container-->

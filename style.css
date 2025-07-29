@@ -1,148 +1,5 @@
-/* Wrapper for each card */
-.tiny-slide .group {
-  width: 280px;       /* same width for all cards */
-  height: 350px;      /* fixed height for uniformity */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Image container height */
-.tiny-slide .group img {
-  width: 100%;
-  height: 160px;       /* same height for all images */
-  object-fit: cover;   /* keeps image aspect ratio cropped */
-  border-radius: 6px;
-}
-
-/* Card content alignment */
-.tiny-slide .p-6 {
-  padding: 15px;
-  flex-grow: 1;
-}
-
-/* Title styling */
-.tiny-slide .p-6 a {
-  font-size: 18px;
-  display: block;
-  min-height: 50px; /* keep height consistent even if text differs */
-}
-
-/* Description spacing */
-.tiny-slide .p-6 p {
-  font-size: 14px;
-  color: #64748b; /* slate color */
-  margin-top: 8px;
-}
-/* Center the image */
-.image-section {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-   margin: 0;       /* remove default margins */
-  padding: 0;
-}
-
-/* Full width container */
-.image-container {
-  width: 200%;
-}
-
-/* Remove default disclosure arrow on summary */
-details summary::-webkit-details-marker {
-  display: none;
-}
-
-details summary::marker {
-  content: "";
-}
-
-/* Make image fill full screen width and small height */
-.wide-short-image {
-  width: 98%;          /* leaves ~1% space each side */
-  height: 300px;       /* controlled height */
-  object-fit: cover;   /* crop to fit nicely */
-  display: block;
-  margin: 0 auto;      /* center image */
-  border-radius: 15px; /* rounded corners */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* optional shadow */
-}
-
-/* Navbar background white */
-#topnav {
-    background-color: #ffffff;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-/* Make logo always show dark version */
-#topnav .logo img.l-dark {
-    display: inline-block !important;
-}
-#topnav .logo img.l-light,
-#topnav .logo img.hidden.dark\:inline-block {
-    display: none !important;
-}
-
-/* Menu text black */
-#topnav .navigation-menu > li > a {
-    color: #000000;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-/* Hover effect - light blue */
-#topnav .navigation-menu > li > a:hover {
-    color: #3b82f6; /* Tailwind light blue */
-}
-
-/* Search icon color black */
-#topnav .buy-button button i {
-    
-}
-
-/* Force navbar background white */
-
-
-/* Force menu text black */
-#topnav .navigation-menu > li > a {
-   
-    font-weight: 500 !important;
-}
-
-
-/* Hover search icon light blue */
-#topnav .buy-button button:hover i {
-    color: #3b82f6 !important;
-}
-
-
-
 /* Force navbar background white (normal + sticky) */
-nav#topnav,
-nav#topnav.is-sticky {
-    font-family: "roboto";
-    
-}
 
-/* Force text black (normal + sticky) */
-nav#topnav .navigation-menu > li > a,
-nav#topnav.is-sticky .navigation-menu > li > a {
-    
-    transition: color 0.3s ease-in-out;
-}
-
-/* Force hover light blue (normal + sticky) */
-nav#topnav .navigation-menu > li > a:hover,
-nav#topnav.is-sticky .navigation-menu > li > a:hover {
-    color: #3b82f6 !important;
-}
-
-/* Search icon force black + hover blue */
-
-nav#topnav .buy-button button:hover i,
-nav#topnav.is-sticky .buy-button button:hover i {
-    color: #3b82f6 !important;
-}
 .ceo-message {
   padding: 60px 0;
   font-family: Arial, sans-serif;
@@ -220,3 +77,100 @@ nav#topnav.is-sticky .buy-button button:hover i {
   color: #666;
 }
 
+.about-main-wrapper {
+                max-width: 1200px;
+                margin: 80px auto 60px auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 60px;
+                padding: 0 40px;
+            }
+            .about-main-content {
+                flex: 2;
+                min-width: 320px;
+            }
+            .about-main-content h1 {
+                font-size: 2.8em;
+                font-weight: 700;
+                margin-bottom: 18px;
+                color: #222;
+            }
+            .about-main-content strong {
+                font-size: 1.25em;
+                font-weight: 600;
+                display: block;
+                margin-bottom: 24px;
+            }
+            .about-main-content p {
+                font-size: 1.15em;
+                line-height: 1.7;
+                margin-bottom: 18px;
+            }
+            .about-main-content h2 {
+                font-size: 1.2em;
+                font-weight: 600;
+                margin: 32px 0 10px 0;
+                color: #222;
+                border-left: 4px solid #4a5670;
+                padding-left: 12px;
+            }
+            .about-main-content ul.core-values {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .about-main-content ul.core-values li {
+                margin-bottom: 10px;
+                padding-left: 20px;
+                position: relative;
+                font-size: 1.08em;
+            }
+            .about-main-content ul.core-values li:before {
+                content: "•";
+                color: #4a5670;
+                position: absolute;
+                left: 0;
+                font-size: 1.2em;
+            }
+            .about-profile-pic {
+                flex: 1;
+                min-width: 260px;
+                text-align: center;
+            }
+            .about-profile-pic img {
+                width: 320px;
+                height: 420px;
+                object-fit: cover;
+                border-radius: 16px;
+                box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+                background: #fff;
+                max-width: 100%;
+            }
+            .about-profile-name {
+                margin-top: 18px;
+                font-size: 1.25em;
+                font-weight: 700;
+                color: #222;
+            }
+            .about-profile-title {
+                font-size: 1.05em;
+                color: #4a5670;
+                margin-top: 2px;
+            }
+            @media (max-width: 900px) {
+                .about-main-wrapper {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 40px;
+                    padding: 0 10px;
+                }
+                .about-profile-pic {
+                    text-align: left;
+                }
+                .about-profile-pic img {
+                    width: 100%;
+                    height: auto;
+                    max-width: 320px;
+                }
+            }
