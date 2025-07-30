@@ -703,6 +703,10 @@ details > summary {
   margin-right: 8px;
 }
 
+#chat-toggle {
+  width: 60px !important;
+  height: 60px !important;
+}
 
 /* Responsive for mobile */
 @media (max-width: 768px) {
