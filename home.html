@@ -11,7 +11,8 @@
         <meta name="email" content="support@shreethemes.in" />
         <meta name="version" content="1.0.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-         <link rel="stylesheet" href="style.css"> 
+         <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="services.css">
         <!-- favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
@@ -121,56 +122,119 @@
         </nav><!--end header-->
        
  
-              
-<section class="services-section">
-  <!-- Header / Hero -->
-  <header class="services-hero">
-    <h1 class="services-title">Our Services</h1>
-    <p class="services-subtitle">End-to-End IT & Business Solutions to Accelerate Your Growth</p>
-  </header>
+  <main class="main-content">
 
-  <!-- IT Services -->
-  <h2 class="services-heading">IT-Related Services</h2>
-  <div class="services-grid">
-  <a href="card3.html" class="service-card">
-    <h4 class="service-title">Cloud & DevOps</h4>
-    <p class="service-desc">Infrastructure setup, CI/CD pipelines, cloud migration (AWS, Azure, GCP).</p>
-  </a>
+  <!-- IT Services Section -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">IT & Technology Services</h2>
+      <p class="section-subtitle">Cutting-edge technology solutions to drive your business forward</p>
+    </div>
 
-  <a href="card4.html" class="service-card">
-    <h4 class="service-title">AI & Machine Learning</h4>
-    <p class="service-desc">Intelligent automation, predictive analytics, and ML model development.</p>
-  </a>
+    <div class="services-grid">
 
-  <a href="card6.html" class="service-card">
-    <h4 class="service-title">Cybersecurity</h4>
-    <p class="service-desc">Application & network security, audits, and vulnerability management.</p>
-  </a>
-</div>
+      <div class="service-card" onclick="window.location.href='/card3.html'">
+        <div class="service-icon">
+          <i class="mdi mdi-cloud"></i>
+        </div>
+        <h3>Cloud & DevOps</h3>
+        <p>Infrastructure setup, CI/CD pipelines, and cloud migration services for AWS, Azure, and Google Cloud Platform.</p>
+        <ul class="service-features">
+          <li>Cloud Migration</li>
+          <li>CI/CD Pipelines</li>
+          <li>Infrastructure as Code</li>
+          <li>Monitoring & Logging</li>
+        </ul>
+      </div>
 
-</section>
+      <div class="service-card" onclick="window.location.href='/card5.html'">
+        <div class="service-icon">
+          <i class="mdi mdi-bug-check"></i>
+        </div>
+        <h3>Software Testing & QA</h3>
+        <p>Comprehensive quality assurance including manual testing, automation, performance testing, and security validation.</p>
+        <ul class="service-features">
+          <li>Manual & Automated Testing</li>
+          <li>Performance Testing</li>
+          <li>Security Testing</li>
+          <li>Test Automation Frameworks</li>
+        </ul>
+      </div>
 
-<!-- Non-IT Related Services -->
-<section class="services-section">
-  <h2 class="services-heading">Non-IT Related Services</h2>
-  <div class="services-grid">
-   <a href="card7.html" class="service-card">
-  <h4 class="service-title">Startup & Business Consulting</h4>
-  <p class="service-desc">Strategic guidance for entrepreneurs and SMEs to scale efficiently.</p>
-</a>
+      <div class="service-card" onclick="window.location.href='/card6.html'">
+        <div class="service-icon">
+          <i class="mdi mdi-shield-check"></i>
+        </div>
+        <h3>Cybersecurity</h3>
+        <p>Application and network security, security audits, vulnerability assessments, and compliance management.</p>
+        <ul class="service-features">
+          <li>Security Audits</li>
+          <li>Vulnerability Assessment</li>
+          <li>Penetration Testing</li>
+          <li>Compliance Management</li>
+        </ul>
+      </div>
 
-<a href="card8.html" class="service-card">
-  <h4 class="service-title">Digital Marketing</h4>
-  <p class="service-desc">SEO, SEM, social media campaigns, email marketing, and brand visibility.</p>
-</a>
+    </div>
+  </section>
 
-<a href="card9.html" class="service-card">
-  <h4 class="service-title">Content & Documentation</h4>
-  <p class="service-desc">Technical writing, content creation, documentation, and translations.</p>
-</a>
+  <!-- Business Services Section -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Business & Consulting Services</h2>
+      <p class="section-subtitle">Strategic solutions to help your business grow and succeed</p>
+    </div>
 
-  </div>
-</section>
+    <div class="services-grid">
+
+      <div class="service-card" onclick="window.location.href='/card7.html'">
+        <div class="service-icon">
+          <i class="mdi mdi-lightbulb"></i>
+        </div>
+        <h3>Startup & Business Consulting</h3>
+        <p>Strategic guidance for entrepreneurs and SMEs to scale efficiently and achieve sustainable growth.</p>
+        <ul class="service-features">
+          <li>Business Strategy</li>
+          <li>Market Analysis</li>
+          <li>Growth Planning</li>
+          <li>Investor Relations</li>
+        </ul>
+      </div>
+
+      <div class="service-card" onclick="window.location.href='/card8.html'">
+        <div class="service-icon">
+          <i class="mdi mdi-chart-line"></i>
+        </div>
+        <h3>Digital Marketing</h3>
+        <p>Comprehensive digital marketing services including SEO, SEM, social media campaigns, and brand visibility.</p>
+        <ul class="service-features">
+          <li>SEO & SEM</li>
+          <li>Social Media Marketing</li>
+          <li>Content Marketing</li>
+          <li>Email Campaigns</li>
+        </ul>
+      </div>
+
+      <div class="service-card" onclick="window.location.href='/card9.html'">
+        <div class="service-icon">
+          <i class="mdi mdi-file-document"></i>
+        </div>
+        <h3>Content & Documentation</h3>
+        <p>Professional technical writing, content creation, documentation, and translation services.</p>
+        <ul class="service-features">
+          <li>Technical Writing</li>
+          <li>Content Creation</li>
+          <li>Documentation</li>
+          <li>Translation Services</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
 
          <section class="relative md:py-24 py-16">
                        <div class="container relative md:mt-24 mt-16">

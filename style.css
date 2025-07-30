@@ -626,6 +626,81 @@ details > summary {
     display: block;
     margin: 0 auto; /* Center the image */
 }
+.section {
+  margin-bottom: 60px;
+  padding: 20px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #555;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
+  min-height: 450px; /* Increased from 360px to 450px */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+
+.service-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.service-icon {
+  font-size: 32px;
+  color: #6a00ff;
+  margin-bottom: 10px;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+}
+
+.service-features li::before {
+  content: "✔";
+  color: #3b82f6;
+  margin-right: 8px;
+}
+
 
 /* Responsive for mobile */
 @media (max-width: 768px) {
