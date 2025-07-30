@@ -1,5 +1,7 @@
 /* Force navbar background white (normal + sticky) */
-
+.has-submenu a{
+  font-size: 14px !important;
+}
 .ceo-message {
   padding: 60px 0;
   font-family: Arial, sans-serif;
