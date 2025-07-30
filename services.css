@@ -49,6 +49,123 @@
   background-color: #fff;
   transition: box-shadow 0.2s ease;
 }
+/* Section spacing */
+.section {
+  margin-bottom: 80px;
+  padding: 20px 0;
+}
+
+/* Section title & subtitle styling */
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Grid layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* Card style */
+.service-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  margin: 15px 0 10px;
+  color: #222;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: #6A00FF;
+}
+
+/* List inside card */
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-features li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.service-features li::before {
+  content: "✔";
+  color: #3b82f6;
+  margin-right: 8px;
+}
+
+/* CTA section */
+.cta-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9ff;
+  border-top: 1px solid #e0e0e0;
+}
+
+.cta-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cta-description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 12px 28px;
+  background-color: #6A00FF;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #5200cc;
+}
 
 .service-card:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
