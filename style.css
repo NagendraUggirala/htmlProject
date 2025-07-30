@@ -614,8 +614,19 @@ details > summary {
   object-fit: cover;     /* crop proportionally */
   border-radius: 8px;
 }
- 
- 
+ .consulting-title {
+    text-align: center;
+    font-size: 32px;
+    color: #5a6480;
+    margin-top: 40px;
+}
+.custom-image {
+    width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
 /* Responsive for mobile */
 @media (max-width: 768px) {
   .benefit-images {
