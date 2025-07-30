@@ -29,24 +29,41 @@
     max-width: 600px;
     margin: 0 auto;
 }
-
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* responsive grid */
+  gap: 20px;
 }
 
 .service-card {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 2.5rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e5e7eb;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
+  display: block;
+  width: 100%;                /* take full grid cell width */
+  max-width: 350px;           /* optional max width */
+  height: 250px;              /* fixed height */
+  text-decoration: none;
+  color: inherit;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: box-shadow 0.2s ease;
 }
+
+.service-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.service-desc {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
 
 .service-card::before {
     content: '';
