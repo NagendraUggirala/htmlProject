@@ -338,7 +338,7 @@
     </details>
     </div>
         </div>
-            </div><!--end container-->
+            </div><br><!--end container-->
 
              <div class="container relative md:mt-24 mt-16">
                 <div class="grid grid-cols-1 pb-6 text-center">
@@ -586,45 +586,32 @@
         </footer>
 
        </footer><!--end footer-->
-<div id="chat-container" class="fixed bottom-6 z-50" style="right: 1.5rem;">
+
+    <div id="chat-container" class="fixed bottom-6 z-50" style="right: 1.5rem;">
    <!-- Chat Icon using uploaded image -->
-<img id="chat-toggle" src="../../../../../../assets/images/bg/chb.jpg"
-     alt="Chat Icon" 
-     class="w-8 h-8 cursor-pointer rounded-full shadow-lg border border-gray-300 bg-white p-1" />
+   <img id="chat-toggle" src="../../../../../../assets/images/bg/chat.png"
+        alt="Chat Icon" 
+        class="w-8 h-8 cursor-pointer shadow-lg" />
 
-
-
-    <!-- Chat Popup -->
-    <div id="chat-popup" class="hidden bg-white dark:bg-slate-900 shadow-lg w-80 rounded-xl overflow-hidden mt-2 border border-gray-300 dark:border-gray-700">
-        <!-- Header -->
-        <div class="bg-violet-600 text-white p-3 font-semibold flex justify-between items-center">
-            Chat with us
-            <button id="chat-close" class="text-white text-xl leading-none">&times;</button>
-        </div>
-        <!-- Messages -->
-        <div class="p-3 h-64 overflow-y-auto text-gray-700 dark:text-gray-300" id="chat-messages">
-            <p class="text-sm text-gray-400">Hi! How can we help you today?</p>
-        </div>
-        <!-- Input -->
-        <div class="border-t border-gray-300 dark:border-gray-700 p-2 flex">
-            <input id="chat-input" type="text" placeholder="Type a message..." 
-                class="flex-1 px-2 py-1 border rounded-l-md text-sm focus:outline-none">
-            <button id="chat-send" class="bg-violet-600 hover:bg-violet-700 text-white px-3 rounded-r-md text-sm">Send</button>
-        </div>
-    </div>
+   <!-- Chat Popup -->
+   <div id="chat-popup" class="hidden bg-white dark:bg-slate-900 shadow-lg w-80 rounded-xl overflow-hidden mt-2 border border-gray-300 dark:border-gray-700">
+       <!-- Header -->
+       <div class="bg-violet-600 text-white p-3 font-semibold flex justify-between items-center">
+           Chat with us
+           <button id="chat-close" class="text-white text-xl leading-none">&times;</button>
+       </div>
+       <!-- Messages -->
+       <div class="p-3 h-64 overflow-y-auto text-gray-700 dark:text-gray-300" id="chat-messages">
+           <p class="text-sm text-gray-400">Hi! How can we help you today?</p>
+       </div>
+       <!-- Input -->
+       <div class="border-t border-gray-300 dark:border-gray-700 p-2 flex">
+           <input id="chat-input" type="text" placeholder="Type a message..." 
+               class="flex-1 px-2 py-1 border rounded-l-md text-sm focus:outline-none">
+           <button id="chat-send" class="bg-violet-600 hover:bg-violet-700 text-white px-3 rounded-r-md text-sm">Send</button>
+       </div>
+   </div>
 </div>
-        <!-- Switcher -->
-        <div class="fixed top-1/4 -right-2 z-3">
-            <span class="relative inline-block rotate-90">
-                <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
-                <label class="label bg-slate-900 dark:bg-white shadow-sm dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-[60px] h-8" for="chk">
-                    <i class="iconoir-half-moon text-yellow-500 align-middle ps-1 text-[16px] relative z-1"></i>
-                    <i class="iconoir-sun-light text-yellow-500 align-middle pe-1 text-[16px] relative z-1"></i>
-                    <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] size-7"></span>
-                </label>
-            </span>
-        </div>
-        <!-- Switcher -->
 
       
 
