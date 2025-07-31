@@ -944,6 +944,23 @@ details > summary {
         }
 
         @media (max-width: 768px) {
+            .image-responsive-center{
+                padding-left: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .image-responsive-services{
+                padding-left: 18px;
+                
+            }
+
+            .about-team-image{
+              height: 250px;
+              width: 250px;
+            }
+
             .footer-content {
                 grid-template-columns: 1fr;
                 gap: 30px;
