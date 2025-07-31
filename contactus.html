@@ -189,53 +189,96 @@
 
       <!-- Contact Form -->
       <div class="w-full">
-        <div class="bg-white dark:bg-slate-900 rounded-md shadow-sm dark:shadow-gray-700 p-6">
-          <h3 class="mb-6 md:text-3xl text-2xl font-semibold">Get in touch!</h3>
-          <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
-            <p class="mb-0 text-red-500" id="error-msg"></p>
-            <div id="simple-msg"></div>
-            <div class="grid lg:grid-cols-2 gap-4">
-              <div>
-                <label for="name" class="font-medium">Your Name:</label>
-                <input name="name" id="name" type="text"
-                  class="w-full py-2 px-3 border border-slate-300 focus:border-violet-600 focus:outline-none rounded-md mt-2"
-                  placeholder="Name">
-              </div>
-              <div>
-                <label for="email" class="font-medium">Your Email:</label>
-                <input name="email" id="email" type="email"
-                  class="w-full py-2 px-3 border border-slate-300 focus:border-violet-600 focus:outline-none rounded-md mt-2"
-                  placeholder="Email">
-              </div>
-            </div>
-
-            <div class="mt-4">
-              <label for="subject" class="font-medium">Your Question:</label>
-              <input name="subject" id="subject" type="text"
-                class="w-full py-2 px-3 border border-slate-300 focus:border-violet-600 focus:outline-none rounded-md mt-2"
-                placeholder="Subject">
-            </div>
-
-            <div class="mt-4">
-              <label for="comments" class="font-medium">Your Comment:</label>
-              <textarea name="comments" id="comments"
-                class="w-full py-2 px-3 border border-slate-300 focus:border-violet-600 focus:outline-none rounded-md h-28 mt-2"
-                placeholder="Message"></textarea>
-            </div>
-
-            <div class="mt-4">
-              <button type="submit" id="submit" name="send"
-                class="h-10 px-5 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600 text-white hover:bg-violet-700 transition">
-                Send Message
-              </button>
-            </div>
-          </form>
+  <div class="bg-white dark:bg-slate-900 rounded-md shadow-sm dark:shadow-gray-700 p-6">
+    <h3 class="mb-6 md:text-3xl text-2xl font-semibold">Get in touch!</h3>
+    <form method="post" name="myForm" id="myForm">
+      <p class="mb-0 text-red-500" id="error-msg"></p>
+      <div id="simple-msg"></div>
+      <div class="grid lg:grid-cols-2 gap-4">
+        <div>
+          <label for="name" class="font-medium">Your Name:</label>
+          <input
+            name="name"
+            id="name"
+            type="text"
+            class="w-full py-2 px-3 border border-slate-300 focus:border-violet-600 focus:outline-none rounded-md mt-2"
+            placeholder="Name"
+          />
+        </div>
+        <div>
+          <label for="email" class="font-medium">Your Email:</label>
+          <input
+            name="email"
+            id="email"
+            type="email"
+            class="w-full py-2 px-3 border border-slate-300 focus:border-violet-600 focus:outline-none rounded-md mt-2"
+            placeholder="Email"
+          />
         </div>
       </div>
 
-    </div>
+      <div class="mt-4">
+        <label for="subject" class="font-medium">Your Question:</label>
+        <input
+          name="subject"
+          id="subject"
+          type="text"
+          class="w-full py-2 px-3 border border-slate-300 focus:border-violet-600 focus:outline-none rounded-md mt-2"
+          placeholder="Subject"
+        />
+      </div>
+
+      <div class="mt-4">
+        <label for="comments" class="font-medium">Your Comment:</label>
+        <textarea
+          name="comments"
+          id="comments"
+          class="w-full py-2 px-3 border border-slate-300 focus:border-violet-600 focus:outline-none rounded-md h-28 mt-2"
+          placeholder="Message"
+        ></textarea>
+      </div>
+
+      <div class="mt-4">
+        <button
+          type="submit"
+          id="submit"
+          name="send"
+          class="h-10 px-5 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600 text-white hover:bg-violet-700 transition"
+        >
+          Send Message
+        </button>
+      </div>
+    </form>
   </div>
+</div>
 </section>
+
+<!-------scriptstart-->
+<script>
+document.getElementById('myForm').onsubmit = async function (e) {
+  e.preventDefault();
+
+  const data = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    subject: document.getElementById('subject').value,
+    comments: document.getElementById('comments').value
+  };
+
+  const res = await fetch('http://localhost:3000/send-email', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+
+  const msg = await res.text();
+  document.getElementById('simple-msg').innerText = msg;
+
+  if (res.ok) document.getElementById('myForm').reset();
+};
+</script>
+<!---------Scriptend-->
+
         <!-- Start Footer -->
         <footer class="footer">
         <div class="footer-container">
