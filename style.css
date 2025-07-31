@@ -761,22 +761,12 @@ details > summary {
   height: 100px;
   width: 100px;
 }
-.navigation-menu li a {
+.navigation-menu a {
+    color: black !important;  /* Force black text color */
+    font-weight: bold;
     text-decoration: none;
 }
-.navigation-menu li a:hover {
-    color: blueviolet; /* hover color */
-}
-.social-icons {
-    display: flex;
-    gap: 25px;
-    margin-left: 40px; /* Space between Contact Us and icons */
-}
-.social-icons a {
-    font-size: 20px;  /* Increased size (default was 18px) */
-    color: black;
-    transition: color 0.3s ease;
-}
-.social-icons a:hover {
-    color: #00acee; /* Hover effect color */
+
+.navigation-menu a:hover {
+    color: blueviolet; /* Optional hover color */
 }
