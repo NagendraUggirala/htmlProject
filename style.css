@@ -984,3 +984,14 @@ details > summary {
   
   color: white !important;
 }
+
+.courses-image-container{
+  width: 45vw;
+}
+
+.clss{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
