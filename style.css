@@ -416,6 +416,10 @@ details > summary {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .container-nav{
+    padding-left: 30px;
+    text-align: center;
+  }
   .services-title {
     font-size: 2rem;
   }
@@ -769,4 +773,197 @@ details > summary {
 
 .navigation-menu a:hover {
     color: blueviolet; /* Optional hover color */
+}
+
+
+      /* Demo content to show footer at bottom */
+        .main-content {
+            flex: 1;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #2b6be2  0%, hsl(270, 59%, 65%)  100%);
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: auto 1fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 40px;
+        }
+
+        /* Support Card */
+        .support-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            color: #333;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            min-width: 280px;
+            height: fit-content;
+        }
+
+        .support-card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .support-phone {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .support-phone .phone-number {
+            font-size: 18px;
+            font-weight: bold;
+            color: #8A2BE2 ;
+            text-decoration: none;
+        }
+
+        .support-phone .phone-number:hover {
+            color: #8A2BE2 ;
+        }
+
+        .headset-icon {
+            width: 40px;
+            height: 40px;
+            background: #8A2BE2 ;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        .support-location {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Footer Sections */
+        .footer-section h4 {
+            font-size: 22px;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-section ul li a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-section ul li a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+
+        .footer-section ul li a:before {
+            content: "›";
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Branch Info */
+        .branch-info h4 {
+            margin-bottom: 20px;
+        }
+
+        .branch-location {
+            margin-bottom: 15px;
+        }
+
+        .branch-location h5 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .branch-address {
+            color: rgba(255,255,255,0.9);
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        /* Copyright */
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 20px;
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .footer-bottom a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+
+            .support-card {
+                grid-column: 1 / -1;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .footer {
+                padding: 40px 0 20px;
+            }
+
+            .support-card {
+                min-width: auto;
+            }
+
+            .footer-section h4 {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+.color-white{
+  
+  color: white !important;
 }
