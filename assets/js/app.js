@@ -350,6 +350,35 @@ try {
 } catch (error) {
     
 }
+// Select slides and dots
+const slides = document.querySelectorAll('.hero-slide');
+const dots = document.querySelectorAll('.hero-dot');
+
+let currentIndex = 0;
+const slideInterval = 4000; // 4 seconds
+
+// Show specific slide
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+    dots[i].classList.toggle('active', i === index);
+  });
+}
+
+// Manual dot navigation
+function currentSlide(index) {
+  currentIndex = index;
+  showSlide(currentIndex);
+}
+
+// Auto-slide
+function autoSlide() {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+}
+
+// Start auto slide
+setInterval(autoSlide, slideInterval);
 
 /*********************/
 /* Dark & Light Mode */
