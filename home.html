@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="services.css">
     <!-- favicon -->
     <link rel="icon" type="image/png" sizes="512x512" href="assets/images/logo-dark.png">
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
 
     <!-- Css -->
     <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
@@ -45,38 +49,69 @@
 
     <section
         class="relative table w-full md:py-44 py-36 bg-[url('assets/images/bg-patterns/dots.svg')]] bg-no-repeat bg-center bg-cover">
-        <div class="absolute inset-0 bg-slate-950/90"></div>
-        <div class="absolute inset-0 opacity-5 bg-[url('/assets/images/map.html')] bg-no-repeat bg-center bg-cover">
+        
+<!-- Navbar -->
+<header class="nav-bar">
+ 
+</header>
+
+<!-- Hero Slider -->
+<section class="hero-slider" id="home">
+  <div class="hero-slides">
+
+    <!-- Slide 1 -->
+    <div class="hero-slide active" style="background-image: url(assets/images/bg/1.avif);">
+      <div class="hero-text">
+        <button class="hero-tag-btn">Only High Quality Services</button>
+        <h1 class="hero-title">Excellent IT Services for Your Success</h1>
+        <p class="hero-desc">We deliver world-class web designing, development, software testing, e-commerce, custom apps, voice/non-voice, and digital marketing globally.</p>
+        <div class="hero-buttons">
+          <a href="#about" class="hero-btn hero-learn">Learn More</a>
+          <a href="#contact" class="hero-btn hero-contact">Contact Us</a>
         </div>
-        <div class="container relative">
-            <div class="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-6">
-                <div class="lg:col-span-7 md:col-span-6">
-                    <h2 class="text-4xl font-bold text-white mb-4">
-                        Start Your Learning Journey
-                    </h2>
-                    <p class="text-white/50 text-lg max-w-xl">Empower your learning journey with expert-led courses
-                        designed to build real-world skills. Whether you’re starting from basics or advancing your
-                        career, our programs combine practical knowledge, interactive lessons, and hands-on projects to
-                        help you succeed in today’s competitive world. Learn at your own pace and achieve your goals
-                        with confidence.</p>
+      </div>
+    </div>
 
-                    <br> <a href="courses.html" class="btn-primary">Explore Courses</a>
+    <!-- Slide 2 -->
+    <div class="hero-slide" style="background-image: url(assets/images/bg/9);">
+      <div class="hero-text">
+        <button class="hero-tag-btn">Only High Quality Services</button>
+        <h1 class="hero-title">We Provide Best IT Services for Your Need</h1>
+        <p class="hero-desc">We create solutions with web development, software testing, custom applications, and digital marketing across the globe.</p>
+        <div class="hero-buttons">
+          <a href="#about" class="hero-btn hero-learn">Learn More</a>
+          <a href="#contact" class="hero-btn hero-contact">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="hero-slide" style="background-image: url(assets/images/bg/5.jpg);">
+      <div class="hero-text">
+        <button class="hero-tag-btn">Only High Quality Services</button>
+        <h1 class="hero-title">Digital IT Service With Excellent Quality</h1>
+        <p class="hero-desc">Providing expert web and mobile solutions, voice/non-voice services, and digital transformation strategies worldwide.</p>
+        <div class="hero-buttons">
+          <a href="#about" class="hero-btn hero-learn">Learn More</a>
+          <a href="#contact" class="hero-btn hero-contact">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Dots Navigation -->
+  <div class="hero-dots">
+    <span class="hero-dot active" onclick="currentSlide(0)"></span>
+    <span class="hero-dot" onclick="currentSlide(1)"></span>
+    <span class="hero-dot" onclick="currentSlide(2)"></span>
+  </div>
+</section>
 
 
-                </div><!--end col-->
 
-                <div class="lg:col-span-5 md:col-span-6 w-full">
-                    <div class="grid grid-cols-1 relative xl:ms-20 w-full">
 
-                        <!-- Bigger Image -->
-                        <img src="assets/images/home/edss.avif" alt="Course Image"
-                            class="w-full h-[700px] object-cover rounded-lg shadow-lg" />
-
-                    </div>
-                </div><!--end col-->
-
-            </div><!--end grid-->
-        </div><!--end container -->
+        
     </section><!--end section-->
     <!-- End Hero -->
 
@@ -201,7 +236,7 @@
                                 <span class="text-slate-400">Join a Global Network</span>
                             </li>
                         </ul>
-                    </div>
+                    </div><br>
 
 
 
@@ -215,186 +250,15 @@
 
             </div><!--end grid-->
         </div><!--end container-->
-        <div class="mt-20"></div>
+     
 
         <div class="container relative md:mt-24 mt-5">
-            <div class="grid grid-cols-1 pb-6 text-center">
-                <span class="text-violet-600 font-semibold mb-3 uppercase">Courses</span>
-                <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Explore Our Best
-                    Courses</h4>
+            
 
-                <p class="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our
-                    online education platform pursue a new career.</p>
-            </div><!--end grid-->
-
-            <div class="grid grid-cols-1 relative mt-3">
-                <div class="tiny-home-slide-three">
-                    <div class="tiny-slide">
-                        <div
-                            class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
-                            <div class="p-3 pb-0 relative">
-                                <div class="relative overflow-hidden rounded-md">
-                                    <img src="assets/images/home/14.jpg"
-                                        class="w-full h-52 object-cover group-hover:scale-105 duration-500 rounded-md"
-                                        alt="">
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="p-6">
-
-
-                                <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">The
-                                    Ultimate Course Bundle</a>
-
-                                <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
-
-
-                            </div>
-                        </div>
-                    </div><!--end content-->
-
-                    <div class="tiny-slide">
-                        <div
-                            class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
-                            <div class="p-3 pb-0 relative">
-                                <div class="relative overflow-hidden rounded-md">
-                                    <img src="assets/images/home/13.jpg"
-                                        class="w-full h-52 object-cover group-hover:scale-105 duration-500 rounded-md"
-                                        alt="">
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="p-6">
-
-
-                                <a href="course-detail1.html" class="text-lg hover:text-violet-600 font-medium">App
-                                    Development Course</a>
-
-                                <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
-
-
-                            </div>
-                        </div>
-                    </div><!--end content-->
-
-                    <div class="tiny-slide">
-                        <div
-                            class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
-                            <div class="p-3 pb-0 relative">
-                                <div class="relative overflow-hidden rounded-md">
-                                    <img src="assets/images/home/19.jpg"
-                                        class="w-full h-52 object-cover group-hover:scale-105 duration-500 rounded-md"
-                                        alt="">
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="p-6">
-
-
-                                <a href="course-detail2.html" class="text-lg hover:text-violet-600 font-medium">Spoken
-                                    English Popular Course</a>
-                                <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
-
-                            </div>
-                        </div>
-                    </div><!--end content-->
-
-                    <div class="tiny-slide">
-                        <div
-                            class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
-                            <div class="p-3 pb-0 relative">
-                                <div class="relative overflow-hidden rounded-md">
-                                    <img src="assets/images/home/15.webp"
-                                        class="w-full h-52 object-cover group-hover:scale-105 duration-500 rounded-md"
-                                        alt="">
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="p-6">
-
-
-                                <a href="course-detail3.html" class="text-lg hover:text-violet-600 font-medium">Back-end
-                                    Development Course</a>
-
-                                <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
-
-
-                            </div>
-                        </div>
-                    </div><!--end content-->
-
-                    <div class="tiny-slide">
-                        <div
-                            class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
-                            <div class="p-3 pb-0 relative">
-                                <div class="relative overflow-hidden rounded-md">
-                                    <img src="assets/images/home/16.webp"
-                                        class="w-full h-52 object-cover group-hover:scale-105 duration-500 rounded-md"
-                                        alt=" ">
-                                </div>
-
-                            </div>
-
-                            <div class="p-6">
-
-
-                                <a href="course-detail4.html"
-                                    class="text-lg hover:text-violet-600 font-medium">Front-end Development Course</a>
-
-                                <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
-
-
-                            </div>
-                        </div>
-                    </div><!--end content-->
-
-                    <div class="tiny-slide">
-                        <div
-                            class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
-                            <div class="p-3 pb-0 relative">
-                                <div class="relative overflow-hidden rounded-md">
-                                    <img src="assets/images/home/17.jpg" class="group-hover:scale-105 duration-500"
-                                        alt="">
-                                </div>
-
-                            </div>
-
-                            <div class="p-6">
-
-
-                                <a href="course-detail5.html"
-                                    class="w-full h-52 object-cover group-hover:scale-105 duration-500 rounded-md">Full
-                                    stack Project in Nextjs Course</a>
-
-                                <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
-
-
-                            </div>
-                        </div>
-                    </div><!--end content-->
-                </div><!--end tiny slider-->
-            </div><!--end grid-->
-
-            <div class="grid md:grid-cols-12 grid-cols-1 mt-6">
-                <div class="md:col-span-12 text-center">
-                    <a href="grid.html" class="text-slate-400 hover:text-violet-600 duration-500 ease-in-out">See More
-                        Courses <i class="mdi mdi-arrow-right align-middle"></i></a>
-                </div>
     </section>
 
-    <main class="main-content">
+  <main class="main-content">
+        <!-- IT Services Section -->
         <section class="section">
             <div class="section-header">
                 <h2 class="section-title">IT & Technology Services</h2>
@@ -402,8 +266,36 @@
             </div>
 
             <div class="services-grid">
+                <div class="service-card" onclick="window.location.href='card1.html'" style="cursor: pointer;">
+                    <div class="service-icon">
+                        <i class="mdi mdi-web"></i>
+                    </div>
+                    <h3>Web Development & Design</h3>
+                    <p>Custom websites and web applications built with modern technologies, responsive design, and
+                        optimized for performance and SEO.</p>
+                    <ul class="service-features">
+                        <li>Responsive Design</li>
+                        <li>SEO Optimization</li>
+                        <li>Performance Optimization</li>
+                        <li>Modern Frameworks</li>
+                    </ul>
+                </div>
 
-                <div class="service-card" onclick="window.location.href='/card3.html'">
+                <div class="service-card" onclick="window.location.href='/card2.html'" style="cursor: pointer;">
+                    <div class="service-icon">
+                        <i class="mdi mdi-cellphone"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Cross-platform mobile applications with intuitive UX/UI design for iOS and Android platforms.</p>
+                    <ul class="service-features">
+                        <li>iOS & Android Development</li>
+                        <li>Cross-platform Solutions</li>
+                        <li>Native Performance</li>
+                        <li>App Store Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" onclick="window.location.href='/card3.html'" style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-cloud"></i>
                     </div>
@@ -418,7 +310,22 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='/card5.html'">
+                <div class="service-card" onclick="window.location.href='/card4.html'" style="cursor: pointer;">
+                    <div class="service-icon">
+                        <i class="mdi mdi-brain"></i>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Intelligent automation, predictive analytics, and custom ML model development for data-driven
+                        insights.</p>
+                    <ul class="service-features">
+                        <li>Predictive Analytics</li>
+                        <li>Natural Language Processing</li>
+                        <li>Computer Vision</li>
+                        <li>Model Training & Deployment</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" onclick="window.location.href='/card5.html'" style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-bug-check"></i>
                     </div>
@@ -433,7 +340,7 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='/card6.html'">
+                <div class="service-card" onclick="window.location.href='/card6.html'" style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-shield-check"></i>
                     </div>
@@ -447,7 +354,6 @@
                         <li>Compliance Management</li>
                     </ul>
                 </div>
-
             </div>
         </section>
 
@@ -458,37 +364,8 @@
                 <p class="section-subtitle">Strategic solutions to help your business grow and succeed</p>
             </div>
 
-
-            <div id="chat-container" class="fixed bottom-6 z-50" style="right: 1.5rem;">
-                <!-- Chat Icon using uploaded image -->
-                <img id="chat-toggle" src="../../../../../../assets/images/bg/chat.png" alt="Chat Icon"
-                    class="w-8 h-8 cursor-pointer shadow-lg" />
-
-                <!-- Chat Popup -->
-                <div id="chat-popup"
-                    class="hidden bg-white dark:bg-slate-900 shadow-lg w-80 rounded-xl overflow-hidden mt-2 border border-gray-300 dark:border-gray-700">
-                    <!-- Header -->
-                    <div class="bg-violet-600 text-white p-3 font-semibold flex justify-between items-center">
-                        Chat with us
-                        <button id="chat-close" class="text-white text-xl leading-none">&times;</button>
-                    </div>
-                    <!-- Messages -->
-                    <div class="p-3 h-64 overflow-y-auto text-gray-700 dark:text-gray-300" id="chat-messages">
-                        <p class="text-sm text-gray-400">Hi! How can we help you today?</p>
-                    </div>
-                    <!-- Input -->
-                    <div class="border-t border-gray-300 dark:border-gray-700 p-2 flex">
-                        <input id="chat-input" type="text" placeholder="Type a message..."
-                            class="flex-1 px-2 py-1 border rounded-l-md text-sm focus:outline-none">
-                        <button id="chat-send"
-                            class="bg-violet-600 hover:bg-violet-700 text-white px-3 rounded-r-md text-sm">Send</button>
-                    </div>
-                </div>
-            </div>
-
             <div class="services-grid">
-
-                <div class="service-card" onclick="window.location.href='/card7.html'">
+                <div class="service-card" onclick="window.location.href='/card7.html'" style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-lightbulb"></i>
                     </div>
@@ -503,7 +380,7 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='/card8.html'">
+                <div class="service-card" onclick="window.location.href='/card8.html'" style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-chart-line"></i>
                     </div>
@@ -518,7 +395,7 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='/card9.html'">
+                <div class="service-card" onclick="window.location.href='/card9.html'" style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-file-document"></i>
                     </div>
@@ -532,6 +409,34 @@
                     </ul>
                 </div>
 
+                <div class="service-card" onclick="window.location.href='/card10.html'" style="cursor: pointer;">
+                    <div class="service-icon">
+                        <i class="mdi mdi-account-group"></i>
+                    </div>
+                    <h3>HR & Recruitment</h3>
+                    <p>Comprehensive HR services including staffing, payroll management, compliance, and training
+                        programs.</p>
+                    <ul class="service-features">
+                        <li>Talent Acquisition</li>
+                        <li>Payroll Management</li>
+                        <li>Compliance</li>
+                        <li>Training Programs</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" onclick="window.location.href='/card11.html'" style="cursor: pointer;">
+                    <div class="service-icon">
+                        <i class="mdi mdi-briefcase"></i>
+                    </div>
+                    <h3>Legal & Finance</h3>
+                    <p>Business registration, bookkeeping, taxation, and intellectual property management services.</p>
+                    <ul class="service-features">
+                        <li>Business Registration</li>
+                        <li>Bookkeeping</li>
+                        <li>Tax Planning</li>
+                        <li>IP Management</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -539,10 +444,8 @@
 
 
 
-
-
-    <!-- Start Footer -->
- <footer class="footer">
+        <!-- Start Footer -->
+           <footer class="footer">
         <div class="footer-container">
             <div class="footer-content">
                 <!-- Support Card -->
@@ -611,40 +514,55 @@
             </div>
         </div>
     </footer>
-
     <!--end footer-->
+    <!-- End Footer -->
+
+    <div id="chat-container" class="fixed bottom-6 z-50" style="right: 1.5rem;">
+       <img id="chat-toggle" src="../../../../../../assets/images/bg/chat.png"
+     alt="Chat Icon" 
+     style="width:60px; height:60px;"
+     class="cursor-pointer shadow-lg" />
 
 
-    <!-- Chat Popup -->
-    <div id="chat-popup"
-        class="hidden bg-white dark:bg-slate-900 shadow-lg w-80 rounded-xl overflow-hidden mt-2 border border-gray-300 dark:border-gray-700">
-        <!-- Header -->
-        <div class="bg-violet-600 text-white p-3 font-semibold flex justify-between items-center">
-            Chat with us
-            <button id="chat-close" class="text-white text-xl leading-none">&times;</button>
-        </div>
-        <!-- Messages -->
-        <div class="p-3 h-64 overflow-y-auto text-gray-700 dark:text-gray-300" id="chat-messages">
-            <p class="text-sm text-gray-400">Hi! How can we help you today?</p>
-        </div>
-        <!-- Input -->
-        <div class="border-t border-gray-300 dark:border-gray-700 p-2 flex">
-            <input id="chat-input" type="text" placeholder="Type a message..."
-                class="flex-1 px-2 py-1 border rounded-l-md text-sm focus:outline-none">
-            <button id="chat-send"
-                class="bg-violet-600 hover:bg-violet-700 text-white px-3 rounded-r-md text-sm">Send</button>
+        <!-- Chat Popup -->
+        <div id="chat-popup"
+            class="hidden bg-white dark:bg-slate-900 shadow-lg w-80 rounded-xl overflow-hidden mt-2 border border-gray-300 dark:border-gray-700">
+            <!-- Header -->
+            <div class="bg-violet-600 text-white p-3 font-semibold flex justify-between items-center">
+                Chat with us
+                <button id="chat-close" class="text-white text-xl leading-none">&times;</button>
+            </div>
+            <!-- Messages -->
+            <div class="p-3 h-64 overflow-y-auto text-gray-700 dark:text-gray-300" id="chat-messages">
+                <p class="text-sm text-gray-400">Hi! How can we help you today?</p>
+            </div>
+            <!-- Input -->
+            <div class="border-t border-gray-300 dark:border-gray-700 p-2 flex">
+                <input id="chat-input" type="text" placeholder="Type a message..."
+                    class="flex-1 px-2 py-1 border rounded-l-md text-sm focus:outline-none">
+                <button id="chat-send"
+                    class="bg-violet-600 hover:bg-violet-700 text-white px-3 rounded-r-md text-sm">Send</button>
+            </div>
         </div>
     </div>
-    </div>
+    <!-- End Footer -->
 
 
-    <!-- JAVASCRIPTS -->
-    <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
-    <script src="assets/libs/tobii/js/tobii.min.js"></script>
-    <script src="assets/libs/feather-icons/feather.min.js"></script>
-    <script src="assets/js/plugins.init.js"></script>
-    <script src="assets/js/app.js"></script>
-    <!-- JAVASCRIPTS -->
+      
+        <!-- Switcher -->
+       
+        <!-- Switcher -->
+
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+        <script src="assets/libs/tobii/js/tobii.min.js"></script>
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/js/plugins.init.js"></script>
+        <script src="assets/js/app.js"></script>
+        <!-- JAVASCRIPTS -->
+
+
 </body>
 
 </html>
