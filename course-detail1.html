@@ -23,6 +23,7 @@
         <link href="assets/libs/iconoir/css/iconoir.css" rel="stylesheet" type="text/css" />
         <link href="assets/libs/%40mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+        <link rel="stylesheet" href="style.css">
 
     </head>
     
@@ -38,66 +39,56 @@
         </div> -->
         <!-- Loader End -->
         <!-- Start Navbar -->
-        <nav id="topnav" class="defaultscroll is-sticky">
-            <div class="container relative">
-                <!-- Logo container-->
-                <a class="logo" href="home.html">
-                    <img src="assets/images/logo-dark.png" class="inline-block dark:hidden" alt="">
-                    <img src="assets/images/logo-light.png" class="hidden dark:inline-block" alt="">
-                </a>
-                <!-- End Logo container-->
+         <nav id="topnav" style="background-color:white ; height: 75px;" class="defaultscroll  is-sticky">
+        <div class="container relative">
+            <!-- Start Logo container-->
+            <a class="logo" href="home.html">
+                <span class="inline-block dark:hidden">
+                    <img src="assets/images/logo-dark.png" class="l-dark logo-size" height="24" alt="">
+                    <img src="assets/images/logo-dark.png" class="l-light logo-size" height="24" alt="">
+                </span>
+                <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
+            </a>
+            <!-- End Logo container-->
 
-                <!-- Start Mobile Toggle -->
-                <div class="menu-extras">
-                    <div class="menu-item">
-                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
-                            <div class="lines">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </a>
-                    </div>
+            <!-- Start Mobile Toggle -->
+            <div class="menu-extras ">
+                <div class="menu-item">
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
                 </div>
-                <!-- End Mobile Toggle -->
+            </div>
+            <!-- End Mobile Toggle -->
 
-                <!--Login button Start-->
-                <ul class="buy-button list-none mb-0">
-                    <li class="inline-block relative me-1">
-                        <button class="text-[20px]" onclick="navbarSearch.showModal()" type="button">
-                            <i class="iconoir-search align-middle"></i>
-                        </button>                
+            <!--Login button Start-->
+
+            <!--Login button End-->
+
+            <div id="navigation" >
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu justify-start " >
+                    <li class="has-submenu parent-parent-menu-item text-3xl "><a class="text-white"
+                            href="home.html" style="font-weight: bold; font-family: Roboto;">Home</a></li>
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="courses.html" style="font-weight: bold; font-family: Roboto;">Courses</a>
                     </li>
+                    <li><a href="aboutus.html" class="sub-menu-item" style="font-weight: bold; font-family: Roboto;">About Us</a></li>
+                    <li><a href="core.html" class="sub-menu-item my-core" style="font-weight: bold; font-family: Roboto;">My Core</a></li>
+                    <li><a href="services.html" class="sub-menu-item my-core" style="font-weight: bold; font-family: Roboto;">Services</a></li>
+                    <li><a href="contactus.html" class="sub-menu-item" style="font-weight: bold; font-family: Roboto;">Contact Us</a></li>
 
-                    
-    
-                    
-                </ul>
-                <!--Login button End-->
 
-                <div id="navigation">
-                    <!-- Navigation Menu-->   
-                    <ul class="navigation-menu justify-start">
-                        <li class="has-submenu parent-parent-menu-item">
-                            <a href="home.html">Home</a>
-
-                          
-                        </li>
-
-                         <li><a href="courses.html" class="sub-menu-item">Courses</a></li>
-                            
-
-                        <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>
-
-                       <li><a href="core.html" class="sub-menu-item my-core">My Core</a></li>
-                       <li><a href="services.html" class="sub-menu-item my-core">Services</a></li>
-    
-                
-                        <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
-                    </ul><!--end navigation menu-->
-                </div><!--end navigation-->
-            </div><!--end container-->
-        </nav><!--end header-->
+                </ul><!--end navigation menu-->
+            </div><!--end navigation-->
+        </div><!--end container-->
+    </nav>
+        
+        <!--end header-->
         <!-- End Navbar -->
 
         <!-- Searchbar modal -->

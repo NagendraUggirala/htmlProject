@@ -32,20 +32,20 @@
 
 
     <!-- Start Navbar -->
-    <nav id="topnav" class="defaultscroll is-sticky">
+     <nav id="topnav" style="background-color:white ; height: 75px;" class="defaultscroll  is-sticky">
         <div class="container relative">
             <!-- Start Logo container-->
             <a class="logo" href="home.html">
                 <span class="inline-block dark:hidden">
-                    <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
-                    <img src="assets/images/logo-light.png" class="l-light" height="24" alt="">
+                    <img src="assets/images/logo-dark.png" class="l-dark logo-size" height="24" alt="">
+                    <img src="assets/images/logo-dark.png" class="l-light logo-size" height="24" alt="">
                 </span>
                 <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
             </a>
             <!-- End Logo container-->
 
             <!-- Start Mobile Toggle -->
-            <div class="menu-extras">
+            <div class="menu-extras ">
                 <div class="menu-item">
                     <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
                         <div class="lines">
@@ -62,21 +62,25 @@
 
             <!--Login button End-->
 
-
-
-            <div id="navigation">
+            <div id="navigation" >
                 <!-- Navigation Menu-->
-                <ul class="navigation-menu justify-start nav-light">
-                    <li class="has-submenu parent-parent-menu-item"><a href="home.html">Home</a></li>
-                    <li class="has-submenu parent-parent-menu-item"><a href="courses.html">Courses</a></li>
-                    <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>
-                    <li><a href="core.html" class="sub-menu-item my-core">My Core</a></li>
-                    <li><a href="services.html" class="sub-menu-item my-core">Services</a></li>
-                    <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
+                <ul class="navigation-menu justify-start " >
+                    <li class="has-submenu parent-parent-menu-item text-3xl "><a class="text-white"
+                            href="home.html" style="font-weight: bold; font-family: Roboto;">Home</a></li>
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="courses.html" style="font-weight: bold; font-family: Roboto;">Courses</a>
+                    </li>
+                    <li><a href="aboutus.html" class="sub-menu-item" style="font-weight: bold; font-family: Roboto;">About Us</a></li>
+                    <li><a href="core.html" class="sub-menu-item my-core" style="font-weight: bold; font-family: Roboto;">My Core</a></li>
+                    <li><a href="services.html" class="sub-menu-item my-core" style="font-weight: bold; font-family: Roboto;">Services</a></li>
+                    <li><a href="contactus.html" class="sub-menu-item" style="font-weight: bold; font-family: Roboto;">Contact Us</a></li>
+
+
                 </ul><!--end navigation menu-->
             </div><!--end navigation-->
         </div><!--end container-->
-    </nav><!--end header-->
+    </nav>
+    <!--end header-->
 
 
     <dialog id="navbarSearch"
@@ -387,19 +391,6 @@
 </div>
 
         
-
-    <div class="fixed top-1/4 -right-2 z-3">
-        <span class="relative inline-block rotate-90">
-            <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
-            <label
-                class="label bg-slate-900 dark:bg-white shadow-sm dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-[60px] h-8"
-                for="chk">
-                <i class="iconoir-half-moon text-yellow-500 align-middle ps-1 text-[16px] relative z-1"></i>
-                <i class="iconoir-sun-light text-yellow-500 align-middle pe-1 text-[16px] relative z-1"></i>
-                <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] size-7"></span>
-            </label>
-        </span>
-    </div>
 
 
 

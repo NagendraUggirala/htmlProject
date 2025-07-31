@@ -756,3 +756,8 @@ details > summary {
   height: 250px;
   width: 250px;
 }
+
+.logo-size{
+  height: 100px;
+  width: 100px;
+}
