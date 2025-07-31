@@ -995,3 +995,28 @@ details > summary {
   justify-content: center;
   align-items: center;
 }
+.chat-with-us{
+  height: 45px;
+  width: 250px;
+  padding: 5px;
+
+}
+.hi-chat{
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.type-a-msg{
+  height: 25px;
+  
+
+  border-width: none;
+  height: 30px;
+}
+
+.send{
+  padding: 5px;
+  border-width: none;
+}
+
