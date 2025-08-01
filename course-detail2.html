@@ -107,20 +107,47 @@
         <!--end header-->
         <!-- End Navbar -->
 
-        <!-- Searchbar modal -->
-        <dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
-            <div class="relative w-full h-auto">
-                <form method="dialog" class="modal-backdrop">
-                    <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost"><i data-feather="x" class="size-4"></i></button>
-                </form>
-                <div class="p-6 text-center">
-                    <form class="relative">
-                        <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
-                        <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10" name="s" id="searchItem" placeholder="Search...">
-                    </form>
-                </div>
-            </div>
-        </dialog>
+    <dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
+    <div class="relative w-full h-auto">
+        <form method="dialog" class="modal-backdrop">
+            <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost">
+                <i data-feather="x" class="size-4"></i>
+            </button>
+        </form>
+        <div class="p-6 text-center">
+            <form class="relative">
+                <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
+                <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10" name="s" id="searchItem" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+</dialog>
+
+<!-- Banner Section -->
+ <section
+    class="relative table w-full py-16 lg:py-24 bg-no-repeat bg-center bg-cover"
+    style="background: linear-gradient(135deg, #92afe9 0%, #D4C3F2 100%);">
+    
+    <!-- Slight overlay for contrast -->
+    <div class="absolute inset-0 bg-black opacity-10"></div>
+    
+    <!-- Content Container -->
+    <div class="container relative z-10">
+        <div class="grid grid-cols-1 text-center mt-10">
+            <h3 class="md:text-3xl text-2xl font-semibold text-black">
+              .Net Full-Stack
+            </h3>
+        </div><!--end grid-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- Bottom Curve Shape -->
+<div class="relative">
+    <div class="shape overflow-hidden z-1 text-white ">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-[60px]">
+            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+        </svg>
+    </div>
+</div>
         <!-- Searchbar modal -->
 
         <!-- Start -->
