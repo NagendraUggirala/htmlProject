@@ -42,79 +42,68 @@
         </div> -->
         <!-- Loader End -->
         <!-- Start Navbar -->
-       <nav id="topnav" style="background-color:white ; height: 75px;" class="defaultscroll  is-sticky">
-        <div class="container relative">
-            <!-- Start Logo container-->
-            <a class="logo" href="home.html">
-                <span class="inline-block dark:hidden">
-                    <img src="assets/images/logo-dark.png" class="l-dark logo-size" height="24" alt="">
-                    <img src="assets/images/logo-dark.png" class="l-light logo-size" height="24" alt="">
-                </span>
-                <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
-            </a>
-            <!-- End Logo container-->
+   <nav id="topnav" style="background-color:white; height: 85px;" class="defaultscroll is-sticky">
+    <!-- Flex container for full navbar -->
+    <div class="container mx-auto flex items-center justify-between">
+        
+        <!-- Logo -->
+        <a class="logo flex items-center" href="home.html">
+            <span class="inline-block dark:hidden">
+                <img src="assets/images/logo-dark.png" class="l-dark logo-size" height="40" alt="">
+                <img src="assets/images/logo-dark.png" class="l-light logo-size" height="40" alt="">
+            </span>
+            <img src="assets/images/logo-light.png" height="40" class="hidden dark:inline-block" alt="">
+        </a>
 
-            <!-- Start Mobile Toggle -->
-            <div class="menu-extras ">
-                <div class="menu-item">
-                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
-                        <div class="lines">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+        <!-- Flex section for nav items and icons -->
+        <div class="flex items-center w-full justify-between ml-10">
+            
+            <!-- Navigation Menu -->
+            <ul class="navigation-menu flex gap-3 font-semibold text-black text-lg">
+                <li><a href="home.html" class="sub-menu-item container-nav font-bold font-[Roboto]">Home</a></li>
+                <li><a href="courses.html" class="sub-menu-item container-nav font-bold font-[Roboto] text-purple-600">Courses</a></li>
+                <li><a href="aboutus.html" class="sub-menu-item container-nav font-bold font-[Roboto]">About Us</a></li>
+                <li><a href="core.html" class="sub-menu-item container-nav font-bold font-[Roboto]">My Core</a></li>
+                <li><a href="services.html" class="sub-menu-item container-nav font-bold font-[Roboto]">Services</a></li>
+                <li><a href="contactus.html" class="sub-menu-item container-nav font-bold font-[Roboto]">Contact Us</a></li>
+            </ul>
+
+            <!-- Social Icons aligned right -->
+            <ul class="flex  gap-6  items-center font-semibold text-black ml-auto"> <!-- Adjust ml-10 or use ml-auto -->
+                <li>
+                    <a href="https://www.facebook.com/share/16yW5mkdBR/" target="_blank"
+                        class="text-black text-xl hover:text-blue-600 transition">
+                        <i class="fab fa-linkedin"></i>
                     </a>
-                </div>
-            </div>
-            <!-- End Mobile Toggle -->
-
-            <!--Login button Start-->
-
-            <!--Login button End-->
-
-            <div id="navigation">
-                <!-- Navigation Menu-->
-                <ul class="navigation-menu justify-start ">
-                    <li><a href="home.html" class="sub-menu-item container-nav"
-                            style="font-weight: bold; font-family: Roboto;">Home</a></li>
-                    <li><a href="courses.html" class="sub-menu-item container-nav"
-                            style="font-weight: bold; font-family: Roboto;">Courses</a></li>
-                    <li><a href="aboutus.html" class="sub-menu-item container-nav"
-                            style="font-weight: bold; font-family: Roboto;">About Us</a></li>
-                    <li><a href="core.html" class="sub-menu-item my-core container-nav"
-                            style="font-weight: bold; font-family: Roboto;">My Core</a></li>
-                    <li><a href="services.html" class="sub-menu-item my-core container-nav"
-                            style="font-weight: bold; font-family: Roboto;">Services</a></li>
-                    <li><a href="contactus.html" class="sub-menu-item container-nav"
-                            style="font-weight: bold; font-family: Roboto;">Contact Us</a></li>
-
-
-                    <li> <a href="https://www.facebook.com/share/16yW5mkdBR/" target="_blank"
-                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
-                                <i class="fab fa-linkedin"></i>
-                            </a></li>
-                    <li> <a href="https://youtube.com/@techlynxinnovationsprivatelimi?si=PM6yu6NXCnoSN9h2" target="_blank"
-                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
-                                <i class="fab fa-youtube"></i>
-                            </a></li>
-                    <li> <a href="https://www.instagram.com/techlynx_innovations?igsh=MTAxYnUxanFwc2Riag==" target="_blank"
-                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
-                                <i class="fab fa-instagram"></i>
-                            </a></li>
-                    <li> <a href="https://x.com/TechlynxLimited?t=Ty3Wx5qshDFYvqM1ad0dTw&s=08" target="_blank"
-                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
-                                <i class="fab fa-twitter"></i>
-                            </a></li>
-
-
-
-
-
-                </ul><!--end navigation menu-->
-            </div><!--end navigation-->
-
-        </div><!--end container-->
-    </nav>
+                </li>
+                <li>
+                    <a href="https://youtube.com/@techlynxinnovationsprivatelimi?si=PM6yu6NXCnoSN9h2" target="_blank"
+                        class="text-black text-xl hover:text-red-600 transition">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/techlynx_innovations?igsh=MTAxYnUxanFwc2Riag==" target="_blank"
+                        class="text-black text-xl hover:text-pink-500 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/TechlynxLimited?t=Ty3Wx5qshDFYvqM1ad0dTw&s=08" target="_blank"
+                        class="text-black text-xl hover:text-blue-500 transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                 <li>
+                    <a href="https://www.facebook.com/share/1BxrW7rUji/" target="_blank"
+                        class="text-black text-xl hover:text-blue-500 transition">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
         <!--end header-->
         <!-- End Navbar -->
 

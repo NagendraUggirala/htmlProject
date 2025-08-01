@@ -14,8 +14,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- favicon -->
-     
- <link rel="icon" type="image/png" sizes="512x512" href="assets/images/logo-dark.png">
+
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/logo-dark.png">
 
 
     <!-- Css -->
@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="assets/css/tailwind.min.css" />
     <link rel="stylesheet" href="/services.css" />
     <link rel="stylesheet" href="/style.css" />
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body class="dark:bg-slate-900" style="font-family: 'Roboto', sans-serif;">
@@ -44,78 +44,72 @@
     <!-- Loader End -->
     <!-- Start Navbar -->
     <!--end container-->
-    <nav id="topnav" style="background-color:white ; height: 75px;" class="defaultscroll  is-sticky">
-        <div class="container relative">
-            <!-- Start Logo container-->
-            <a class="logo" href="home.html">
+    <nav id="topnav" style="background-color:white; height: 85px;" class="defaultscroll is-sticky">
+        <!-- Flex container for full navbar -->
+        <div class="container mx-auto flex items-center justify-between">
+
+            <!-- Logo -->
+            <a class="logo flex items-center" href="home.html">
                 <span class="inline-block dark:hidden">
-                    <img src="assets/images/logo-dark.png" class="l-dark logo-size" height="24" alt="">
-                    <img src="assets/images/logo-dark.png" class="l-light logo-size" height="24" alt="">
+                    <img src="assets/images/logo-dark.png" class="l-dark logo-size" height="40" alt="">
+                    <img src="assets/images/logo-dark.png" class="l-light logo-size" height="40" alt="">
                 </span>
-                <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
+                <img src="assets/images/logo-light.png" height="40" class="hidden dark:inline-block" alt="">
             </a>
-            <!-- End Logo container-->
 
-            <!-- Start Mobile Toggle -->
-            <div class="menu-extras ">
-                <div class="menu-item">
-                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
-                        <div class="lines">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </a>
-                </div>
+            <!-- Flex section for nav items and icons -->
+            <div class="flex items-center w-full justify-between ml-10">
+
+                <!-- Navigation Menu -->
+                <ul class="navigation-menu flex gap-3 font-semibold text-black text-lg">
+                    <li><a href="home.html" class="sub-menu-item container-nav font-bold font-[Roboto]">Home</a></li>
+                    <li><a href="courses.html"
+                            class="sub-menu-item container-nav font-bold font-[Roboto] text-purple-600">Courses</a></li>
+                    <li><a href="aboutus.html" class="sub-menu-item container-nav font-bold font-[Roboto]">About Us</a>
+                    </li>
+                    <li><a href="core.html" class="sub-menu-item container-nav font-bold font-[Roboto]">My Core</a></li>
+                    <li><a href="services.html" class="sub-menu-item container-nav font-bold font-[Roboto]">Services</a>
+                    </li>
+                    <li><a href="contactus.html" class="sub-menu-item container-nav font-bold font-[Roboto]">Contact
+                            Us</a></li>
+                </ul>
+
+                <!-- Social Icons aligned right -->
+                <ul class="flex  gap-6  items-center font-semibold text-black ml-auto">
+                    <!-- Adjust ml-10 or use ml-auto -->
+                    <li>
+                        <a href="https://www.facebook.com/share/16yW5mkdBR/" target="_blank"
+                            class="text-black text-xl hover:text-blue-600 transition">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com/@techlynxinnovationsprivatelimi?si=PM6yu6NXCnoSN9h2"
+                            target="_blank" class="text-black text-xl hover:text-red-600 transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/techlynx_innovations?igsh=MTAxYnUxanFwc2Riag=="
+                            target="_blank" class="text-black text-xl hover:text-pink-500 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/TechlynxLimited?t=Ty3Wx5qshDFYvqM1ad0dTw&s=08" target="_blank"
+                            class="text-black text-xl hover:text-blue-500 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/share/1BxrW7rUji/" target="_blank"
+                            class="text-black text-xl hover:text-blue-500 transition">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <!-- End Mobile Toggle -->
-
-            <!--Login button Start-->
-
-            <!--Login button End-->
-
-            <div id="navigation">
-                <!-- Navigation Menu-->
-                <ul class="navigation-menu justify-start ">
-                    <li><a href="home.html" class="sub-menu-item container-nav"
-                            style="font-weight: bold; font-family: Roboto;">Home</a></li>
-                    <li><a href="courses.html" class="sub-menu-item container-nav"
-                            style="font-weight: bold; font-family: Roboto;">Courses</a></li>
-                    <li><a href="aboutus.html" class="sub-menu-item container-nav"
-                            style="font-weight: bold; font-family: Roboto;">About Us</a></li>
-                    <li><a href="core.html" class="sub-menu-item my-core container-nav"
-                            style="font-weight: bold; font-family: Roboto;">My Core</a></li>
-                    <li><a href="services.html" class="sub-menu-item my-core container-nav"
-                            style="font-weight: bold; font-family: Roboto;">Services</a></li>
-                    <li><a href="contactus.html" class="sub-menu-item container-nav"
-                            style="font-weight: bold; font-family: Roboto;">Contact Us</a></li>
-
-
-                    <li> <a href="https://www.facebook.com/share/16yW5mkdBR/" target="_blank"
-                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
-                                <i class="fab fa-linkedin"></i>
-                            </a></li>
-                    <li> <a href="https://youtube.com/@techlynxinnovationsprivatelimi?si=PM6yu6NXCnoSN9h2" target="_blank"
-                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
-                                <i class="fab fa-youtube"></i>
-                            </a></li>
-                    <li> <a href="https://www.instagram.com/techlynx_innovations?igsh=MTAxYnUxanFwc2Riag==" target="_blank"
-                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
-                                <i class="fab fa-instagram"></i>
-                            </a></li>
-                    <li> <a href="https://x.com/TechlynxLimited?t=Ty3Wx5qshDFYvqM1ad0dTw&s=08" target="_blank"
-                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
-                                <i class="fab fa-twitter"></i>
-                            </a></li>
-
-
-
-
-
-                </ul><!--end navigation menu-->
-            </div><!--end navigation-->
-
-        </div><!--end container-->
+        </div>
     </nav>
     <!--end header-->
 
@@ -139,28 +133,30 @@
     </dialog>
 
     <!-- Banner Section -->
-    <section
-        class="relative table w-full py-16 lg:py-24 bg-[url('../../assets/images/bg/3.html')] bg-no-repeat bg-center bg-cover">
-        <!-- Darker overlay -->
-        <div class="absolute inset-0 bg-slate-900 opacity-95"></div>
-        <div class="container relative">
+    <section class="relative table w-full py-16 lg:py-24 bg-no-repeat bg-center bg-cover"
+        style="background: linear-gradient(135deg, #92afe9 0%, #D4C3F2 100%);">
+
+        <!-- Slight overlay for contrast -->
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+
+        <!-- Content Container -->
+        <div class="container relative z-10">
             <div class="grid grid-cols-1 text-center mt-10">
-                <h3 class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-white">
+                <h3 class="md:text-3xl text-2xl font-semibold text-black">
                     Services
                 </h3>
             </div><!--end grid-->
         </div><!--end container-->
     </section><!--end section-->
 
-
-        <div class="relative">
-            <div class="shape overflow-hidden z-1 text-white dark:text-slate-900">
-                <svg viewBox="0 0 2880 48" fill="none" xmlns="../../../www.w3.org/2000/svg.html">
-                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
-                </svg>
-            </div>
+    <!-- Bottom Curve Shape -->
+    <div class="relative">
+        <div class="shape overflow-hidden z-1 text-white ">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-[60px]">
+                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+            </svg>
         </div>
-
+    </div>
 
 
 
@@ -175,7 +171,8 @@
             </div>
 
             <div class="services-grid">
-                <div class="service-card" onclick="window.location.href='web development.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='web development.html'"
+                    style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-web"></i>
                     </div>
@@ -190,7 +187,8 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='Mobile app development.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='Mobile app development.html'"
+                    style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-cellphone"></i>
                     </div>
@@ -234,7 +232,8 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='software testing.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='software testing.html'"
+                    style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-bug-check"></i>
                     </div>
@@ -274,7 +273,8 @@
             </div>
 
             <div class="services-grid">
-                <div class="service-card" onclick="window.location.href='startup & Business consulting.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='startup & Business consulting.html'"
+                    style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-lightbulb"></i>
                     </div>
@@ -289,7 +289,8 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='digital marketing.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='digital marketing.html'"
+                    style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-chart-line"></i>
                     </div>
@@ -304,7 +305,8 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='content and documentation.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='content and documentation.html'"
+                    style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-file-document"></i>
                     </div>
@@ -318,7 +320,8 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='Hr & recruitment.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='Hr & recruitment.html'"
+                    style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-account-group"></i>
                     </div>
@@ -333,7 +336,8 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='Legal & Finance.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='Legal & Finance.html'"
+                    style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-briefcase"></i>
                     </div>
@@ -354,26 +358,27 @@
             <h2 class="cta-title">Ready to Get Started?</h2>
             <p class="cta-description">Let's discuss how our services can help transform your business and achieve your
                 goals.</p>
-            
+
         </section>
     </main>
 
 
 
 
-       
 
-        <!-- Start Footer -->
-           <footer class="footer">
+
+    <!-- Start Footer -->
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-content">
                 <!-- Support Card -->
                 <div class="support-card">
                     <h3>Talk to Our Support</h3>
                     <div class="support-phone">
-                        <div class="headset-icon footer-section"><i class=" color-white mdi mdi-phone text-slate-400"></i></div>
+                        <div class="headset-icon footer-section"><i
+                                class=" color-white mdi mdi-phone text-slate-400"></i></div>
                         <a href="tel:+91 830 9380900" class="phone-number">+91 830 9380900</a>
-                        
+
                     </div>
                     <div class="support-location">Guntur</div>
                 </div>
@@ -437,10 +442,8 @@
     <!-- End Footer -->
 
     <div id="chat-container" class="fixed bottom-6 z-50" style="right: 1.5rem;">
-       <img id="chat-toggle" src="../../../../../../assets/images/bg/chat.png"
-     alt="Chat Icon" 
-     style="width:60px; height:60px;"
-     class="cursor-pointer shadow-lg" />
+        <img id="chat-toggle" src="../../../../../../assets/images/bg/chat.png" alt="Chat Icon"
+            style="width:60px; height:60px;" class="cursor-pointer shadow-lg" />
 
 
         <!-- Chat Popup -->
@@ -467,19 +470,19 @@
     <!-- End Footer -->
 
 
-      
-        <!-- Switcher -->
-       
-        <!-- Switcher -->
+
+    <!-- Switcher -->
+
+    <!-- Switcher -->
 
 
-        <!-- JAVASCRIPTS -->
-        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
-        <script src="assets/libs/tobii/js/tobii.min.js"></script>
-        <script src="assets/libs/feather-icons/feather.min.js"></script>
-        <script src="assets/js/plugins.init.js"></script>
-        <script src="assets/js/app.js"></script>
-        <!-- JAVASCRIPTS -->
+    <!-- JAVASCRIPTS -->
+    <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+    <script src="assets/libs/tobii/js/tobii.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/plugins.init.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- JAVASCRIPTS -->
 
 
 </body>

@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" class="light scroll-smooth" dir="ltr">
-    <head>
-        <meta charset="UTF-8" />
-        <title>TechLynx - Online Courses</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta content="Real Estate Website Landing Page" name="description" />
-        <meta content="Real Estate, buy, sell, Rent, tailwind Css" name="keywords" />
-        <meta name="author" content="Shreethemes" />
-        <meta name="website" content="../../index.html" />
-        <meta name="email" content="support@shreethemes.in" />
-        <meta name="version" content="1.0.0" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-            <link rel="stylesheet" href="style.css"> 
 
-        <!-- favicon -->
-        
- <link rel="icon" type="image/png" sizes="512x512" href="assets/images/logo-dark.png">
+<head>
+    <meta charset="UTF-8" />
+    <title>TechLynx - Online Courses</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta content="Real Estate Website Landing Page" name="description" />
+    <meta content="Real Estate, buy, sell, Rent, tailwind Css" name="keywords" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="website" content="../../index.html" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="version" content="1.0.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css">
 
-        <!-- Css -->
-        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
-        <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
-        <!-- Main Css -->
-        <link href="assets/libs/iconoir/css/iconoir.css" rel="stylesheet" type="text/css" />
-        <link href="assets/libs/%40mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="assets/css/tailwind.min.css" />
-        <link rel="stylesheet" href="style.css">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </head>
-    
-    <body class="dark:bg-slate-900" style="font-family: 'Roboto', sans-serif;">
+    <!-- favicon -->
 
-        <!-- Loader Start -->
-        <!-- <div id="preloader">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/logo-dark.png">
+
+    <!-- Css -->
+    <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+    <!-- Main Css -->
+    <link href="assets/libs/iconoir/css/iconoir.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/%40mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="dark:bg-slate-900" style="font-family: 'Roboto', sans-serif;">
+
+    <!-- Loader Start -->
+    <!-- <div id="preloader">
             <div id="status">
                 <div class="spinner">
                     <div class="double-bounce1"></div>
@@ -39,98 +40,95 @@
                 </div>
             </div>
         </div> -->
-        <!-- Loader End -->
-        <!-- Start Navbar -->
-         <nav id="topnav" style="background-color:white ; height: 75px;" class="defaultscroll  is-sticky">
-        <div class="container relative">
-            <!-- Start Logo container-->
-            <a class="logo" href="home.html">
+    <!-- Loader End -->
+    <!-- Start Navbar -->
+    <nav id="topnav" style="background-color:white; height: 85px;" class="defaultscroll is-sticky">
+        <!-- Flex container for full navbar -->
+        <div class="container mx-auto flex items-center justify-between">
+
+            <!-- Logo -->
+            <a class="logo flex items-center" href="home.html">
                 <span class="inline-block dark:hidden">
-                    <img src="assets/images/logo-dark.png" class="l-dark logo-size" height="24" alt="">
-                    <img src="assets/images/logo-dark.png" class="l-light logo-size" height="24" alt="">
+                    <img src="assets/images/logo-dark.png" class="l-dark logo-size" height="40" alt="">
+                    <img src="assets/images/logo-dark.png" class="l-light logo-size" height="40" alt="">
                 </span>
-                <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
+                <img src="assets/images/logo-light.png" height="40" class="hidden dark:inline-block" alt="">
             </a>
-            <!-- End Logo container-->
 
-            <!-- Start Mobile Toggle -->
-            <div class="menu-extras ">
-                <div class="menu-item">
-                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
-                        <div class="lines">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </a>
-                </div>
+            <!-- Flex section for nav items and icons -->
+            <div class="flex items-center w-full justify-between ml-10">
+
+                <!-- Navigation Menu -->
+                <ul class="navigation-menu flex gap-3 font-semibold text-black text-lg">
+                    <li><a href="home.html" class="sub-menu-item container-nav font-bold font-[Roboto]">Home</a></li>
+                    <li><a href="courses.html"
+                            class="sub-menu-item container-nav font-bold font-[Roboto] text-purple-600">Courses</a></li>
+                    <li><a href="aboutus.html" class="sub-menu-item container-nav font-bold font-[Roboto]">About Us</a>
+                    </li>
+                    <li><a href="core.html" class="sub-menu-item container-nav font-bold font-[Roboto]">My Core</a></li>
+                    <li><a href="services.html" class="sub-menu-item container-nav font-bold font-[Roboto]">Services</a>
+                    </li>
+                    <li><a href="contactus.html" class="sub-menu-item container-nav font-bold font-[Roboto]">Contact
+                            Us</a></li>
+                </ul>
+
+                <!-- Social Icons aligned right -->
+                <ul class="flex  gap-6  items-center font-semibold text-black ml-auto">
+                    <!-- Adjust ml-10 or use ml-auto -->
+                    <li>
+                        <a href="https://www.facebook.com/share/16yW5mkdBR/" target="_blank"
+                            class="text-black text-xl hover:text-blue-600 transition">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com/@techlynxinnovationsprivatelimi?si=PM6yu6NXCnoSN9h2"
+                            target="_blank" class="text-black text-xl hover:text-red-600 transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/techlynx_innovations?igsh=MTAxYnUxanFwc2Riag=="
+                            target="_blank" class="text-black text-xl hover:text-pink-500 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/TechlynxLimited?t=Ty3Wx5qshDFYvqM1ad0dTw&s=08" target="_blank"
+                            class="text-black text-xl hover:text-blue-500 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/share/1BxrW7rUji/" target="_blank"
+                            class="text-black text-xl hover:text-blue-500 transition">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <!-- End Mobile Toggle -->
-
-            <!--Login button Start-->
-
-            <!--Login button End-->
-
-            <div id="navigation">
-                <!-- Navigation Menu-->
-                <ul class="navigation-menu justify-start ">
-                    <li><a href="home.html" class="sub-menu-item container-nav"
-                            style="font-weight: bold; font-family: Roboto;">Home</a></li>
-                    <li><a href="courses.html" class="sub-menu-item container-nav"
-                            style="font-weight: bold; font-family: Roboto;">Courses</a></li>
-                    <li><a href="aboutus.html" class="sub-menu-item container-nav"
-                            style="font-weight: bold; font-family: Roboto;">About Us</a></li>
-                    <li><a href="core.html" class="sub-menu-item my-core container-nav"
-                            style="font-weight: bold; font-family: Roboto;">My Core</a></li>
-                    <li><a href="services.html" class="sub-menu-item my-core container-nav"
-                            style="font-weight: bold; font-family: Roboto;">Services</a></li>
-                    <li><a href="contactus.html" class="sub-menu-item container-nav"
-                            style="font-weight: bold; font-family: Roboto;">Contact Us</a></li>
-
-
-                    <li> <a href="https://www.facebook.com/share/16yW5mkdBR/" target="_blank"
-                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
-                                <i class="fab fa-linkedin"></i>
-                            </a></li>
-                    <li> <a href="https://youtube.com/@techlynxinnovationsprivatelimi?si=PM6yu6NXCnoSN9h2" target="_blank"
-                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
-                                <i class="fab fa-youtube"></i>
-                            </a></li>
-                    <li> <a href="https://www.instagram.com/techlynx_innovations?igsh=MTAxYnUxanFwc2Riag==" target="_blank"
-                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
-                                <i class="fab fa-instagram"></i>
-                            </a></li>
-                    <li> <a href="https://x.com/TechlynxLimited?t=Ty3Wx5qshDFYvqM1ad0dTw&s=08" target="_blank"
-                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
-                                <i class="fab fa-twitter"></i>
-                            </a></li>
-
-
-
-
-
-                </ul><!--end navigation menu-->
-            </div><!--end navigation-->
-
-        </div><!--end container-->
+        </div>
     </nav><!--end header-->
-        <!-- End Navbar -->
+    <!-- End Navbar -->
 
-        <!-- Searchbar modal -->
-        <dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
-            <div class="relative w-full h-auto">
-                <form method="dialog" class="modal-backdrop">
-                    <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost"><i data-feather="x" class="size-4"></i></button>
+    <!-- Searchbar modal -->
+    <dialog id="navbarSearch"
+        class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
+        <div class="relative w-full h-auto">
+            <form method="dialog" class="modal-backdrop">
+                <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost"><i
+                        data-feather="x" class="size-4"></i></button>
+            </form>
+            <div class="p-6 text-center">
+                <form class="relative">
+                    <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
+                    <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10"
+                        name="s" id="searchItem" placeholder="Search...">
                 </form>
-                <div class="p-6 text-center">
-                    <form class="relative">
-                        <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
-                        <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10" name="s" id="searchItem" placeholder="Search...">
-                    </form>
-                </div>
             </div>
-        </dialog>
-        <!-- Searchbar modal -->
+        </div>
+    </dialog>
+    <!-- Searchbar modal -->
 
         <!-- Start -->
         <section class="relative pt-32 md:pb-24 pb-16">
@@ -138,18 +136,17 @@
                 <div class="md:flex justify-center">
                    <div class="lg:w-3/5 mx-auto text-center">
   <h3 class="text-3xl leading-normal font-medium">
-  Java Full-Stack
+  The Ultimate Course Bundle
   </h3>
 </div>
 
-                </div><br>
+            </div><br>
 
-               
+
 
                 <div class="image-section ">
   <div class="image-container clss">
-    <img src="assets/images/course/java1.jpg" alt="Course Image" class="courses-image-container wide-short-image" style="width: 1000px; height: 300px;">
-
+    <img src="assets/images/course/ul.png" alt="Course Image" class="courses-image-container wide-short-image">
   </div>
 </div>
                 <div class="md:flex justify-center mt-10">
@@ -159,59 +156,50 @@
                        <section class="py-8">
     <!-- Title -->
    
-<!-- Description -->
-<p class="text-slate-400 mb-3">
-  Welcome to the <strong>Java Full Stack Developer Mastery Program</strong> – a complete end-to-end course designed to take you from foundational programming to advanced full stack application development using Java technologies. Whether you're a beginner or a working professional looking to upskill, this bundle offers structured learning with hands-on implementation.
-</p>
 
-<p class="text-slate-400 mb-3">
-  This program begins with the core Java concepts including object-oriented programming, data structures, and exception handling. As you progress, you’ll dive into backend technologies like Spring Boot and Hibernate, while also building interactive frontend interfaces using HTML, CSS, JavaScript, and modern libraries like React or Angular.
-</p>
+    <!-- Description -->
+    <p class="text-slate-400 mb-3">
+    Welcome to   <strong> The Ultimate Course Bundle </strong> – a complete learning package designed to help you master
+        essential development skills step-by-step. This program is perfect for beginners as well as
+        professionals looking to upgrade their skills and advance to higher levels of expertise.
+    </p>
 
-<p class="text-slate-400 mb-3">
-  Real-world projects and guided assignments are included in each module to help solidify your understanding. You'll learn to develop RESTful APIs, connect with databases like MySQL and MongoDB, and manage your codebase with Git and GitHub. The course also includes integration with third-party tools, security implementation, and testing practices.
-</p>
+    <p class="text-slate-400 mb-3">
+        Throughout this bundle, you will work on real-world projects, participate in practical exercises,
+        and follow clear explanations that make complex topics simple. Each module is crafted to ensure
+        you can apply your knowledge directly to real-life scenarios.
+    </p>
 
-<p class="text-slate-400 mb-3">
-  Along with technical training, we’ve included career support such as mock interviews, resume preparation, and soft skill enhancement. You’ll also learn how to deploy your applications using cloud platforms like AWS, Azure, or Heroku – making you job-ready in every sense.
-</p>
+    <p class="text-slate-400 mb-3">
+        The curriculum covers a balanced mix of frontend development, backend programming, app development,
+        and bonus sections like deployment and interview preparation. With lifetime access and continuous
+        updates, you will always stay ahead of industry trends.
+    </p>
 
-<p class="text-slate-400">
-  By the end of this course, you’ll have built multiple full stack projects, gained a strong understanding of the Java ecosystem, and will be fully prepared for job roles like Full Stack Java Developer, Backend Engineer, or Software Developer.
-</p>
+    <p class="text-slate-400">
+        By the end of this bundle, you will have a strong portfolio, hands-on experience, and the confidence
+        to take on professional challenges or freelance opportunities in web and app development.
+    </p>
 
-<!-- Key Highlights -->
-<div class="mt-6">
-  <h3 class="text-xl font-semibold text-gray-700 mb-3">Key Highlights:</h3>
-  <ul class="list-disc pl-5 text-slate-500 space-y-2">
-    <li>Complete training in Core Java, OOPs, Collections, and Java 8+</li>
-    <li>Master Spring Boot, Hibernate, RESTful APIs, and MVC architecture</li>
-    <li>Frontend technologies: HTML5, CSS3, JavaScript, Bootstrap, React or Angular</li>
-    <li>Hands-on integration with MySQL, MongoDB, and PostgreSQL</li>
-    <li>Version control using Git, GitHub, and collaborative workflows</li>
-   
-  </ul>
-</div>
-
-
-
-
-
-
+    <!-- Key Highlights -->
+    <div class="mt-6">
+        <h3 class="text-xl font-semibold text-gray-700 mb-3">Key Highlights:</h3>
+        <ul class="list-disc pl-5 text-slate-500 space-y-2">
+            <li>Comprehensive coverage of Frontend, Backend, and App Development</li>
+            <li>100+ hours of video content and practical exercises</li>
+            <li>Real-world projects and portfolio-building opportunities</li>
+            <li>Lifetime access with free future updates</li>
+            <li>Certification upon completion</li>
+        </ul>
+    </div>
+</section>
 
 
+                    <img src="./assets/images/course/22.jpg" class="rounded-md shadow-sm mt-4" alt="">
 
-
-                        <img src="./assets/images/course/22.jpg" class="rounded-md shadow-sm mt-4" alt="">
-
-                     <div class="mt-6">
-  <h5 class="text-2xl font-semibold">Root Map</h5>
-</div>
-
-
-
-
-
+                        <div class="mt-6">
+                            <h5 class="text-2xl font-semibold">Root Map</h5>
+                        </div>
         
                        <div class="mt-6">
     <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
@@ -219,164 +207,235 @@
             Introductions
         </summary>
 
-        <table class="w-full text-start">
-            <thead>
-                <tr>
-                    <th class="px-4 py-5 text-start">Lessons</th>
-                    <th class="px-4 py-5 text-end">Time</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>Introduction to Web Technologies </a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">5 days</span></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Front-End Development with React</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">10 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>Back-End Development with Node.js & Express</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">12 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Full-Stack Capstone Project & Deployment</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">10 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-            </tbody>
-        </table>
-    </details>
-</div>
-    <div class="mt-6">
-    <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
-        <summary class="px-4 py-5 text-lg font-semibold cursor-pointer introduction-heading" style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #6D28D9;">
-          Mastery
-        </summary>
-
-        <table class="w-full text-start">
-            <thead>
-                <tr>
-                    <th class="px-4 py-5 text-start">Lessons</th>
-                    <th class="px-4 py-5 text-end">Time</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>Advanced Front-End Performance Optimization</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">7 days</span></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Scalable Back-End Architecture & Microservices</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">10 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>Full-Stack Security & Authentication (JWT, OAuth)</a></a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">8 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>  Capstone Project Presentation and Feedbacka></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-            </tbody>
-        </table>
-    </details>
-</div>
-    
-
-<div class="mt-6">
-    <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
-        <summary class="px-4 py-5 text-lg font-semibold cursor-pointer introduction-heading" style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #6D28D9;">
-        Final Thoughts
-        </summary>
-
-        <table class="w-full text-start">
-            <thead>
-                <tr>
-                    <th class="px-4 py-5 text-start">Lessons</th>
-                    <th class="px-4 py-5 text-end">Time</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>Building and Showcasing Your Portfolio</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">9 days</span></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Interview Preparation and Career Guidance –</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">4 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>Best Practices and Future Learning Path</a></a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">2 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>  Deployment, CI/CD Pipelines & Cloud Integration (AWS, Docker)</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">9 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-            </tbody>
-        </table>
-    </details>
-</div>
-
-<div class="mt-6">
-    <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
-        <summary class="px-4 py-5 text-lg font-semibold cursor-pointer introduction-heading" style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #6D28D9;">
-        Bonus
-        </summary>
-
-        <table class="w-full text-start">
-            <thead>
-                <tr>
-                    <th class="px-4 py-5 text-start">Lessons</th>
-                    <th class="px-4 py-5 text-end">Time</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>Introduction to UI/UX Design Principles</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Version Control with Git and GitHub </a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">2 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>Basics of SEO for Developers</a></a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Freelancing & Building Your Personal Brand</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-            </tbody>
-        </table>
-    </details>
-</div>
-    
-                    
+                            <table class="w-full text-start">
+                                <thead>
+                                    <tr>
+                                        <th class="px-4 py-5 text-start">Lessons</th>
+                                        <th class="px-4 py-5 text-end">Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-t border-slate-100 dark:border-slate-800">
+                                        <td class="p-4"><a href="#" class=""><i
+                                                    class="iconoir-clipboard-check text-lg align-middle me-1"></i>Introduction
+                                                to Web Technologies </a></td>
+                                        <td class="p-4 text-end"><span
+                                                class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">5
+                                                days</span></td>
+                                    </tr>
+                                    <tr class="border-t border-slate-100 dark:border-slate-800">
+                                        <td class="p-4"><a href="#" class=""><i
+                                                    class="iconoir-clipboard-check text-lg align-middle me-1"></i>
+                                                Front-End Development with React</a></td>
+                                        <td class="p-4 text-end"><span
+                                                class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">10
+                                                days</span></td>
+                                        <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                                    </tr>
+                                    <tr class="border-t border-slate-100 dark:border-slate-800">
+                                        <td class="p-4"><a href="#" class=""><i
+                                                    class="iconoir-clipboard-check text-lg align-middle me-1"></i>Back-End
+                                                Development with Node.js & Express</a></td>
+                                        <td class="p-4 text-end"><span
+                                                class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">12
+                                                days</span></td>
+                                        <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                                    </tr>
+                                    <tr class="border-t border-slate-100 dark:border-slate-800">
+                                        <td class="p-4"><a href="#" class=""><i
+                                                    class="iconoir-clipboard-check text-lg align-middle me-1"></i>
+                                                Full-Stack Capstone Project & Deployment</a></td>
+                                        <td class="p-4 text-end"><span
+                                                class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">10
+                                                days</span></td>
+                                        <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
                     </div>
+                    <div class="mt-6">
+                        <details
+                            class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
+                            <summary class="px-4 py-5 text-lg font-semibold cursor-pointer introduction-heading"
+                                style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #6D28D9;">
+                                Mastery
+                            </summary>
+
+                            <table class="w-full text-start">
+                                <thead>
+                                    <tr>
+                                        <th class="px-4 py-5 text-start">Lessons</th>
+                                        <th class="px-4 py-5 text-end">Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-t border-slate-100 dark:border-slate-800">
+                                        <td class="p-4"><a href="#" class=""><i
+                                                    class="iconoir-clipboard-check text-lg align-middle me-1"></i>Advanced
+                                                Front-End Performance Optimization</a></td>
+                                        <td class="p-4 text-end"><span
+                                                class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">7
+                                                days</span></td>
+                                    </tr>
+                                    <tr class="border-t border-slate-100 dark:border-slate-800">
+                                        <td class="p-4"><a href="#" class=""><i
+                                                    class="iconoir-clipboard-check text-lg align-middle me-1"></i>
+                                                Scalable Back-End Architecture & Microservices</a></td>
+                                        <td class="p-4 text-end"><span
+                                                class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">10
+                                                days</span></td>
+                                        <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                                    </tr>
+                                    <tr class="border-t border-slate-100 dark:border-slate-800">
+                                        <td class="p-4"><a href="#" class=""><i
+                                                    class="iconoir-clipboard-check text-lg align-middle me-1"></i>Full-Stack
+                                                Security & Authentication (JWT, OAuth)</a></a></td>
+                                        <td class="p-4 text-end"><span
+                                                class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">8
+                                                days</span></td>
+                                        <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                                    </tr>
+                                    <tr class="border-t border-slate-100 dark:border-slate-800">
+                                        <td class="p-4"><a href="#" class=""><i
+                                                    class="iconoir-clipboard-check text-lg align-middle me-1"></i>
+                                                Capstone Project Presentation and Feedbacka></td>
+                                        <td class="p-4 text-end"><span
+                                                class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">3
+                                                days</span></td>
+                                        <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </div>
+
+
+                    <div class="mt-6">
+                        <details
+                            class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
+                            <summary class="px-4 py-5 text-lg font-semibold cursor-pointer introduction-heading"
+                                style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #6D28D9;">
+                                Final Thoughts
+                            </summary>
+
+                            <table class="w-full text-start">
+                                <thead>
+                                    <tr>
+                                        <th class="px-4 py-5 text-start">Lessons</th>
+                                        <th class="px-4 py-5 text-end">Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-t border-slate-100 dark:border-slate-800">
+                                        <td class="p-4"><a href="#" class=""><i
+                                                    class="iconoir-clipboard-check text-lg align-middle me-1"></i>Building
+                                                and Showcasing Your Portfolio</a></td>
+                                        <td class="p-4 text-end"><span
+                                                class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">9
+                                                days</span></td>
+                                    </tr>
+                                    <tr class="border-t border-slate-100 dark:border-slate-800">
+                                        <td class="p-4"><a href="#" class=""><i
+                                                    class="iconoir-clipboard-check text-lg align-middle me-1"></i>
+                                                Interview Preparation and Career Guidance –</a></td>
+                                        <td class="p-4 text-end"><span
+                                                class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">4
+                                                days</span></td>
+                                        <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                                    </tr>
+                                    <tr class="border-t border-slate-100 dark:border-slate-800">
+                                        <td class="p-4"><a href="#" class=""><i
+                                                    class="iconoir-clipboard-check text-lg align-middle me-1"></i>Best
+                                                Practices and Future Learning Path</a></a></td>
+                                        <td class="p-4 text-end"><span
+                                                class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">2
+                                                days</span></td>
+                                        <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                                    </tr>
+                                    <tr class="border-t border-slate-100 dark:border-slate-800">
+                                        <td class="p-4"><a href="#" class=""><i
+                                                    class="iconoir-clipboard-check text-lg align-middle me-1"></i>
+                                                Deployment, CI/CD Pipelines & Cloud Integration (AWS, Docker)</a></td>
+                                        <td class="p-4 text-end"><span
+                                                class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">9
+                                                days</span></td>
+                                        <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </div>
+
+                    <div class="mt-6">
+                        <details
+                            class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
+                            <summary class="px-4 py-5 text-lg font-semibold cursor-pointer introduction-heading"
+                                style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #6D28D9;">
+                                Bonus
+                            </summary>
+
+                            <table class="w-full text-start">
+                                <thead>
+                                    <tr>
+                                        <th class="px-4 py-5 text-start">Lessons</th>
+                                        <th class="px-4 py-5 text-end">Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-t border-slate-100 dark:border-slate-800">
+                                        <td class="p-4"><a href="#" class=""><i
+                                                    class="iconoir-clipboard-check text-lg align-middle me-1"></i>Introduction
+                                                to UI/UX Design Principles</a></td>
+                                        <td class="p-4 text-end"><span
+                                                class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">3
+                                                days</span></td>
+                                    </tr>
+                                    <tr class="border-t border-slate-100 dark:border-slate-800">
+                                        <td class="p-4"><a href="#" class=""><i
+                                                    class="iconoir-clipboard-check text-lg align-middle me-1"></i>
+                                                Version Control with Git and GitHub </a></td>
+                                        <td class="p-4 text-end"><span
+                                                class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">2
+                                                days</span></td>
+                                        <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                                    </tr>
+                                    <tr class="border-t border-slate-100 dark:border-slate-800">
+                                        <td class="p-4"><a href="#" class=""><i
+                                                    class="iconoir-clipboard-check text-lg align-middle me-1"></i>Basics
+                                                of SEO for Developers</a></a></td>
+                                        <td class="p-4 text-end"><span
+                                                class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">3
+                                                days</span></td>
+                                        <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                                    </tr>
+                                    <tr class="border-t border-slate-100 dark:border-slate-800">
+                                        <td class="p-4"><a href="#" class=""><i
+                                                    class="iconoir-clipboard-check text-lg align-middle me-1"></i>
+                                                Freelancing & Building Your Personal Brand</a></td>
+                                        <td class="p-4 text-end"><span
+                                                class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">3
+                                                days</span></td>
+                                        <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
+                    </div>
+
+
                 </div>
-            </div><br><!--end container-->
+            </div>
+        </div><br><!--end container-->
 
-             <div class="container relative md:mt-24 mt-16">
-                <div class="grid grid-cols-1 pb-6 text-center">
-                    
-                    <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Recent Courses</h4>
+        <div class="container relative md:mt-24 mt-16">
+            <div class="grid grid-cols-1 pb-6 text-center">
 
-                    <p class="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
-                </div><!--end grid-->
+                <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Recent Courses</h4>
+
+                <p class="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our
+                    online education platform pursue a new career.</p>
+            </div><!--end grid-->
 
                 <div class="grid grid-cols-1 relative mt-3">
                     <div class="tiny-home-slide-three">
@@ -384,175 +443,179 @@
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/java.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/14.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                                    
 
-                                    <div class="absolute -bottom-5 end-6">
-                                        
-                                    </div>
-                                </div>
+                                <div class="absolute -bottom-5 end-6">
 
-                                <div class="p-6">
-                                   
-
-                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Java Full-Stack</a>
-
-                                    <p class="text-slate-400 mt-2">Learn front-end with HTML, CSS, and JavaScript; back-end development with Java and Spring Boot; connect to MySQL databases; and deploy full-stack applications using tools like Git,and jenkins</p>
-
-                                   
                                 </div>
                             </div>
-                        </div><!--end content-->
+
+                            <div class="p-6">
+
+
+                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">The Ultimate Course Bundle</a>
+
+                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+
+
+                            </div>
+                        </div>
+                    </div><!--end content-->
 
                         <div class="tiny-slide">
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/python.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/13.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                                    
 
-                                    <div class="absolute -bottom-5 end-6">
-                                        
-                                    </div>
-                                </div>
+                                <div class="absolute -bottom-5 end-6">
 
-                                <div class="p-6">
+                                </div>
+                            </div>
+
+                            <div class="p-6">
+
+
+                                    <a href="course-detail1.html" class="text-lg hover:text-violet-600 font-medium">App Development Course</a>
+
+                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+
+
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                        <div class="tiny-slide">
+                            <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
+                                <div class="p-3 pb-0 relative">
+                                    <div class="relative overflow-hidden rounded-md">
+                                <img src="assets/images/course/19.jpg" class="group-hover:scale-105 duration-500" alt="">
+                            </div>
+                                   
+
+
+                            </div>
+
+                            <div class="p-6">
+
+
+                                    <a href="course-detail2.html" class="text-lg hover:text-violet-600 font-medium">Spoken English Popular Course</a>
+
+                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                        <div class="tiny-slide">
+                            <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
+                                <div class="p-3 pb-0 relative">
+                                    <div class="relative overflow-hidden rounded-md">
+                                <img src="assets/images/course/15.webp" class="group-hover:scale-105 duration-500" alt="">
+                            </div>
                                     
 
-                                    <a href="course-detail1.html" class="text-lg hover:text-violet-600 font-medium">Python Full-Stack</a>
 
-                                    <p class="text-slate-400 mt-2">Learn front-end with HTML, CSS, and JavaScript; back-end with Java, Spring Boot, and Python; connect to MySQL; and deploy full-stack apps using Git, Docker, and Jenkins.</p>
-
-                                   
-                                </div>
                             </div>
-                        </div><!--end content-->
+
+                            <div class="p-6">
+
+
+                                    <a href="course-detail3.html" class="text-lg hover:text-violet-600 font-medium">Back-end Development Course</a>
+
+                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+
+
+                            </div>
+                        </div>
+                    </div><!--end content-->
 
                         <div class="tiny-slide">
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/dot.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/16.webp" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                                    
-
-                                    
                                 </div>
 
-                                <div class="p-6">
-                                   
+                            <div class="p-6">
 
-                                    <a href="course-detail2.html" class="text-lg hover:text-violet-600 font-medium">.Net Full-Stack</a>
 
-                                    <p class="text-slate-400 mt-2">Learn front-end with HTML, CSS, and JavaScript; back-end with C# and ASP.NET Core; connect to SQL Server; and deploy full-stack apps using Git, Docker, and Azure DevOps.</p>
+                                    <a href="course-detail4.html" class="text-lg hover:text-violet-600 font-medium">Front-end Development Course</a>
 
-                                </div>
+                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+
+
                             </div>
-                        </div><!--end content-->
+                        </div>
+                    </div><!--end content-->
 
                         <div class="tiny-slide">
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/cloud.jpg" class="group-hover:scale-105 duration-500" alt="">
-                            </div>
-                                    
-
-                                   
-                                </div>
-
-                                <div class="p-6">
-                                  
-
-
-                                    <a href="course-detail3.html" class="text-lg hover:text-violet-600 font-medium">Data Science & Cloud Courses</a>
-
-                                    <p class="text-slate-400 mt-2">Learn data analysis with Python and R, master machine learning algorithms, perform data cleaning and preprocessing, visualize insights using tools like Tableau and Power BI.</p>
-
-                                   
-                                </div>
-                            </div>
-                        </div><!--end content-->
-
-                        <div class="tiny-slide">
-                            <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
-                                <div class="p-3 pb-0 relative">
-                                    <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/react.png" class="group-hover:scale-105 duration-500" alt="">
-                            </div>
-                                   
-                                </div>
-
-                                <div class="p-6">
-
-
-                                    <a href="course-detail4.html" class="text-lg hover:text-violet-600 font-medium">Flutter /React</a>
-
-                                    <p class="text-slate-400 mt-2">Build cross-platform mobile apps with Flutter using Dart, create dynamic and responsive web applications with React using JavaScript and JSX,  and integrate REST APIs for seamless user experiences.</p>
-
-                                   
-                                </div>
-                            </div>
-                        </div><!--end content-->
-
-                        <div class="tiny-slide">
-                            <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
-                                <div class="p-3 pb-0 relative">
-                                    <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/selenium.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/17.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                                     
                                 </div>
 
-                                <div class="p-6">
-                                  
+                            <div class="p-6">
 
-                                    <a href="course-detail5.html" class="text-lg hover:text-violet-600 font-medium">Manual with Selenium Automations</a>
 
-                                    <p class="text-slate-400 mt-2">Perform manual testing to thoroughly understand application behavior, identify bugs, then automate repetitive test cases using Selenium WebDriver for reliable, scalable.
+                                    <a href="course-detail5.html" class="text-lg hover:text-violet-600 font-medium">Full stack Project in Nextjs Course</a>
 
-</p>
+                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
 
                                    
                                 </div>
                             </div>
                         </div><!--end content-->
                     </div><!--end tiny slider-->
-                </div><!--end grid--><br>
+                </div><!--end grid-->
             <div class="container relative md:mt-24 mt-16">
                 <div class="md:flex justify-center">
                     <div class="lg:w-2/3 text-center">
-                        <h3 class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold mb-6">Subscribe our weekly subscription</h3>
+                        <h3 class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold mb-6">Subscribe
+                            our weekly subscription</h3>
 
-                        <p class="text-slate-400 max-w-xl mx-auto">Add some text to explain benefits of subscripton on your services. We'll send you the best of our blog just once a weekly.</p>
+                        <p class="text-slate-400 max-w-xl mx-auto">Add some text to explain benefits of subscripton on
+                            your services. We'll send you the best of our blog just once a weekly.</p>
 
                         <div class="mt-6">
                             <div class="text-center subcribe-form">
                                 <form class="relative mx-auto max-w-xl">
-                                    <input type="email" id="subemail" name="name" class="pt-4 pe-40 pb-4 ps-6 w-full h-[50px] outline-none text-slate-900 dark:text-white rounded-full bg-white/70 dark:bg-slate-900/70 border border-slate-100 dark:border-slate-800" placeholder="Enter your email id..">
-                                    <button type="submit" class="h-12 px-6 tracking-wide items-center justify-center font-medium bg-violet-600 text-white rounded-full absolute top-[1px] end-[1px]">Subcribe Now</button>
+                                    <input type="email" id="subemail" name="name"
+                                        class="pt-4 pe-40 pb-4 ps-6 w-full h-[50px] outline-none text-slate-900 dark:text-white rounded-full bg-white/70 dark:bg-slate-900/70 border border-slate-100 dark:border-slate-800"
+                                        placeholder="Enter your email id..">
+                                    <button type="submit"
+                                        class="h-12 px-6 tracking-wide items-center justify-center font-medium bg-violet-600 text-white rounded-full absolute top-[1px] end-[1px]">Subcribe
+                                        Now</button>
                                 </form><!--end form-->
                             </div>
                         </div>
                     </div>
                 </div>
             </div><!--end container-->
-        </section><!--end section-->
-        <!-- End -->
+    </section><!--end section-->
+    <!-- End -->
 
-        <!-- Start Footer -->
-      <footer class="footer">
+    <!-- Start Footer -->
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-content">
                 <!-- Support Card -->
                 <div class="support-card">
                     <h3>Talk to Our Support</h3>
                     <div class="support-phone">
-                        <div class="headset-icon footer-section"><i class=" color-white mdi mdi-phone text-slate-400"></i></div>
+                        <div class="headset-icon footer-section"><i
+                                class=" color-white mdi mdi-phone text-slate-400"></i></div>
                         <a href="tel:+91 830 9380900" class="phone-number">+91 830 9380900</a>
-                        
+
                     </div>
                     <div class="support-location">Guntur</div>
                 </div>
@@ -615,42 +678,43 @@
     <!--end footer-->
     <!-- End Footer -->
 
-    
-          <div id="chat-container" class="fixed bottom-6 z-50" style="right: 1.5rem;">
-   <!-- Chat Icon using uploaded image -->
-  <img id="chat-toggle" src="../../../../../../assets/images/bg/chat.png"
-     alt="Chat Icon" 
-     style="width:60px; height:60px;"
-     class="cursor-pointer shadow-lg" />
-   <!-- Chat Popup -->
-   <div id="chat-popup" class="hidden bg-white dark:bg-slate-900 shadow-lg w-80 rounded-xl overflow-hidden mt-2 border border-gray-300 dark:border-gray-700">
-       <!-- Header -->
-       <div class="bg-violet-600 text-white p-3 font-semibold flex justify-between items-center">
-           Chat with us
-           <button id="chat-close" class="text-white text-xl leading-none">&times;</button>
-       </div>
-       <!-- Messages -->
-       <div class="p-3 h-64 overflow-y-auto text-gray-700 dark:text-gray-300" id="chat-messages">
-           <p class="text-sm text-gray-400">Hi! How can we help you today?</p>
-       </div>
-       <!-- Input -->
-       <div class="border-t border-gray-300 dark:border-gray-700 p-2 flex">
-           <input id="chat-input" type="text" placeholder="Type a message..." 
-               class="flex-1 px-2 py-1 border rounded-l-md text-sm focus:outline-none">
-           <button id="chat-send" class="bg-violet-600 hover:bg-violet-700 text-white px-3 rounded-r-md text-sm">Send</button>
-       </div>
-   </div>
-</div>
 
-      
-        <!-- LTR & RTL Mode Code -->
+    <div id="chat-container" class="fixed bottom-6 z-50" style="right: 1.5rem;">
+        <!-- Chat Icon using uploaded image -->
+        <img id="chat-toggle" src="../../../../../../assets/images/bg/chat.png" alt="Chat Icon"
+            style="width:60px; height:60px;" class="cursor-pointer shadow-lg" />
+        <!-- Chat Popup -->
+        <div id="chat-popup"
+            class="hidden bg-white dark:bg-slate-900 shadow-lg w-80 rounded-xl overflow-hidden mt-2 border border-gray-300 dark:border-gray-700">
+            <!-- Header -->
+            <div class="bg-violet-600 text-white p-3 font-semibold flex justify-between items-center">
+                Chat with us
+                <button id="chat-close" class="text-white text-xl leading-none">&times;</button>
+            </div>
+            <!-- Messages -->
+            <div class="p-3 h-64 overflow-y-auto text-gray-700 dark:text-gray-300" id="chat-messages">
+                <p class="text-sm text-gray-400">Hi! How can we help you today?</p>
+            </div>
+            <!-- Input -->
+            <div class="border-t border-gray-300 dark:border-gray-700 p-2 flex">
+                <input id="chat-input" type="text" placeholder="Type a message..."
+                    class="flex-1 px-2 py-1 border rounded-l-md text-sm focus:outline-none">
+                <button id="chat-send"
+                    class="bg-violet-600 hover:bg-violet-700 text-white px-3 rounded-r-md text-sm">Send</button>
+            </div>
+        </div>
+    </div>
 
-        <!-- JAVASCRIPTS -->
-        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
-        <script src="assets/libs/tobii/js/tobii.min.js"></script>
-        <script src="assets/libs/feather-icons/feather.min.js"></script>
-        <script src="assets/js/plugins.init.js"></script>
-        <script src="assets/js/app.js"></script>
-        <!-- JAVASCRIPTS -->
-    </body>
+
+    <!-- LTR & RTL Mode Code -->
+
+    <!-- JAVASCRIPTS -->
+    <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+    <script src="assets/libs/tobii/js/tobii.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/plugins.init.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- JAVASCRIPTS -->
+</body>
+
 </html>
