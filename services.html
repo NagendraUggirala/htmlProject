@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Edupath - Online Courses & Education HTML5 Template</title>
+    <title>TechLynx -Services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta content="Real Estate Website Landing Page" name="description" />
     <meta content="Real Estate, buy, sell, Rent, tailwind Css" name="keywords" />
@@ -14,7 +14,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+     
+ <link rel="icon" type="image/png" sizes="512x512" href="assets/images/logo-dark.png">
+
 
     <!-- Css -->
     <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
@@ -24,7 +26,8 @@
     <link href="assets/libs/%40mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/css/tailwind.min.css" />
     <link rel="stylesheet" href="/services.css" />
-
+    <link rel="stylesheet" href="/style.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body class="dark:bg-slate-900" style="font-family: 'Roboto', sans-serif;">
@@ -40,20 +43,21 @@
         </div> -->
     <!-- Loader End -->
     <!-- Start Navbar -->
-    <nav id="topnav" class="defaultscroll is-sticky">
+    <!--end container-->
+    <nav id="topnav" style="background-color:white ; height: 75px;" class="defaultscroll  is-sticky">
         <div class="container relative">
             <!-- Start Logo container-->
             <a class="logo" href="home.html">
                 <span class="inline-block dark:hidden">
-                    <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
-                    <img src="assets/images/logo-light.png" class="l-light" height="24" alt="">
+                    <img src="assets/images/logo-dark.png" class="l-dark logo-size" height="24" alt="">
+                    <img src="assets/images/logo-dark.png" class="l-light logo-size" height="24" alt="">
                 </span>
                 <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
             </a>
             <!-- End Logo container-->
 
             <!-- Start Mobile Toggle -->
-            <div class="menu-extras">
+            <div class="menu-extras ">
                 <div class="menu-item">
                     <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
                         <div class="lines">
@@ -70,22 +74,50 @@
 
             <!--Login button End-->
 
-
-
-
             <div id="navigation">
                 <!-- Navigation Menu-->
-                <ul class="navigation-menu justify-start nav-light">
-                    <li class="has-submenu parent-parent-menu-item"><a href="home.html">Home</a></li>
-                    <li class="has-submenu parent-parent-menu-item"><a href="courses.html">Courses</a></li>
-                    <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>
-                    <li><a href="core.html" class="sub-menu-item my-core">My Core</a></li>
-                    <li><a href="services.html" class="sub-menu-item my-core">Services</a></li>
-                    <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
+                <ul class="navigation-menu justify-start ">
+                    <li><a href="home.html" class="sub-menu-item container-nav"
+                            style="font-weight: bold; font-family: Roboto;">Home</a></li>
+                    <li><a href="courses.html" class="sub-menu-item container-nav"
+                            style="font-weight: bold; font-family: Roboto;">Courses</a></li>
+                    <li><a href="aboutus.html" class="sub-menu-item container-nav"
+                            style="font-weight: bold; font-family: Roboto;">About Us</a></li>
+                    <li><a href="core.html" class="sub-menu-item my-core container-nav"
+                            style="font-weight: bold; font-family: Roboto;">My Core</a></li>
+                    <li><a href="services.html" class="sub-menu-item my-core container-nav"
+                            style="font-weight: bold; font-family: Roboto;">Services</a></li>
+                    <li><a href="contactus.html" class="sub-menu-item container-nav"
+                            style="font-weight: bold; font-family: Roboto;">Contact Us</a></li>
+
+
+                    <li> <a href="https://www.facebook.com/share/16yW5mkdBR/" target="_blank"
+                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
+                                <i class="fab fa-linkedin"></i>
+                            </a></li>
+                    <li> <a href="https://youtube.com/@techlynxinnovationsprivatelimi?si=PM6yu6NXCnoSN9h2" target="_blank"
+                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
+                                <i class="fab fa-youtube"></i>
+                            </a></li>
+                    <li> <a href="https://www.instagram.com/techlynx_innovations?igsh=MTAxYnUxanFwc2Riag==" target="_blank"
+                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a></li>
+                    <li> <a href="https://x.com/TechlynxLimited?t=Ty3Wx5qshDFYvqM1ad0dTw&s=08" target="_blank"
+                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a></li>
+
+
+
+
+
                 </ul><!--end navigation menu-->
             </div><!--end navigation-->
+
         </div><!--end container-->
-    </nav><!--end header-->
+    </nav>
+    <!--end header-->
 
 
     <dialog id="navbarSearch"
@@ -136,14 +168,14 @@
     <!-- Main Content -->
     <main class="main-content">
         <!-- IT Services Section -->
-        <section class="section">
+        <section class="section image-responsive-services">
             <div class="section-header">
                 <h2 class="section-title">IT & Technology Services</h2>
                 <p class="section-subtitle">Cutting-edge technology solutions to drive your business forward</p>
             </div>
 
             <div class="services-grid">
-                <div class="service-card" onclick="window.location.href='card1.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='web development.html'" style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-web"></i>
                     </div>
@@ -158,7 +190,7 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='/card2.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='Mobile app development.html'" style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-cellphone"></i>
                     </div>
@@ -172,7 +204,7 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='/card3.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='cloud & devops.html'" style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-cloud"></i>
                     </div>
@@ -187,7 +219,7 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='/card4.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='Ai & Ml.html'" style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-brain"></i>
                     </div>
@@ -202,7 +234,7 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='/card5.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='software testing.html'" style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-bug-check"></i>
                     </div>
@@ -217,11 +249,11 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='/card6.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='cyber security.html'" style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-shield-check"></i>
                     </div>
-                    <h3>Cybersecurity</h3>
+                    <h3>Cyber security</h3>
                     <p>Application and network security, security audits, vulnerability assessments, and compliance
                         management.</p>
                     <ul class="service-features">
@@ -235,14 +267,14 @@
         </section>
 
         <!-- Business Services Section -->
-        <section class="section">
+        <section class="section image-responsive-services">
             <div class="section-header">
                 <h2 class="section-title">Business & Consulting Services</h2>
                 <p class="section-subtitle">Strategic solutions to help your business grow and succeed</p>
             </div>
 
             <div class="services-grid">
-                <div class="service-card" onclick="window.location.href='/card7.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='startup & Business consulting.html'" style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-lightbulb"></i>
                     </div>
@@ -257,7 +289,7 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='/card8.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='digital marketing.html'" style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-chart-line"></i>
                     </div>
@@ -272,7 +304,7 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='/card9.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='content and documentation.html'" style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-file-document"></i>
                     </div>
@@ -286,7 +318,7 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='/card10.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='Hr & recruitment.html'" style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-account-group"></i>
                     </div>
@@ -301,7 +333,7 @@
                     </ul>
                 </div>
 
-                <div class="service-card" onclick="window.location.href='/card11.html'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location.href='Legal & Finance.html'" style="cursor: pointer;">
                     <div class="service-icon">
                         <i class="mdi mdi-briefcase"></i>
                     </div>
@@ -322,7 +354,7 @@
             <h2 class="cta-title">Ready to Get Started?</h2>
             <p class="cta-description">Let's discuss how our services can help transform your business and achieve your
                 goals.</p>
-            <a href="contact.html" class="cta-button">Get Free Consultation</a>
+            
         </section>
     </main>
 
@@ -332,155 +364,112 @@
        
 
         <!-- Start Footer -->
-        <footer class="relative bg-slate-900 dark:bg-slate-800">
-            <div class="container relative">
-                <div class="grid grid-cols-1">
-                    <div class="relative py-16">
-                        <!-- Subscribe -->
-                        <div class="relative w-full">
-                            <div class="grid md:grid-cols-12 grid-cols-1 gap-6">
-                                <div class="lg:col-span-4 md:col-span-12">
-                                    <a href="#" class="text-[22px] focus:outline-none">
-                                        <img src="assets/images/logo-light.png" alt="">
-                                    </a>
-                                    <p class="mt-6 text-gray-300">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
+           <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Support Card -->
+                <div class="support-card">
+                    <h3>Talk to Our Support</h3>
+                    <div class="support-phone">
+                        <div class="headset-icon footer-section"><i class=" color-white mdi mdi-phone text-slate-400"></i></div>
+                        <a href="tel:+91 830 9380900" class="phone-number">+91 830 9380900</a>
+                        
+                    </div>
+                    <div class="support-location">Guntur</div>
+                </div>
 
-                                <div class="flex mt-6">
-                                    <i class="iconoir-map-pin align-middle text-2xl text-violet-600 me-2"></i>
-                                    <div class="">
-                                        <h6 class="text-gray-300">C/54 Northwest Freeway, <br> Houston, USA 485</h6>
-                                    </div>
-                                </div>
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="core.html">My Core</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                    </ul>
+                </div>
 
-                                <div class="flex mt-4">
-                                    <i class="iconoir-phone align-middle text-2xl text-violet-600 me-2"></i>
-                                    <div class="">
-                                        <a href="tel:+152534-468-854"
-                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">+152
-                                            534-468-854</a>
-                                    </div>
-                                </div>
-                            </div><!--end col-->
+                <!-- Services -->
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="card1.html">Web development</a></li>
+                        <li><a href="card2.html">Mobile App Development</a></li>
+                        <li><a href="card3.html">Cloud & DevOps</a></li>
 
-                            <div class="lg:col-span-2 md:col-span-3">
-                                <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Usefull Links</h5>
+                        <li><a href="card4.html">AI & Machine Learning</a></li>
+                        <li><a href="card5.html">Cybersecurity</a></li>
+                        <li><a href="card6.html">Automation Testing</a></li>
+                        <li><a href="card7.html">Startup & Business Consulting</a></li>
+                        <li><a href="card8.html">Digital Marketing</a></li>
+                        <li><a href="card9.html">Content & Documentation</a></li>
+                        <li><a href="card10.html">HR & Recruitment</a></li>
+                        <li><a href="card11.html">Legal & Finance</a></li>
+                    </ul>
+                </div>
 
-                                <ul class="list-none footer-list mt-6">
-                                    <li><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
-                                            href="#"
-                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Course</a>
-                                    </li>
-                                    <li class="mt-[10px]"><i
-                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
-                                            href="#"
-                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Mission &
-                                            Vision</a></li>
-                                    <li class="mt-[10px]"><i
-                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
-                                            href="#"
-                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Join a
-                                            Career</a></li>
-                                    <li class="mt-[10px]"><i
-                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
-                                            href="#"
-                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Zoom
-                                            Meeting</a></li>
-                                    <li class="mt-[10px]"><i
-                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
-                                            href="#"
-                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Pricing
-                                            Plan</a></li>
-                                </ul>
-                            </div><!--end col-->
-
-                            <div class="lg:col-span-2 md:col-span-3">
-                                <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Our Institute</h5>
-
-                                    <ul class="list-none footer-list mt-6">
-                                        <li><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Contact Us</a></li>
-                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Technology</a></li>
-                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Instructors</a></li>
-                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Pricing</a></li>
-                                        <li class="mt-[10px]"><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Services</a></li>
-                                    </ul>
-                                </div><!--end col-->
-    
-                               
-                            </div><!--end grid-->
+                <!-- Our Branches -->
+                <div class="footer-section branch-info">
+                    <h4>Our Branches</h4>
+                    <div class="branch-location">
+                        <h5>Guntur:</h5>
+                        <div class="branch-address">
+                            10/3, near Tagore chowk, Sali Pet, Arundelpet,
+                            Guntur,
+                            Andhra Pradesh 522601
                         </div>
-                        <!-- Subscribe -->
                     </div>
                 </div>
-            </div><!--end container-->
+            </div>
 
-        <div class="py-[30px] px-0 border-t border-gray-800 dark:border-gray-700">
-            <div class="container relative text-center">
-                <div class="grid md:grid-cols-2 items-center gap-6">
-                    <div class="md:text-start text-center">
-                        <p class="mb-0 text-gray-300">CopyRight ©
-                            <script>document.write(new Date().getFullYear())</script> Edupath. Design <i
-                                class="mdi mdi-heart text-red-600"></i> by <a class="text-reset">Levitica</a>.
-                        </p>
-                    </div>
-
-                    <ul class="list-disc footer-list md:text-end text-center space-x-3">
-                        <li class="inline-block"><i class="mdi mdi-circle-medium text-gray-400"></i> <a
-                                href="terms.html"
-                                class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Terms</a></li>
-                        <li class="inline-block mt-[10px] md:mt-0"><i class="mdi mdi-circle-medium text-gray-400"></i>
-                            <a href="privacy.html"
-                                class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Privacy</a>
-                        </li>
-                        <li class="inline-block mt-[10px] md:mt-0"><i class="mdi mdi-circle-medium text-gray-400"></i>
-                            <a href="login.html"
-                                class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Login</a>
-                        </li>
-                    </ul><!--end icon-->
-                </div><!--end grid-->
-            </div><!--end container-->
+            <!-- Copyright -->
+            <div class="footer-bottom branch-address">
+                <p class="mb-0 text-gray-300 ">CopyRight ©
+                    <script>document.write(new Date().getFullYear())</script> Techlynxinnovations. Designed <i
+                        class="mdi mdi-develop text-red-600"></i> by <a class="text-reset">Levitica</a>.
+                </p>
+            </div>
         </div>
     </footer>
     <!--end footer-->
     <!-- End Footer -->
 
-     <div id="chat-container" class="fixed bottom-6 z-50" style="right: 1.5rem;">
-   <!-- Chat Icon using uploaded image -->
-   <img id="chat-toggle" src="../../../../../../assets/images/bg/chat.png"
-        alt="Chat Icon" 
-        class="w-8 h-8 cursor-pointer shadow-lg" />
+    <div id="chat-container" class="fixed bottom-6 z-50" style="right: 1.5rem;">
+       <img id="chat-toggle" src="../../../../../../assets/images/bg/chat.png"
+     alt="Chat Icon" 
+     style="width:60px; height:60px;"
+     class="cursor-pointer shadow-lg" />
 
-   <!-- Chat Popup -->
-   <div id="chat-popup" class="hidden bg-white dark:bg-slate-900 shadow-lg w-80 rounded-xl overflow-hidden mt-2 border border-gray-300 dark:border-gray-700">
-       <!-- Header -->
-       <div class="bg-violet-600 text-white p-3 font-semibold flex justify-between items-center">
-           Chat with us
-           <button id="chat-close" class="text-white text-xl leading-none">&times;</button>
-       </div>
-       <!-- Messages -->
-       <div class="p-3 h-64 overflow-y-auto text-gray-700 dark:text-gray-300" id="chat-messages">
-           <p class="text-sm text-gray-400">Hi! How can we help you today?</p>
-       </div>
-       <!-- Input -->
-       <div class="border-t border-gray-300 dark:border-gray-700 p-2 flex">
-           <input id="chat-input" type="text" placeholder="Type a message..." 
-               class="flex-1 px-2 py-1 border rounded-l-md text-sm focus:outline-none">
-           <button id="chat-send" class="bg-violet-600 hover:bg-violet-700 text-white px-3 rounded-r-md text-sm">Send</button>
-       </div>
-   </div>
-</div>
+
+        <!-- Chat Popup -->
+        <div id="chat-popup"
+            class="hidden bg-white dark:bg-slate-900 shadow-lg w-80 rounded-xl overflow-hidden mt-2 border border-gray-300 dark:border-gray-700">
+            <!-- Header -->
+            <div class="bg-violet-600 text-white p-3 font-semibold flex justify-between items-center">
+                Chat with us
+                <button id="chat-close" class="text-white text-xl leading-none">&times;</button>
+            </div>
+            <!-- Messages -->
+            <div class="p-3 h-64 overflow-y-auto text-gray-700 dark:text-gray-300" id="chat-messages">
+                <p class="text-sm text-gray-400">Hi! How can we help you today?</p>
+            </div>
+            <!-- Input -->
+            <div class="border-t border-gray-300 dark:border-gray-700 p-2 flex">
+                <input id="chat-input" type="text" placeholder="Type a message..."
+                    class="flex-1 px-2 py-1 border rounded-l-md text-sm focus:outline-none">
+                <button id="chat-send"
+                    class="bg-violet-600 hover:bg-violet-700 text-white px-3 rounded-r-md text-sm">Send</button>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+
 
       
         <!-- Switcher -->
-        <div class="fixed top-1/4 -right-2 z-3">
-            <span class="relative inline-block rotate-90">
-                <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
-                <label class="label bg-slate-900 dark:bg-white shadow-sm dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-[60px] h-8" for="chk">
-                    <i class="iconoir-half-moon text-yellow-500 align-middle ps-1 text-[16px] relative z-1"></i>
-                    <i class="iconoir-sun-light text-yellow-500 align-middle pe-1 text-[16px] relative z-1"></i>
-                    <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] size-7"></span>
-                </label>
-            </span>
-        </div>
+       
         <!-- Switcher -->
 
 
@@ -493,74 +482,6 @@
         <!-- JAVASCRIPTS -->
 
 
-    <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', function () {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const navMenu = document.getElementById('nav-menu');
-
-        mobileMenuBtn.addEventListener('click', function () {
-            navMenu.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on a link
-        const navLinks = document.querySelectorAll('.nav-menu a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function () {
-                navMenu.classList.remove('active');
-            });
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function (entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe service cards
-        document.querySelectorAll('.service-card').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(30px)';
-            observer.observe(card);
-        });
-
-        // Initialize Feather icons
-        if (typeof feather !== 'undefined') {
-            feather.replace();
-        }
-    </script>
 </body>
 
 </html>

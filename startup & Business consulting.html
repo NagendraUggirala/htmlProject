@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+   <title>TechLynx - Online Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta content="Real Estate Website Landing Page" name="description" />
+    <meta content="Real Estate, buy, sell, Rent, tailwind Css" name="keywords" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="website" content="../../index.html" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="version" content="1.0.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css">
+
+    <!-- favicon -->
+    
+ <link rel="icon" type="image/png" sizes="512x512" href="assets/images/logo-dark.png">
+
+
+    <!-- Css -->
+    <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+    <!-- Main Css -->
+    <link href="assets/libs/iconoir/css/iconoir.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/%40mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="dark:bg-slate-900" style="font-family: 'Roboto', sans-serif;">
+
+
+
+    <!-- Start Navbar -->
+    <nav id="topnav" style="background-color:white ; height: 75px;" class="defaultscroll  is-sticky">
+        <div class="container relative">
+            <!-- Start Logo container-->
+            <a class="logo" href="home.html">
+                <span class="inline-block dark:hidden">
+                    <img src="assets/images/logo-dark.png" class="l-dark logo-size" height="24" alt="">
+                    <img src="assets/images/logo-dark.png" class="l-light logo-size" height="24" alt="">
+                </span>
+                <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
+            </a>
+            <!-- End Logo container-->
+
+            <!-- Start Mobile Toggle -->
+            <div class="menu-extras ">
+                <div class="menu-item">
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- End Mobile Toggle -->
+
+            <!--Login button Start-->
+
+            <!--Login button End-->
+
+            <div id="navigation">
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu justify-start ">
+                    <li><a href="home.html" class="sub-menu-item container-nav"
+                            style="font-weight: bold; font-family: Roboto;">Home</a></li>
+                    <li><a href="courses.html" class="sub-menu-item container-nav"
+                            style="font-weight: bold; font-family: Roboto;">Courses</a></li>
+                    <li><a href="aboutus.html" class="sub-menu-item container-nav"
+                            style="font-weight: bold; font-family: Roboto;">About Us</a></li>
+                    <li><a href="core.html" class="sub-menu-item my-core container-nav"
+                            style="font-weight: bold; font-family: Roboto;">My Core</a></li>
+                    <li><a href="services.html" class="sub-menu-item my-core container-nav"
+                            style="font-weight: bold; font-family: Roboto;">Services</a></li>
+                    <li><a href="contactus.html" class="sub-menu-item container-nav"
+                            style="font-weight: bold; font-family: Roboto;">Contact Us</a></li>
+
+
+                    <li> <a href="https://www.facebook.com/share/16yW5mkdBR/" target="_blank"
+                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
+                                <i class="fab fa-linkedin"></i>
+                            </a></li>
+                    <li> <a href="https://youtube.com/@techlynxinnovationsprivatelimi?si=PM6yu6NXCnoSN9h2" target="_blank"
+                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
+                                <i class="fab fa-youtube"></i>
+                            </a></li>
+                    <li> <a href="https://www.instagram.com/techlynx_innovations?igsh=MTAxYnUxanFwc2Riag==" target="_blank"
+                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a></li>
+                    <li> <a href="https://x.com/TechlynxLimited?t=Ty3Wx5qshDFYvqM1ad0dTw&s=08" target="_blank"
+                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a></li>
+
+
+
+
+
+                </ul><!--end navigation menu-->
+            </div><!--end navigation-->
+
+        </div><!--end container-->
+    </nav>
+    <!--end header-->
+
+
+    <dialog id="navbarSearch"
+        class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
+        <div class="relative w-full h-auto">
+            <form method="dialog" class="modal-backdrop">
+                <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost">
+                    <i data-feather="x" class="size-4"></i>
+                </button>
+            </form>
+            <div class="p-6 text-center">
+                <form class="relative">
+                    <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
+                    <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10"
+                        name="s" id="searchItem" placeholder="Search...">
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Banner Section -->
+    <section
+        class="relative table w-full py-16 lg:py-24 bg-[url('../../assets/images/bg/3.html')] bg-no-repeat bg-center bg-cover">
+        <!-- Darker overlay -->
+        <div class="absolute inset-0 bg-slate-900 opacity-95"></div>
+        <div class="container relative">
+            <div class="grid grid-cols-1 text-center mt-10">
+                <h3 class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-white">
+                  Startup & Business Consulting
+                </h3>
+            </div><!--end grid-->
+        </div><!--end container-->
+    </section>
+    <!--end section-->
+
+    <div class="relative">
+        <div class="shape overflow-hidden z-1 text-white dark:text-slate-900">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="../../../www.w3.org/2000/svg.html">
+                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </div><br>
+    <!-- End Hero -->
+
+
+<h2 class="consulting-title">Startup & Business Consulting</h2><br><br>
+<img src="assets/images/servies/card7.jpg" alt="Consulting Image" class="custom-image"  style="width: 300px; height: 300px;" class="custom-image">
+
+    <section class="service-details">
+        <div class="container">
+            <!-- Service Title -->
+            <h1 class="service-title">Startup & Business Consulting</h1>
+
+            <!-- Main Description -->
+            <p class="service-desc">
+                Startup and business consulting plays a vital role in guiding new ventures from idea to execution.
+                It focuses on building a strong foundation for projects by defining goals, analyzing markets, and
+                creating actionable strategies. Our consulting ensures informed decisions, effective planning,
+                and sustainable growth for your projects.
+            </p>
+
+            <!-- Bullet Points -->
+            <div class="service-points">
+                <ul>
+                    <li>Project planning and execution strategies</li>
+                    <li>Market research and competitor analysis</li>
+                    <li>Business model and revenue development</li>
+                </ul>
+                <ul>
+                    <li>Funding support and investor presentations</li>
+                    <li>Operational efficiency and risk management</li>
+                    <li>Growth roadmaps and scalability plans</li>
+                </ul>
+            </div>
+
+
+            <h2 class="benefit-title">What Benefit You Will Get</h2>
+            <p class="benefit-text">
+                        Startup and business consulting provides clarity and strategies for new ventures to succeed.
+                        It helps entrepreneurs plan effectively, reduce risks, and identify growth opportunities
+                        to scale faster and stand out in competitive markets.
+                    </p>
+                    <div class="benefit-images">
+                        <img src="assets/images/servies/img1.jpg">
+                        <img src="assets/images/servies/img2.jpg">
+                    </div>
+            
+
+                    <!-- Bottom Paragraph -->
+                    <p class="benefit-text">
+                        Our consulting services ensure startups have a strong foundation, enabling them to
+                        attract investors, streamline operations, and achieve long-term growth with
+                        confidence and clarity.
+                    </p>
+
+                       <h2 class="benefit-title">Our Working Process</h2>  
+                        <p>
+                            Our working process at Ravali’s Startup & Business Consulting is rooted in strategic
+                            planning and deep
+                            business insight.
+                            We begin by understanding your vision, goals, and market positioning. Our team then crafts a
+                            custom
+                            roadmap that aligns with
+                            your growth objectives, leveraging industry trends and proven methodologies. Every step —
+                            from ideation
+                            to execution — is
+                            handled with care and precision. We focus on collaboration, feedback, and continuous
+                            improvement to
+                            ensure your startup is
+                            positioned for long-term success in a competitive landscape.
+                        </p>
+                    </div>
+                </section>
+                </div>
+
+
+               
+
+
+
+
+
+            </section>
+
+    </section>
+
+
+
+
+
+ <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Support Card -->
+                <div class="support-card">
+                    <h3>Talk to Our Support</h3>
+                    <div class="support-phone">
+                        <div class="headset-icon footer-section"><i class=" color-white mdi mdi-phone text-slate-400"></i></div>
+                        <a href="tel:+91 830 9380900" class="phone-number">+91 830 9380900</a>
+                        
+                    </div>
+                    <div class="support-location">Guntur</div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="core.html">My Core</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="card1.html">Web development</a></li>
+                        <li><a href="card2.html">Mobile App Development</a></li>
+                        <li><a href="card3.html">Cloud & DevOps</a></li>
+
+                        <li><a href="card4.html">AI & Machine Learning</a></li>
+                        <li><a href="card5.html">Cybersecurity</a></li>
+                        <li><a href="card6.html">Automation Testing</a></li>
+                        <li><a href="card7.html">Startup & Business Consulting</a></li>
+                        <li><a href="card8.html">Digital Marketing</a></li>
+                        <li><a href="card9.html">Content & Documentation</a></li>
+                        <li><a href="card10.html">HR & Recruitment</a></li>
+                        <li><a href="card11.html">Legal & Finance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Branches -->
+                <div class="footer-section branch-info">
+                    <h4>Our Branches</h4>
+                    <div class="branch-location">
+                        <h5>Guntur:</h5>
+                        <div class="branch-address">
+                            10/3, near Tagore chowk, Sali Pet, Arundelpet,
+                            Guntur,
+                            Andhra Pradesh 522601
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom branch-address">
+                <p class="mb-0 text-gray-300 ">CopyRight ©
+                    <script>document.write(new Date().getFullYear())</script> Techlynxinnovations. Designed <i
+                        class="mdi mdi-develop text-red-600"></i> by <a class="text-reset">Levitica</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--end footer-->
+    <!-- End Footer -->
+
+       <div id="chat-container" class="fixed bottom-6 z-50" style="right: 1.5rem;">
+   <!-- Chat Icon using uploaded image -->
+  <img id="chat-toggle" src="../../../../../../assets/images/bg/chat.png"
+     alt="Chat Icon" 
+     style="width:60px; height:60px;"
+     class="cursor-pointer shadow-lg" />
+
+   <!-- Chat Popup -->
+   <div id="chat-popup" class="hidden bg-white dark:bg-slate-900 shadow-lg w-80 rounded-xl overflow-hidden mt-2 border border-gray-300 dark:border-gray-700">
+       <!-- Header -->
+       <div class="bg-violet-600 text-white p-3 font-semibold flex justify-between items-center">
+           Chat with us
+           <button id="chat-close" class="text-white text-xl leading-none">&times;</button>
+       </div>
+       <!-- Messages -->
+       <div class="p-3 h-64 overflow-y-auto text-gray-700 dark:text-gray-300" id="chat-messages">
+           <p class="text-sm text-gray-400">Hi! How can we help you today?</p>
+       </div>
+       <!-- Input -->
+       <div class="border-t border-gray-300 dark:border-gray-700 p-2 flex">
+           <input id="chat-input" type="text" placeholder="Type a message..." 
+               class="flex-1 px-2 py-1 border rounded-l-md text-sm focus:outline-none">
+           <button id="chat-send" class="bg-violet-600 hover:bg-violet-700 text-white px-3 rounded-r-md text-sm">Send</button>
+       </div>
+   </div>
+</div>
+
+        
+
+
+
+    <!-- Switcher -->
+
+    <!-- JAVASCRIPTS -->
+    <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+    <script src="assets/libs/tobii/js/tobii.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/plugins.init.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- JAVASCRIPTS -->
+</body>
+
+</html>

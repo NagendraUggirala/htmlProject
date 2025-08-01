@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Edupath - Online Courses & Education HTML5 Template</title>
+    <title>TechLynx - Online Courses</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta content="Real Estate Website Landing Page" name="description" />
     <meta content="Real Estate, buy, sell, Rent, tailwind Css" name="keywords" />
@@ -14,7 +14,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    
+ <link rel="icon" type="image/png" sizes="512x512" href="assets/images/logo-dark.png">
+
 
     <!-- Css -->
     <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
@@ -23,10 +25,11 @@
     <link href="assets/libs/iconoir/css/iconoir.css" rel="stylesheet" type="text/css" />
     <link href="assets/libs/%40mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/css/tailwind.min.css" />
-
+    <Link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body class="dark:bg-slate-900" style="font-family: 'Roboto', sans-serif;">
+
     <!-- Loader Start -->
     <!-- <div id="preloader">
             <div id="status">
@@ -38,20 +41,20 @@
         </div> -->
     <!-- Loader End -->
     <!-- Start Navbar -->
-    <nav id="topnav" class="defaultscroll is-sticky">
+   <nav id="topnav" style="background-color:white ; height: 75px;" class="defaultscroll  is-sticky">
         <div class="container relative">
             <!-- Start Logo container-->
             <a class="logo" href="home.html">
                 <span class="inline-block dark:hidden">
-                    <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
-                    <img src="assets/images/logo-light.png" class="l-light" height="24" alt="">
+                    <img src="assets/images/logo-dark.png" class="l-dark logo-size" height="24" alt="">
+                    <img src="assets/images/logo-dark.png" class="l-light logo-size" height="24" alt="">
                 </span>
                 <img src="assets/images/logo-light.png" height="24" class="hidden dark:inline-block" alt="">
             </a>
             <!-- End Logo container-->
 
             <!-- Start Mobile Toggle -->
-            <div class="menu-extras">
+            <div class="menu-extras ">
                 <div class="menu-item">
                     <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
                         <div class="lines">
@@ -68,20 +71,49 @@
 
             <!--Login button End-->
 
-            
-<div id="navigation">
-    <!-- Navigation Menu-->   
-    <ul class="navigation-menu justify-start nav-light">
-        <li class="has-submenu parent-parent-menu-item"><a href="home.html">Home</a></li>
-        <li class="has-submenu parent-parent-menu-item"><a href="courses.html">Courses</a></li>
-        <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>    
-        <li><a href="core.html" class="sub-menu-item my-core">My Core</a></li>
-        <li><a href="services.html" class="sub-menu-item my-core">Services</a></li>
-        <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
-    </ul><!--end navigation menu-->
-</div><!--end navigation-->
-</div><!--end container-->
-</nav><!--end header-->
+            <div id="navigation">
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu justify-start ">
+                    <li><a href="home.html" class="sub-menu-item container-nav"
+                            style="font-weight: bold; font-family: Roboto;">Home</a></li>
+                    <li><a href="courses.html" class="sub-menu-item container-nav"
+                            style="font-weight: bold; font-family: Roboto;">Courses</a></li>
+                    <li><a href="aboutus.html" class="sub-menu-item container-nav"
+                            style="font-weight: bold; font-family: Roboto;">About Us</a></li>
+                    <li><a href="core.html" class="sub-menu-item my-core container-nav"
+                            style="font-weight: bold; font-family: Roboto;">My Core</a></li>
+                    <li><a href="services.html" class="sub-menu-item my-core container-nav"
+                            style="font-weight: bold; font-family: Roboto;">Services</a></li>
+                    <li><a href="contactus.html" class="sub-menu-item container-nav"
+                            style="font-weight: bold; font-family: Roboto;">Contact Us</a></li>
+
+
+                    <li> <a href="https://www.facebook.com/share/16yW5mkdBR/" target="_blank"
+                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
+                                <i class="fab fa-linkedin"></i>
+                            </a></li>
+                    <li> <a href="https://youtube.com/@techlynxinnovationsprivatelimi?si=PM6yu6NXCnoSN9h2" target="_blank"
+                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
+                                <i class="fab fa-youtube"></i>
+                            </a></li>
+                    <li> <a href="https://www.instagram.com/techlynx_innovations?igsh=MTAxYnUxanFwc2Riag==" target="_blank"
+                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a></li>
+                    <li> <a href="https://x.com/TechlynxLimited?t=Ty3Wx5qshDFYvqM1ad0dTw&s=08" target="_blank"
+                                class="container-nav text-blue-700 text-2xl hover:opacity-80 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a></li>
+
+
+
+
+
+                </ul><!--end navigation menu-->
+            </div><!--end navigation-->
+
+        </div><!--end container-->
+    </nav><!--end header-->
 
 
 <dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
@@ -113,13 +145,76 @@
     </div><!--end container-->
 </section><!--end section-->
 
+
+
+
         <div class="relative">
             <div class="shape overflow-hidden z-1 text-white dark:text-slate-900">
                 <svg viewBox="0 0 2880 48" fill="none" xmlns="../../../www.w3.org/2000/svg.html">
                     <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
                 </svg>
             </div>
+        </div><br><br>
+
+
+         
+        <div class="container relative md:mt-24 mt-16">
+    <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
+        <!-- Image on left -->
+        <div class="lg:col-span-6 md:col-span-7">
+            <div class="relative">
+                <div class="relative md:shrink-0 lg:me-0 me-10 mb-12">
+                    <img class="object-cover w-[98%] h-[480px] rounded-lg shadow-md dark:shadow-gray-600"
+                        src="assets/images/bg/10.jpg" alt="">
+                </div>
+            </div>
         </div>
+        <!-- Text on right -->
+        <div class="lg:col-span-6 md:col-span-5">
+            <h4 class="mb-4 md:text-4xl text-3xl md:leading-relaxed leading-relaxed font-semibold">
+                Access to Learning <br> Anytime & Anywhere
+            </h4>
+            <p class="text-slate-400 max-w-xl mx-auto text-lg md:text-xl">
+                We believe education should be available to everyone, no matter where they are.
+                Our platform offers high-quality courses created by experts, helping learners gain practical
+                skills at their own pace. Learn anytime, on any device, and transform your career with ease.
+            </p>
+
+            <div class="grid md:grid-cols-2 mt-4">
+                <ul class="list-none">
+                    <li class="mt-2 text-[16px]">
+                        <i class="mdi mdi-circle-medium"></i>
+                        <span class="text-slate-400">Self-Paced Learning</span>
+                    </li>
+                    <li class="mt-2 text-[16px]">
+                        <i class="mdi mdi-circle-medium"></i>
+                        <span class="text-slate-400">Live Expert Sessions</span>
+                    </li>
+                </ul>
+
+                <ul class="list-none">
+                    <li class="mt-2 text-[16px]">
+                        <i class="mdi mdi-circle-medium"></i>
+                        <span class="text-slate-400">Affordable & Flexible Plans</span>
+                    </li>
+                    <li class="mt-2 text-[16px]">
+                        <i class="mdi mdi-circle-medium"></i>
+                        <span class="text-slate-400">Join a Global Network</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mt-6">
+                <a href="#"
+                    class="h-10 px-5 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white">
+                    Learn More <i class="mdi mdi-arrow-right align-middle ms-1"></i>
+                </a>
+            </div>
+        </div><!--end col-->
+
+    </div><!--end grid-->
+</div><!--end container--><br>
+
       <section class="relative py-12">
             <div class="container relative">
                 <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 gap-6">
@@ -128,14 +223,14 @@
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/1.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/java.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                              <div class="absolute start-6 top-6">
-                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Free</span>
-                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Event</span>
+                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Paid</span>
+                               
                             </div>
                                                         <div class="absolute -bottom-5 end-6">
-                                <span class="bg-violet-600 text-white size-10 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold">$0</span>
+                                <span class="bg-violet-600 text-white size-16 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold"> ₹ 15000</span>
                             </div>
                                 </div>
         
@@ -145,12 +240,12 @@
                                         <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users" class="text-slate-900 dark:text-white size-[14px] me-1"></i>49 Students</span>
                                     </div>
         
-                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">The Ultimate Course Bundle</a>
+                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Java Full-Stack </a>
         
                                     <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
         
                                     <div class="flex justify-between mt-3">
-                                        <span class="flex items-center"><img src="assets/images/team/2.jpg" class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2" alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin Carlo</a></span>
+                                        
                                         <a href="#" class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
                                     </div>
                                 </div>
@@ -162,14 +257,14 @@
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/5.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/python.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                              <div class="absolute start-6 top-6">
-                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Free</span>
-                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Event</span>
+                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Paid</span>
+                              
                             </div>
                                                         <div class="absolute -bottom-5 end-6">
-                                <span class="bg-violet-600 text-white size-10 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold">$0</span>
+                                <span class="bg-violet-600 text-white size-16 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold">₹17000-</span>
                             </div>
                                 </div>
         
@@ -179,12 +274,12 @@
                                         <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users" class="text-slate-900 dark:text-white size-[14px] me-1"></i>49 Students</span>
                                     </div>
         
-                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Front-end Development Course</a>
+                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Python Full-Stack</a>
         
                                     <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
         
                                     <div class="flex justify-between mt-3">
-                                        <span class="flex items-center"><img src="assets/images/team/2.jpg" class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2" alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin Carlo</a></span>
+                                       
                                         <a href="#" class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
                                     </div>
                                 </div>
@@ -193,14 +288,14 @@
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/6.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/dot.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                              <div class="absolute start-6 top-6">
-                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Free</span>
-                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Event</span>
+                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Paid</span>
+                              
                             </div>
                                                         <div class="absolute -bottom-5 end-6">
-                                <span class="bg-violet-600 text-white size-10 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold">$0</span>
+                                <span class="bg-violet-600 text-white size-16 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold">₹ 19000</span>
                             </div>
             
                                 </div>
@@ -211,12 +306,12 @@
                                         <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users" class="text-slate-900 dark:text-white size-[14px] me-1"></i>49 Students</span>
                                     </div>
         
-                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Full stack Project in Nextjs Course</a>
+                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Dot net Full-Stack</a>
         
                                     <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
         
                                     <div class="flex justify-between mt-3">
-                                        <span class="flex items-center"><img src="assets/images/team/2.jpg" class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2" alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin Carlo</a></span>
+                                      
                                         <a href="#" class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
                                     </div>
                                 </div>
@@ -225,14 +320,14 @@
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/7.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/cloud.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                              <div class="absolute start-6 top-6">
-                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Free</span>
-                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Event</span>
+                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Paid</span>
+                               
                             </div>
                                                         <div class="absolute -bottom-5 end-6">
-                                <span class="bg-violet-600 text-white size-10 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold">$0</span>
+                                <span class="bg-violet-600 text-white size-16 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold">₹ 16000</span>
                             </div>
 
                                 </div>
@@ -243,12 +338,12 @@
                                         <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users" class="text-slate-900 dark:text-white size-[14px] me-1"></i>49 Students</span>
                                     </div>
         
-                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Why Is Education So Famous?</a>
+                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Data Science & Cloud Courses</a>
         
                                     <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
         
                                     <div class="flex justify-between mt-3">
-                                        <span class="flex items-center"><img src="assets/images/team/2.jpg" class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2" alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin Carlo</a></span>
+                                      
                                         <a href="#" class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
                                     </div>
                                 </div>
@@ -257,14 +352,14 @@
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/8.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/react.png" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                              <div class="absolute start-6 top-6">
-                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Free</span>
-                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Event</span>
+                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Paid</span>
+                          
                             </div>
                                                         <div class="absolute -bottom-5 end-6">
-                                <span class="bg-violet-600 text-white size-10 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold">$0</span>
+                                <span class="bg-violet-600 text-white size-16 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold">₹ 15000</span>
                             </div>
                                   
                                 </div>
@@ -275,12 +370,12 @@
                                         <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users" class="text-slate-900 dark:text-white size-[14px] me-1"></i>49 Students</span>
                                     </div>
         
-                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Difficult Things About Education.</a>
+                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Flutter/React</a>
         
                                     <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
         
                                     <div class="flex justify-between mt-3">
-                                        <span class="flex items-center"><img src="assets/images/team/2.jpg" class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2" alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin Carlo</a></span>
+                                     
                                         <a href="#" class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
                                     </div>
                                 </div>
@@ -289,14 +384,14 @@
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/9.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/selenium.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                              <div class="absolute start-6 top-6">
-                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Free</span>
-                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Event</span>
+                                <span class="bg-violet-600 text-white text-[12px] px-2.5 py-1 rounded-md h-4">Paid</span>
+                               
                             </div>
                                                         <div class="absolute -bottom-5 end-6">
-                                <span class="bg-violet-600 text-white size-10 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold">$0</span>
+                                <span class="bg-violet-600 text-white size-16 flex items-center justify-center rounded-full shadow-md shadow-slate-100 dark:shadow-slate-800 font-semibold">₹ 17000</span>
                             </div>
                                    
                                 </div>
@@ -307,12 +402,11 @@
                                         <span class="text-slate-400 text-sm flex items-center ms-3"><i data-feather="users" class="text-slate-900 dark:text-white size-[14px] me-1"></i>49 Students</span>
                                     </div>
         
-                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Online Courses from Edupath</a>
+                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Manual with Selenium Automations</a>
         
                                     <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
         
-                                    <div class="flex justify-between mt-3">
-                                        <span class="flex items-center"><img src="assets/images/team/2.jpg" class="size-8 rounded-full shadow-sm shadow-slate-100 dark:shadow-slate-800 me-2" alt=""> <a href="#" class="hover:text-violet-600 font-medium"> Calvin Carlo</a></span>
+                                    <div class="flex justify-between mt-3"> 
                                         <a href="#" class="h-8 px-3 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-violet-600/10 hover:bg-violet-600 text-violet-600 hover:text-white text-sm">Explore <i class="mdi mdi-arrow-right align-middle ms-1"></i></a>
                                     </div>
                                 </div>
@@ -427,17 +521,17 @@
                             <div class="range-slider mt-3">
                                 <span class="flex justify-between pb-2">
                                     <span>
-                                        <label for="" class="text-lg">$</label>
-                                        <input type="number" class="text-slate-400" value="50" min="0" max="200" />
+                                        <label for="" class="text-lg">Rs</label>
+                                        <input type="number" class="text-slate-400" value="1500" min="0" max="2000" />
                                     </span>
 
                                     <span>
-                                        <label for="" class="text-lg">$</label>
-                                        <input type="number" class="text-slate-400" value="120" min="0" max="200" />
+                                        <label for="" class="text-lg">Rs</label>
+                                        <input type="number" class="text-slate-400" value="20000" min="0" max="2000" />
                                     </span>
                                 </span>
-                                <input value="50" min="0" max="200" step="5" type="range" />
-                                <input value="120" min="0" max="200" step="5" type="range" />
+                                <input value="100" min="0" max="2000" step="5" type="range" />
+                                <input value="100" min="0" max="2000" step="5" type="range" />
                             </div>
                         </div>
 
@@ -446,205 +540,90 @@
             </div><!--end grid-->
         </div><!--end container-->
 
-        <div class="container relative md:mt-24 mt-16">
-            <div class="grid grid-cols-1">
-                <div
-                    class="relative bg-white dark:bg-slate-900 lg:px-8 px-6 py-10 rounded-lg shadow-sm shadow-slate-200 dark:shadow-slate-800 overflow-hidden">
-                    <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-6">
-                        <div class="md:text-start text-center z-1">
-                            <h3 class="mb-2 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
-                                Subscribe to Newsletter!</h3>
-                            <p class="text-slate-400 max-w-xl mx-auto">Subscribe to get latest updates and information.
-                            </p>
-                        </div>
+      </section>
 
-                        <div class="z-1">
-                            <form class="relative mx-auto max-w-xl">
-                                <input type="email" id="subemail" name="name"
-                                    class="pt-4 pe-40 pb-4 ps-6 w-full h-[50px] outline-none text-slate-900 dark:text-white rounded-full bg-white/70 dark:bg-slate-900/70 border border-slate-100 dark:border-slate-800"
-                                    placeholder="Enter your email id..">
-                                <button type="submit"
-                                    class="h-12 px-6 tracking-wide items-center justify-center font-medium bg-violet-600 text-white rounded-full absolute top-[1px] end-[1px]">Subcribe
-                                    Now</button>
-                            </form><!--end form-->
-                        </div>
+   
+        <!-- Start Footer -->
+         <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Support Card -->
+                <div class="support-card">
+                    <h3>Talk to Our Support</h3>
+                    <div class="support-phone">
+                        <div class="headset-icon footer-section"><i class=" color-white mdi mdi-phone text-slate-400"></i></div>
+                        <a href="tel:+91 830 9380900" class="phone-number">+91 830 9380900</a>
+                        
                     </div>
-
-                    <div class="absolute -top-5 -start-5">
-                        <div
-                            class="iconoir-mail lg:text-[150px] text-7xl text-slate-900/5 dark:text-white/5 ltr:-rotate-45 rtl:rotate-45">
-                        </div>
-                    </div>
-
-                    <div class="absolute -bottom-5 -end-5">
-                        <div
-                            class="iconoir-edit-pencil lg:text-[150px] text-7xl text-slate-900/5 dark:text-white/5 rtl:-rotate-90">
-                        </div>
-                    </div>
+                    <div class="support-location">Guntur</div>
                 </div>
-            </div><!--end grid-->
-        </div><!--end container-->
-    </section><!--end section-->
-    <!-- End -->
 
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="core.html">My Core</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                    </ul>
+                </div>
 
-    <!-- Back to top -->
-    <a href="#" onclick="topFunction()" id="back-to-top"
-        class="back-to-top fixed hidden rounded-full z-10 bottom-5 end-5 size-8 text-center bg-violet-600 text-white justify-center items-center"><i
-            data-feather="arrow-up" class="size-4"></i></a>
-    <!-- Back to top -->
-    <!-- Switcher -->
-    <div class="fixed top-1/4 -right-2 z-3">
-        <span class="relative inline-block rotate-90">
-            <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
-            <label
-                class="label bg-slate-900 dark:bg-white shadow-sm dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-[60px] h-8"
-                for="chk">
-                <i class="iconoir-half-moon text-yellow-500 align-middle ps-1 text-[16px] relative z-1"></i>
-                <i class="iconoir-sun-light text-yellow-500 align-middle pe-1 text-[16px] relative z-1"></i>
-                <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] size-7"></span>
-            </label>
-        </span>
-    </div>
-    <!-- Switcher -->
+                <!-- Services -->
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="card1.html">Web development</a></li>
+                        <li><a href="card2.html">Mobile App Development</a></li>
+                        <li><a href="card3.html">Cloud & DevOps</a></li>
 
-    <!-- LTR & RTL Mode Code -->
+                        <li><a href="card4.html">AI & Machine Learning</a></li>
+                        <li><a href="card5.html">Cybersecurity</a></li>
+                        <li><a href="card6.html">Automation Testing</a></li>
+                        <li><a href="card7.html">Startup & Business Consulting</a></li>
+                        <li><a href="card8.html">Digital Marketing</a></li>
+                        <li><a href="card9.html">Content & Documentation</a></li>
+                        <li><a href="card10.html">HR & Recruitment</a></li>
+                        <li><a href="card11.html">Legal & Finance</a></li>
+                    </ul>
+                </div>
 
-    <!-- Start Footer -->
-    <footer class="relative bg-slate-900 dark:bg-slate-800">
-        <div class="container relative">
-            <div class="grid grid-cols-1">
-                <div class="relative py-16">
-                    <!-- Subscribe -->
-                    <div class="relative w-full">
-                        <div class="grid md:grid-cols-12 grid-cols-1 gap-6">
-                            <div class="lg:col-span-4 md:col-span-12">
-                                <a href="#" class="text-[22px] focus:outline-none">
-                                    <img src="assets/images/logo-light.png" alt="">
-                                </a>
-                                <p class="mt-6 text-gray-300">Discover a world of knowledge and opportunities with our
-                                    online education platform pursue a new career.</p>
-
-                                <div class="flex mt-6">
-                                    <i class="iconoir-map-pin align-middle text-2xl text-violet-600 me-2"></i>
-                                    <div class="">
-                                        <h6 class="text-gray-300">C/54 Northwest Freeway, <br> Houston, USA 485</h6>
-                                    </div>
-                                </div>
-
-                                <div class="flex mt-4">
-                                    <i class="iconoir-phone align-middle text-2xl text-violet-600 me-2"></i>
-                                    <div class="">
-                                        <a href="tel:+152534-468-854"
-                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">+152
-                                            534-468-854</a>
-                                    </div>
-                                </div>
-                            </div><!--end col-->
-
-                            <div class="lg:col-span-2 md:col-span-3">
-                                <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Usefull Links</h5>
-
-                                <ul class="list-none footer-list mt-6">
-                                    <li><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
-                                            href="#"
-                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Course</a>
-                                    </li>
-                                    <li class="mt-[10px]"><i
-                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
-                                            href="#"
-                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Mission &
-                                            Vision</a></li>
-                                    <li class="mt-[10px]"><i
-                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
-                                            href="#"
-                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Join a
-                                            Career</a></li>
-                                    <li class="mt-[10px]"><i
-                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
-                                            href="#"
-                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Zoom
-                                            Meeting</a></li>
-                                    <li class="mt-[10px]"><i
-                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
-                                            href="#"
-                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Pricing
-                                            Plan</a></li>
-                                </ul>
-                            </div><!--end col-->
-
-                            <div class="lg:col-span-2 md:col-span-3">
-                                <h5 class="tracking-[1px] text-gray-100 font-semibold text-lg">Our Institute</h5>
-
-                                <ul class="list-none footer-list mt-6">
-                                    <li><i class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
-                                            href="#"
-                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Contact
-                                            Us</a></li>
-                                    <li class="mt-[10px]"><i
-                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
-                                            href="#"
-                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Technology</a>
-                                    </li>
-                                    <li class="mt-[10px]"><i
-                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
-                                            href="#"
-                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Instructors</a>
-                                    </li>
-                                    <li class="mt-[10px]"><i
-                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
-                                            href="#"
-                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Pricing</a>
-                                    </li>
-                                    <li class="mt-[10px]"><i
-                                            class="iconoir-nav-arrow-right text-gray-400 align-middle me-1"></i><a
-                                            href="#"
-                                            class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Services</a>
-                                    </li>
-                                </ul>
-                            </div><!--end col-->
-
-
-                        </div><!--end grid-->
+                <!-- Our Branches -->
+                <div class="footer-section branch-info">
+                    <h4>Our Branches</h4>
+                    <div class="branch-location">
+                        <h5>Guntur:</h5>
+                        <div class="branch-address">
+                            10/3, near Tagore chowk, Sali Pet, Arundelpet,
+                            Guntur,
+                            Andhra Pradesh 522601
+                        </div>
                     </div>
-                    <!-- Subscribe -->
                 </div>
             </div>
-        </div><!--end container-->
 
-        <div class="py-[30px] px-0 border-t border-gray-800 dark:border-gray-700">
-            <div class="container relative text-center">
-                <div class="grid md:grid-cols-2 items-center gap-6">
-                    <div class="md:text-start text-center">
-                        <p class="mb-0 text-gray-300">CopyRight ©
-                            <script>document.write(new Date().getFullYear())</script> Edupath. Design <i
-                                class="mdi mdi-heart text-red-600"></i> by <a class="text-reset">Levitica</a>.
-                        </p>
-                    </div>
-
-                    <ul class="list-disc footer-list md:text-end text-center space-x-3">
-                        <li class="inline-block"><i class="mdi mdi-circle-medium text-gray-400"></i> <a
-                                href="terms.html"
-                                class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Terms</a></li>
-                        <li class="inline-block mt-[10px] md:mt-0"><i class="mdi mdi-circle-medium text-gray-400"></i>
-                            <a href="privacy.html"
-                                class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Privacy</a></li>
-                        <li class="inline-block mt-[10px] md:mt-0"><i class="mdi mdi-circle-medium text-gray-400"></i>
-                            <a href="login.html"
-                                class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out">Login</a></li>
-                    </ul><!--end icon-->
-                </div><!--end grid-->
-            </div><!--end container-->
+            <!-- Copyright -->
+            <div class="footer-bottom branch-address">
+                <p class="mb-0 text-gray-300 ">CopyRight ©
+                    <script>document.write(new Date().getFullYear())</script> Techlynxinnovations. Designed <i
+                        class="mdi mdi-develop text-red-600"></i> by <a class="text-reset">Levitica</a>.
+                </p>
+            </div>
         </div>
     </footer>
     <!--end footer-->
     <!-- End Footer -->
+
+    
+       </footer><!--end footer-->
     <div id="chat-container" class="fixed bottom-6 z-50" style="right: 1.5rem;">
    <!-- Chat Icon using uploaded image -->
    <img id="chat-toggle" src="../../../../../../assets/images/bg/chat.png"
-        alt="Chat Icon" 
-        class="w-8 h-8 cursor-pointer shadow-lg" />
-
+     alt="Chat Icon" 
+     style="width:60px; height:60px;"
+     class="cursor-pointer shadow-lg" />
    <!-- Chat Popup -->
    <div id="chat-popup" class="hidden bg-white dark:bg-slate-900 shadow-lg w-80 rounded-xl overflow-hidden mt-2 border border-gray-300 dark:border-gray-700">
        <!-- Header -->
@@ -666,13 +645,12 @@
 </div>
 
       
-    <!-- JAVASCRIPTS -->
-    <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
-    <script src="assets/libs/tobii/js/tobii.min.js"></script>
-    <script src="assets/libs/feather-icons/feather.min.js"></script>
-    <script src="assets/js/plugins.init.js"></script>
-    <script src="assets/js/app.js"></script>
-    <!-- JAVASCRIPTS -->
-</body>
-
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+        <script src="assets/libs/tobii/js/tobii.min.js"></script>
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/js/plugins.init.js"></script>
+        <script src="assets/js/app.js"></script>
+        <!-- JAVASCRIPTS -->
+    </body>
 </html>
