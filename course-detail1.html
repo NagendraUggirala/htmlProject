@@ -107,20 +107,47 @@
         <!--end header-->
         <!-- End Navbar -->
 
-        <!-- Searchbar modal -->
-        <dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
-            <div class="relative w-full h-auto">
-                <form method="dialog" class="modal-backdrop">
-                    <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost"><i data-feather="x" class="size-4"></i></button>
-                </form>
-                <div class="p-6 text-center">
-                    <form class="relative">
-                        <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
-                        <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10" name="s" id="searchItem" placeholder="Search...">
-                    </form>
-                </div>
-            </div>
-        </dialog>
+    <dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
+    <div class="relative w-full h-auto">
+        <form method="dialog" class="modal-backdrop">
+            <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost">
+                <i data-feather="x" class="size-4"></i>
+            </button>
+        </form>
+        <div class="p-6 text-center">
+            <form class="relative">
+                <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
+                <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10" name="s" id="searchItem" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+</dialog>
+
+<!-- Banner Section -->
+ <section
+    class="relative table w-full py-16 lg:py-24 bg-no-repeat bg-center bg-cover"
+    style="background: linear-gradient(135deg, #92afe9 0%, #D4C3F2 100%);">
+    
+    <!-- Slight overlay for contrast -->
+    <div class="absolute inset-0 bg-black opacity-10"></div>
+    
+    <!-- Content Container -->
+    <div class="container relative z-10">
+        <div class="grid grid-cols-1 text-center mt-10">
+            <h3 class="md:text-3xl text-2xl font-semibold text-black">
+                Python Full-Stack
+            </h3>
+        </div><!--end grid-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- Bottom Curve Shape -->
+<div class="relative">
+    <div class="shape overflow-hidden z-1 text-white ">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-[60px]">
+            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+        </svg>
+    </div>
+</div>
         <!-- Searchbar modal -->
 
         <!-- Start -->
@@ -129,7 +156,7 @@
                 <div class="md:flex justify-center">
                    <div class="lg:w-3/5 mx-auto text-center">
   <h3 class="text-3xl leading-normal font-medium">
-    App Development Course
+   Python Full-Stack
   </h3>
 </div>
 
@@ -138,7 +165,8 @@
                 
                 <div class="image-section">
   <div class="image-container clss">
-    <img src="assets/images/course/App.jpg" alt="Course Image" class="courses-image-container wide-short-image">
+      <img src="assets/images/course/python3.jpg" alt="Course Image" class="courses-image-container wide-short-image" style="width: 1000px; height: 300px;">
+
   </div>
 </div>
                 <div class="md:flex justify-center mt-10">
@@ -146,31 +174,37 @@
                         <h5 class="text-2xl font-semibold mb-4">Overview</h5>
 
                         <section>
-    <p class="text-slate-400 mb-3">
-        Welcome to the <strong>App Development Course</strong> – your complete guide to building modern mobile and web applications step-by-step. This course is perfect for beginners starting their journey as well as professionals aiming to upgrade their skills and work on advanced projects.
-    </p>
+  <!-- Description -->
+<p class="text-slate-400 mb-3">
+  Welcome to the <strong>Python Full Stack Developer Mastery Program</strong> – a comprehensive course designed to equip you with end-to-end development skills using Python and modern web technologies. Whether you’re just starting out or looking to upskill, this bundle offers clear, practical, and career-focused learning.
+</p>
 
-    <p class="text-slate-400 mb-3">
-        Throughout this course, you will create real-world applications, participate in coding challenges, and follow simplified explanations for even the most complex concepts. Each module is designed to ensure you not only learn but also apply your knowledge effectively in real-life scenarios.
-    </p>
+<p class="text-slate-400 mb-3">
+  The course starts with Python fundamentals including variables, functions, data types, and OOP concepts. You’ll then advance into web development using Django and Flask – two powerful Python frameworks that help you build scalable, secure web applications.
+</p>
 
-    <p class="text-slate-400 mb-3">
-        The curriculum covers everything from <strong>frontend and backend integration</strong> to working with APIs, databases, and deploying apps on app stores. With lifetime access and frequent updates, you will always stay ahead of the latest industry trends and technologies.
-    </p>
+<p class="text-slate-400 mb-3">
+  In parallel, you'll gain expertise in frontend technologies like HTML, CSS, Bootstrap, JavaScript, and modern libraries such as React. You’ll learn to build dynamic UIs, connect them to backend APIs, and manage data using both SQL (MySQL, PostgreSQL) and NoSQL (MongoDB) databases.
+</p>
 
-    <p class="text-slate-400">
-        By the end of this course, you will have built multiple professional-grade apps, gained hands-on experience with modern tools, and developed the confidence to work as a full-fledged app developer or start your own projects.
-    </p>
+<p class="text-slate-400 mb-3">
+  This program includes hands-on projects, real-world assignments, and tools used in the industry like Git, GitHub, Postman, and Docker. You’ll also explore deploying full stack apps on cloud platforms such as AWS, Heroku, and Vercel with CI/CD integrations.
+</p>
+
+<p class="text-slate-400">
+  By completing this program, you’ll develop an impressive portfolio, gain confidence in building complete applications, and be well-prepared for roles like Python Full Stack Developer, Backend Engineer, or Software Developer.
+</p>
+
 
     <!-- Key Highlights -->
     <div class="mt-6">
         <h3 class="text-xl font-semibold text-gray-700 mb-3">Key Highlights:</h3>
         <ul class="list-disc pl-5 text-slate-500 space-y-2">
-            <li>Step-by-step learning for mobile and web app development</li>
-            <li>Real-world projects covering both frontend and backend</li>
-            <li>Hands-on experience with frameworks like React Native and Flutter</li>
-            <li>Deployment guidance for Google Play and Apple App Store</li>
-            <li>Lifetime access with free updates and certification</li>
+           <li>Comprehensive Python programming from basics to advanced</li>
+    <li>Backend development with Django, Flask, and REST APIs</li>
+    <li>Frontend development with HTML5, CSS3, Bootstrap, JavaScript, and React</li>
+    <li>Database integration using MySQL, PostgreSQL, and MongoDB</li>
+    <li>Version control with Git and GitHub</li>
         </ul>
     </div>
 </section>
@@ -181,159 +215,125 @@
                             <h5 class="text-2xl font-semibold">Root Map</h5>
                         </div>
 
+<!-- Introduction -->
 <div class="mt-6">
-    <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
-        <summary class="px-4 py-5 text-lg font-semibold cursor-pointer introduction-heading" style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #6D28D9;">
-      Introductions
-        </summary>
-
-        <table class="w-full text-start">
-            <thead>
-                <tr>
-                    <th class="px-4 py-5 text-start">Lessons</th>
-                    <th class="px-4 py-5 text-end">Time</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>Introduction to Mobile App Development (iOS & Android)</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">4 days</span></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> UI/UX Design for Mobile Applications</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">5 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>Building Apps with React Native / Flutter</a></a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">10 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>  Testing, Deployment & Publishing to App Stores</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">6 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-            </tbody>
-        </table>
-    </details>
+  <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
+    <summary class="px-4 py-5 text-lg font-semibold cursor-pointer" style="border-bottom: 1px solid #e2e8f0; color: #6D28D9;">
+      Introduction 
+    </summary>
+    <table class="w-full text-start">
+      <thead>
+        <tr>
+          <th class="px-4 py-5 text-start">Lessons</th>
+          <th class="px-4 py-5 text-end">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">HTML & CSS</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">5 days</span></td>
+        </tr>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">Python Syntax & Control Flow</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">6 days</span></td>
+        </tr>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">Functions & Modules</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">4 days</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
 </div>
 
+<!-- Mastery -->
 <div class="mt-6">
-    <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
-        <summary class="px-4 py-5 text-lg font-semibold cursor-pointer introduction-heading" style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #6D28D9;">
-     Mastery
-        </summary>
-
-        <table class="w-full text-start">
-            <thead>
-                <tr>
-                    <th class="px-4 py-5 text-start">Lessons</th>
-                    <th class="px-4 py-5 text-end">Time</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>Advanced State Management in Mobile Apps (Redux/MobX)</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">6 days</span></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Optimizing App Performance & Offline Capabilities</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">7 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>Integrating APIs & Push Notifications</a></a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">5 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>  Publishing Enterprise-Grade Apps & Monetization Strategies</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">6 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-            </tbody>
-        </table>
-    </details>
+  <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
+    <summary class="px-4 py-5 text-lg font-semibold cursor-pointer" style="border-bottom: 1px solid #e2e8f0; color: #6D28D9;">
+      Mastery 
+    </summary>
+    <table class="w-full text-start">
+      <thead>
+        <tr>
+          <th class="px-4 py-5 text-start">Lessons</th>
+          <th class="px-4 py-5 text-end">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">Flask Web Framework</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">5 days</span></td>
+        </tr>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">React Front-End</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">6 days</span></td>
+        </tr>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">REST APIs with Flask</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">4 days</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
 </div>
 
+<!-- Final Thoughts -->
 <div class="mt-6">
-    <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
-        <summary class="px-4 py-5 text-lg font-semibold cursor-pointer introduction-heading" style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #6D28D9;">
-   Final Thoughts
-        </summary>
+  <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
+    <summary class="px-4 py-5 text-lg font-semibold cursor-pointer" style="border-bottom: 1px solid #e2e8f0; color: #6D28D9;">
+      Final Thoughts 
+    </summary>
+    <table class="w-full text-start">
+      <thead>
+        <tr>
+          <th class="px-4 py-5 text-start">Lessons</th>
+          <th class="px-4 py-5 text-end">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">Capstone Project (Full Stack)</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">7 days</span></td>
+        </tr>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">Hosting & Deployment (Render, Netlify)</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">2 days</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+</div>
 
-        <table class="w-full text-start">
-            <thead>
-                <tr>
-                    <th class="px-4 py-5 text-start">Lessons</th>
-                    <th class="px-4 py-5 text-end">Time</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>Preparing Your App Portfolio for Employers/Clients </td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Best Practices in Mobile App Maintenance & Updates</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">2 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>Interview Preparation for Mobile Developer Roles</a></a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>  Future Trends in Mobile Development (AI, AR/VR, etc.)</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">2 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-            </tbody>
-        </table>
-    </details>
-    </div>
-        
-                       
-                        
-    <div class="mt-6">
-    <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
-        <summary class="px-4 py-5 text-lg font-semibold cursor-pointer introduction-heading" style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #6D28D9;">
-   Bonus
-        </summary>
-
-        <table class="w-full text-start">
-            <thead>
-                <tr>
-                    <th class="px-4 py-5 text-start">Lessons</th>
-                    <th class="px-4 py-5 text-end">Time</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>Integrating Analytics and Tracking User Behavior </td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">2 days</span></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Implementing In-App Purchases and Subscriptions</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i>Cross-Platform Optimization Tips (iOS & Android)</a></a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">2 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><a href="#" class=""><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Freelancing and Monetizing Mobile Apps</a></td>
-                    <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-            </tbody>
-        </table>
-    </details>
-    </div>
+<!-- Bonus -->
+<div class="mt-6">
+  <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
+    <summary class="px-4 py-5 text-lg font-semibold cursor-pointer" style="border-bottom: 1px solid #e2e8f0; color: #6D28D9;">
+      Bonus 
+    </summary>
+    <table class="w-full text-start">
+      <thead>
+        <tr>
+          <th class="px-4 py-5 text-start">Lessons</th>
+          <th class="px-4 py-5 text-end">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">Git & GitHub Basics</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">2 days</span></td>
+        </tr>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">SQL Queries & Joins</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">3 days</span></td>
+        </tr>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">Interview Questions</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">2 days</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+</div>
         </div>
             </div><br><!--end container-->
 
@@ -345,13 +345,13 @@
                     <p class="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
                 </div><!--end grid-->
 
-                <div class="grid grid-cols-1 relative mt-3">
+              <div class="grid grid-cols-1 relative mt-3">
                     <div class="tiny-home-slide-three">
                         <div class="tiny-slide">
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/14.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/java.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                                    
 
@@ -363,9 +363,9 @@
                                 <div class="p-6">
                                    
 
-                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">The Ultimate Course Bundle</a>
+                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Java Full-Stack</a>
 
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+                                    <p class="text-slate-400 mt-2">Learn front-end with HTML, CSS, and JavaScript; back-end development with Java and Spring Boot; connect to MySQL databases; and deploy full-stack applications using tools like Git,and jenkins</p>
 
                                    
                                 </div>
@@ -376,7 +376,7 @@
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/13.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/python.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                                    
 
@@ -388,9 +388,9 @@
                                 <div class="p-6">
                                     
 
-                                    <a href="course-detail1.html" class="text-lg hover:text-violet-600 font-medium">App Development Course</a>
+                                    <a href="course-detail1.html" class="text-lg hover:text-violet-600 font-medium">Python Full-Stack</a>
 
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+                                    <p class="text-slate-400 mt-2">Learn front-end with HTML, CSS, and JavaScript; back-end with Java, Spring Boot, and Python; connect to MySQL; and deploy full-stack apps using Git, Docker, and Jenkins.</p>
 
                                    
                                 </div>
@@ -401,7 +401,7 @@
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/19.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/dot.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                                    
 
@@ -411,9 +411,9 @@
                                 <div class="p-6">
                                    
 
-                                    <a href="course-detail2.html" class="text-lg hover:text-violet-600 font-medium">Spoken English Popular Course</a>
+                                    <a href="course-detail2.html" class="text-lg hover:text-violet-600 font-medium">.Net Full-Stack</a>
 
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+                                    <p class="text-slate-400 mt-2">Learn front-end with HTML, CSS, and JavaScript; back-end with C# and ASP.NET Core; connect to SQL Server; and deploy full-stack apps using Git, Docker, and Azure DevOps.</p>
 
                                 </div>
                             </div>
@@ -423,7 +423,7 @@
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/15.webp" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/cloud.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                                     
 
@@ -433,9 +433,10 @@
                                 <div class="p-6">
                                   
 
-                                    <a href="course-detail3.html" class="text-lg hover:text-violet-600 font-medium">Back-end Development Course</a>
 
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+                                    <a href="course-detail3.html" class="text-lg hover:text-violet-600 font-medium">Data Science & Cloud Courses</a>
+
+                                    <p class="text-slate-400 mt-2">Learn data analysis with Python and R, master machine learning algorithms, perform data cleaning and preprocessing, visualize insights using tools like Tableau and Power BI.</p>
 
                                    
                                 </div>
@@ -446,7 +447,7 @@
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/16.webp" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/react.png" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                                    
                                 </div>
@@ -454,9 +455,9 @@
                                 <div class="p-6">
 
 
-                                    <a href="course-detail4.html" class="text-lg hover:text-violet-600 font-medium">Front-end Development Course</a>
+                                    <a href="course-detail4.html" class="text-lg hover:text-violet-600 font-medium">Flutter /React</a>
 
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+                                    <p class="text-slate-400 mt-2">Build cross-platform mobile apps with Flutter using Dart, create dynamic and responsive web applications with React using JavaScript and JSX,  and integrate REST APIs for seamless user experiences.</p>
 
                                    
                                 </div>
@@ -467,7 +468,7 @@
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/17.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/selenium.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                                     
                                 </div>
@@ -475,16 +476,18 @@
                                 <div class="p-6">
                                   
 
-                                    <a href="course-detail5.html" class="text-lg hover:text-violet-600 font-medium">Full stack Project in Nextjs Course</a>
+                                    <a href="course-detail5.html" class="text-lg hover:text-violet-600 font-medium">Manual with Selenium Automations</a>
 
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+                                    <p class="text-slate-400 mt-2">Perform manual testing to thoroughly understand application behavior, identify bugs, then automate repetitive test cases using Selenium WebDriver for reliable, scalable.
+
+</p>
 
                                    
                                 </div>
                             </div>
                         </div><!--end content-->
                     </div><!--end tiny slider-->
-                </div><!--end grid-->
+                </div><!--end grid--><br>
             <div class="container relative md:mt-24 mt-16">
                 <div class="md:flex justify-center">
                     <div class="lg:w-2/3 text-center">
@@ -538,18 +541,17 @@
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="card1.html">Web development</a></li>
-                        <li><a href="card2.html">Mobile App Development</a></li>
-                        <li><a href="card3.html">Cloud & DevOps</a></li>
-
-                        <li><a href="card4.html">AI & Machine Learning</a></li>
-                        <li><a href="card5.html">Cybersecurity</a></li>
-                        <li><a href="card6.html">Automation Testing</a></li>
-                        <li><a href="card7.html">Startup & Business Consulting</a></li>
-                        <li><a href="card8.html">Digital Marketing</a></li>
-                        <li><a href="card9.html">Content & Documentation</a></li>
-                        <li><a href="card10.html">HR & Recruitment</a></li>
-                        <li><a href="card11.html">Legal & Finance</a></li>
+                       <li><a href="web development.html">Web development</a></li>
+                        <li><a href="Mobile app development.html">Mobile App Development</a></li>
+                        <li><a href="cloud & devops.html">Cloud & DevOps</a></li>
+                       <li><a href="Ai & Ml.html">AI & Machine Learning</a></li>
+                        <li><a href="cyber security.html">Cybersecurity</a></li>
+                        <li><a href="software testing.html">Software Testing & QA</a></li>
+                        <li><a href="startup & Business consulting.html">Startup & Business Consulting</a></li>
+                        <li><a href="digital marketing.html">Digital Marketing</a></li>
+                        <li><a href="content and documentation.html">Content & Documentation</a></li>
+                        <li><a href="Hr & recruitment.html">HR & Recruitment</a></li>
+                        <li><a href="Legal & Finance.html">Legal & Finance</a></li>
                     </ul>
                 </div>
 

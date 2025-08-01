@@ -106,21 +106,47 @@
 </nav>
         <!--end header-->
         <!-- End Navbar -->
+    
+<dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
+    <div class="relative w-full h-auto">
+        <form method="dialog" class="modal-backdrop">
+            <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost">
+                <i data-feather="x" class="size-4"></i>
+            </button>
+        </form>
+        <div class="p-6 text-center">
+            <form class="relative">
+                <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
+                <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10" name="s" id="searchItem" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+</dialog>
 
-        <!-- Searchbar modal -->
-        <dialog id="navbarSearch" class="modal rounded-md shadow-sm dark:shadow-gray-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white w-11/12 max-w-5xl mt-20">
-            <div class="relative w-full h-auto">
-                <form method="dialog" class="modal-backdrop">
-                    <button class="size-5 rounded-md flex justify-center items-center absolute top-0 end-0 btn-ghost"><i data-feather="x" class="size-4"></i></button>
-                </form>
-                <div class="p-6 text-center">
-                    <form class="relative">
-                        <i class="iconoir-search text-lg absolute top-2.5 end-0"></i>
-                        <input type="text" class="w-full py-2 px-3 bg-transparent focus:outline-none rounded-md pe-6 h-10" name="s" id="searchItem" placeholder="Search...">
-                    </form>
-                </div>
-            </div>
-        </dialog>
+<!-- Banner Section -->
+ <section
+    class="relative table w-full py-16 lg:py-24 bg-no-repeat bg-center bg-cover"
+    style="background: linear-gradient(135deg, #92afe9 0%, #D4C3F2 100%);">
+    
+    <!-- Slight overlay for contrast -->
+    <div class="absolute inset-0 bg-black opacity-10"></div>
+    
+    <!-- Content Container -->
+    <div class="container relative z-10">
+        <div class="grid grid-cols-1 text-center mt-10">
+            <h3 class="md:text-3xl text-2xl font-semibold text-black">
+Data Science & Cloud Courses           </h3>
+        </div><!--end grid-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- Bottom Curve Shape -->
+<div class="relative">
+    <div class="shape overflow-hidden z-1 text-white ">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-[60px]">
+            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+        </svg>
+    </div>
+</div>
         <!-- Searchbar modal -->
 
         <!-- Start -->
@@ -129,7 +155,8 @@
                 <div class="md:flex justify-center">
                    <div class="lg:w-3/5 mx-auto text-center">
   <h3 class="text-3xl leading-normal font-medium">
-Back-End Development Course
+
+Data Science & Cloud Courses
   </h3>
 </div>
 
@@ -139,7 +166,7 @@ Back-End Development Course
 
                 <div class="image-section">
   <div class="image-container">
-    <img src="assets/images/course/Bend.jpg" alt="Course Image" class="wide-short-image">
+    <img src="assets/images/course/cloud2.jpg" alt="Course Image" class="wide-short-image">
   </div>
 </div>
                 <div class="md:flex justify-center mt-10">
@@ -147,196 +174,168 @@ Back-End Development Course
                         <h5 class="text-2xl font-semibold mb-4">Overview</h5>
 
                       <section>
-    <p class="text-slate-400 mb-3">
-        Welcome to the <strong>Back-End Development Course</strong> – a complete guide to mastering server-side programming, databases, and APIs. This course is perfect for beginners who want to learn the fundamentals as well as developers looking to specialize in back-end technologies for web and mobile applications.
-    </p>
+  <!-- Description -->
+<p class="text-slate-400 mb-3">
+  Welcome to the <strong>Data Science Full Stack Developer Program</strong> – a hands-on course built to turn you into a proficient data scientist and machine learning practitioner. This program is ideal for beginners and professionals looking to master data analytics, machine learning, and AI-driven development.
+</p>
 
-    <p class="text-slate-400 mb-3">
-        Throughout this course, you will build scalable server-side applications, learn to manage databases, and understand how to create secure and high-performance APIs. Each module includes real-world projects to ensure practical learning and direct application of concepts.
-    </p>
+<p class="text-slate-400 mb-3">
+  You’ll begin with Python programming, statistics, and data handling libraries such as NumPy and Pandas. Then, you'll explore data visualization using Matplotlib, Seaborn, and tools like Power BI or Tableau for building interactive dashboards.
+</p>
 
-    <p class="text-slate-400 mb-3">
-        The curriculum covers essential technologies such as <strong>Node.js, Express.js, REST APIs, SQL/NoSQL Databases, and Authentication systems</strong>. You will also gain hands-on experience with deployment and cloud services, preparing you for professional backend roles.
-    </p>
+<p class="text-slate-400 mb-3">
+  The course covers end-to-end machine learning workflows including supervised and unsupervised learning, model training, evaluation, and deployment using Scikit-learn, TensorFlow, and PyTorch. You'll also gain exposure to data preprocessing, feature engineering, and model optimization.
+</p>
 
-    <p class="text-slate-400">
-        By the end of this course, you will have a solid understanding of backend architecture, database design, and integration, enabling you to confidently build and manage robust web applications.
-    </p>
+<p class="text-slate-400 mb-3">
+  Real-time projects, capstone assignments, Git version control, and cloud deployment with AWS or GCP are included. You’ll also work with databases like MySQL and MongoDB, and learn how to present your insights effectively to business stakeholders.
+</p>
 
-    <!-- Key Highlights -->
-    <div class="mt-6">
-        <h3 class="text-xl font-semibold text-gray-700 mb-3">Key Highlights:</h3>
-        <ul class="list-disc pl-5 text-slate-500 space-y-2">
-            <li>Step-by-step learning of server-side development</li>
-            <li>Master databases like MySQL, MongoDB, and PostgreSQL</li>
-            <li>Hands-on experience with REST API and authentication</li>
-            <li>Real-world projects and deployment on cloud platforms</li>
-            <li>Lifetime access with free updates and certification</li>
-        </ul>
-    </div>
+<p class="text-slate-400">
+  By completing this program, you’ll be ready for roles like Data Scientist, Machine Learning Engineer, Data Analyst, and AI Developer with a strong project portfolio to showcase.
+</p>
+
+<!-- Key Highlights -->
+<div class="mt-6">
+  <h3 class="text-xl font-semibold text-gray-700 mb-3">Key Highlights:</h3>
+  <ul class="list-disc pl-5 text-slate-500 space-y-2">
+    <li>Python for data analysis, statistics, and visualization</li>
+    <li>Libraries: NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn</li>
+    <li>Machine Learning and AI fundamentals with TensorFlow & PyTorch</li>
+    <li>Hands-on with real datasets, projects, and Jupyter Notebooks</li>
+    
+  </ul>
+</div>
+
+    
 </section>
 
                         <img src="./assets/images/course/22.jpg" class="rounded-md shadow-sm mt-4" alt="">
-
-                        <div class="mt-6">
-                            <h5 class="text-2xl font-semibold">Root Map</h5>
-                        </div>
-
+<img src="./assets/images/course/data-cloud.jpg" class="rounded-md shadow-sm mt-4" alt="">
 <div class="mt-6">
-    <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
-        <summary class="px-4 py-5 text-lg font-semibold cursor-pointer" style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #2563EB;">
-            Introduction
-        </summary>
-
-        <table class="w-full text-start">
-            <thead>
-                <tr>
-                    <th class="px-4 py-5 text-start">Lessons</th>
-                    <th class="px-4 py-5 text-end">Time</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Basics of Back-End Development</td>
-                    <td class="p-4 text-end"><span class="bg-blue-600/10 text-blue-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Client-Server Architecture</td>
-                    <td class="p-4 text-end"><span class="bg-blue-600/10 text-blue-600 text-[12px] px-2.5 py-1 rounded-md h-4">4 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Setting up Development Environment</td>
-                    <td class="p-4 text-end"><span class="bg-blue-600/10 text-blue-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Introduction to APIs</td>
-                    <td class="p-4 text-end"><span class="bg-blue-600/10 text-blue-600 text-[12px] px-2.5 py-1 rounded-md h-4">4 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-            </tbody>
-        </table>
-    </details>
+  <h5 class="text-2xl font-semibold">Root Map</h5>
 </div>
 
-
+<!-- Introduction -->
 <div class="mt-6">
-    <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
-        <summary class="px-4 py-5 text-lg font-semibold cursor-pointer" style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #2563EB;">
-            Mastery 
-        </summary>
-
-        <table class="w-full text-start">
-            <thead>
-                <tr>
-                    <th class="px-4 py-5 text-start">Lessons</th>
-                    <th class="px-4 py-5 text-end">Time</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> REST API Design with Node.js & Express</td>
-                    <td class="p-4 text-end"><span class="bg-green-600/10 text-green-600 text-[12px] px-2.5 py-1 rounded-md h-4">6 days</span></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Authentication & Authorization (JWT/OAuth)</td>
-                    <td class="p-4 text-end"><span class="bg-green-600/10 text-green-600 text-[12px] px-2.5 py-1 rounded-md h-4">5 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Database Integration (MongoDB & SQL)</td>
-                    <td class="p-4 text-end"><span class="bg-green-600/10 text-green-600 text-[12px] px-2.5 py-1 rounded-md h-4">7 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Error Handling & Middleware</td>
-                    <td class="p-4 text-end"><span class="bg-green-600/10 text-green-600 text-[12px] px-2.5 py-1 rounded-md h-4">5 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-            </tbody>
-        </table>
-    </details>
+  <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
+    <summary class="px-4 py-5 text-lg font-semibold cursor-pointer" style="border-bottom: 1px solid #e2e8f0; color: #6D28D9;">
+      Introduction 
+    </summary>
+    <table class="w-full text-start">
+      <thead>
+        <tr>
+          <th class="px-4 py-5 text-start">Lessons</th>
+          <th class="px-4 py-5 text-end">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">Python for Data Analysis</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">5 days</span></td>
+        </tr>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">Data Wrangling with Pandas</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">4 days</span></td>
+        </tr>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">Cloud Computing Fundamentals (AWS/Azure)</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">3 days</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
 </div>
 
-
+<!-- Mastery -->
 <div class="mt-6">
-    <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
-        <summary class="px-4 py-5 text-lg font-semibold cursor-pointer" style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #2563EB;">
-            Final Thoughts
-        </summary>
-
-        <table class="w-full text-start">
-            <thead>
-                <tr>
-                    <th class="px-4 py-5 text-start">Lessons</th>
-                    <th class="px-4 py-5 text-end">Time</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Optimizing API Performance</td>
-                    <td class="p-4 text-end"><span class="bg-yellow-600/10 text-yellow-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Secure Coding Best Practices</td>
-                    <td class="p-4 text-end"><span class="bg-yellow-600/10 text-yellow-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Deploying Back-End Applications</td>
-                    <td class="p-4 text-end"><span class="bg-yellow-600/10 text-yellow-600 text-[12px] px-2.5 py-1 rounded-md h-4">4 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Scaling Applications for Production</td>
-                    <td class="p-4 text-end"><span class="bg-yellow-600/10 text-yellow-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-            </tbody>
-        </table>
-    </details>
+  <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
+    <summary class="px-4 py-5 text-lg font-semibold cursor-pointer" style="border-bottom: 1px solid #e2e8f0; color: #6D28D9;">
+      Mastery 
+    </summary>
+    <table class="w-full text-start">
+      <thead>
+        <tr>
+          <th class="px-4 py-5 text-start">Lessons</th>
+          <th class="px-4 py-5 text-end">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">Machine Learning with Scikit-Learn</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">6 days</span></td>
+        </tr>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">Deep Learning with TensorFlow</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">5 days</span></td>
+        </tr>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">Cloud Deployment (AWS S3, EC2, Lambda)</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">4 days</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
 </div>
 
-                       
-                        
-    <div class="mt-6">
-    <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
-        <summary class="px-4 py-5 text-lg font-semibold cursor-pointer" style="border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; color: #2563EB;">
-            Bonus Section
-        </summary>
-
-        <table class="w-full text-start">
-            <thead>
-                <tr>
-                    <th class="px-4 py-5 text-start">Lessons</th>
-                    <th class="px-4 py-5 text-end">Time</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Caching Strategies (Redis)</td>
-                    <td class="p-4 text-end"><span class="bg-red-600/10 text-red-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> WebSockets & Real-Time Communication</td>
-                    <td class="p-4 text-end"><span class="bg-red-600/10 text-red-600 text-[12px] px-2.5 py-1 rounded-md h-4">4 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> Testing APIs (Postman & Jest)</td>
-                    <td class="p-4 text-end"><span class="bg-red-600/10 text-red-600 text-[12px] px-2.5 py-1 rounded-md h-4">3 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-                <tr class="border-t border-slate-100 dark:border-slate-800">
-                    <td class="p-4"><i class="iconoir-clipboard-check text-lg align-middle me-1"></i> CI/CD for Back-End Projects</td>
-                    <td class="p-4 text-end"><span class="bg-red-600/10 text-red-600 text-[12px] px-2.5 py-1 rounded-md h-4">5 days</span></td>
-                    <td class="p-4 text-end"><i class="iconoir-lock text-lg"></i></td>
-                </tr>
-            </tbody>
-        </table>
-    </details>
+<!-- Final Thoughts -->
+<div class="mt-6">
+  <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
+    <summary class="px-4 py-5 text-lg font-semibold cursor-pointer" style="border-bottom: 1px solid #e2e8f0; color: #6D28D9;">
+      Final Thoughts
+    </summary>
+    <table class="w-full text-start">
+      <thead>
+        <tr>
+          <th class="px-4 py-5 text-start">Lessons</th>
+          <th class="px-4 py-5 text-end">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">Capstone Project (Data Science + Cloud)</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">7 days</span></td>
+        </tr>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">Model Deployment with Docker & FastAPI</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">2 days</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
 </div>
+
+<!-- Bonus -->
+<div class="mt-6">
+  <details class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow-sm shadow-slate-200 dark:shadow-slate-800 rounded-md">
+    <summary class="px-4 py-5 text-lg font-semibold cursor-pointer" style="border-bottom: 1px solid #e2e8f0; color: #6D28D9;">
+      Bonus 
+    </summary>
+    <table class="w-full text-start">
+      <thead>
+        <tr>
+          <th class="px-4 py-5 text-start">Lessons</th>
+          <th class="px-4 py-5 text-end">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">Version Control with Git & GitHub</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">2 days</span></td>
+        </tr>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">SQL for Data Analysis</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">3 days</span></td>
+        </tr>
+        <tr class="border-t border-slate-100">
+          <td class="p-4">Interview Preparation (ML/Cloud)</td>
+          <td class="p-4 text-end"><span class="bg-violet-600/10 text-violet-600 px-2.5 py-1 text-xs rounded-md">2 days</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+</div>
+
 
         </div>
             </div><br><!--end container-->
@@ -348,14 +347,13 @@ Back-End Development Course
 
                     <p class="text-slate-400 max-w-xl mx-auto">Discover a world of knowledge and opportunities with our online education platform pursue a new career.</p>
                 </div><!--end grid-->
-
-                <div class="grid grid-cols-1 relative mt-3">
+<div class="grid grid-cols-1 relative mt-3">
                     <div class="tiny-home-slide-three">
                         <div class="tiny-slide">
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/14.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/java.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                                    
 
@@ -367,9 +365,9 @@ Back-End Development Course
                                 <div class="p-6">
                                    
 
-                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">The Ultimate Course Bundle</a>
+                                    <a href="course-detail.html" class="text-lg hover:text-violet-600 font-medium">Java Full-Stack</a>
 
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+                                    <p class="text-slate-400 mt-2">Learn front-end with HTML, CSS, and JavaScript; back-end development with Java and Spring Boot; connect to MySQL databases; and deploy full-stack applications using tools like Git,and jenkins</p>
 
                                    
                                 </div>
@@ -380,7 +378,7 @@ Back-End Development Course
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/13.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/python.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                                    
 
@@ -392,9 +390,9 @@ Back-End Development Course
                                 <div class="p-6">
                                     
 
-                                    <a href="course-detail1.html" class="text-lg hover:text-violet-600 font-medium">App Development Course</a>
+                                    <a href="course-detail1.html" class="text-lg hover:text-violet-600 font-medium">Python Full-Stack</a>
 
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+                                    <p class="text-slate-400 mt-2">Learn front-end with HTML, CSS, and JavaScript; back-end with Java, Spring Boot, and Python; connect to MySQL; and deploy full-stack apps using Git, Docker, and Jenkins.</p>
 
                                    
                                 </div>
@@ -405,7 +403,7 @@ Back-End Development Course
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/19.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/dot.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                                    
 
@@ -415,9 +413,9 @@ Back-End Development Course
                                 <div class="p-6">
                                    
 
-                                    <a href="course-detail2.html" class="text-lg hover:text-violet-600 font-medium">Spoken English Popular Course</a>
+                                    <a href="course-detail2.html" class="text-lg hover:text-violet-600 font-medium">.Net Full-Stack</a>
 
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+                                    <p class="text-slate-400 mt-2">Learn front-end with HTML, CSS, and JavaScript; back-end with C# and ASP.NET Core; connect to SQL Server; and deploy full-stack apps using Git, Docker, and Azure DevOps.</p>
 
                                 </div>
                             </div>
@@ -427,7 +425,7 @@ Back-End Development Course
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/15.webp" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/cloud.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                                     
 
@@ -437,9 +435,10 @@ Back-End Development Course
                                 <div class="p-6">
                                   
 
-                                    <a href="course-detail3.html" class="text-lg hover:text-violet-600 font-medium">Back-end Development Course</a>
 
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+                                    <a href="course-detail3.html" class="text-lg hover:text-violet-600 font-medium">Data Science & Cloud Courses</a>
+
+                                    <p class="text-slate-400 mt-2">Learn data analysis with Python and R, master machine learning algorithms, perform data cleaning and preprocessing, visualize insights using tools like Tableau and Power BI.</p>
 
                                    
                                 </div>
@@ -450,7 +449,7 @@ Back-End Development Course
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/16.webp" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/react.png" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                                    
                                 </div>
@@ -458,9 +457,9 @@ Back-End Development Course
                                 <div class="p-6">
 
 
-                                    <a href="course-detail4.html" class="text-lg hover:text-violet-600 font-medium">Front-end Development Course</a>
+                                    <a href="course-detail4.html" class="text-lg hover:text-violet-600 font-medium">Flutter /React</a>
 
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+                                    <p class="text-slate-400 mt-2">Build cross-platform mobile apps with Flutter using Dart, create dynamic and responsive web applications with React using JavaScript and JSX,  and integrate REST APIs for seamless user experiences.</p>
 
                                    
                                 </div>
@@ -471,7 +470,7 @@ Back-End Development Course
                             <div class="group bg-white dark:bg-slate-900 rounded-md shadow-md hover:shadow-lg shadow-slate-100 dark:shadow-slate-800 transition duration-500 m-3">
                                 <div class="p-3 pb-0 relative">
                                     <div class="relative overflow-hidden rounded-md">
-                                <img src="assets/images/course/17.jpg" class="group-hover:scale-105 duration-500" alt="">
+                                <img src="assets/images/course/selenium.jpg" class="group-hover:scale-105 duration-500" alt="">
                             </div>
                                     
                                 </div>
@@ -479,16 +478,18 @@ Back-End Development Course
                                 <div class="p-6">
                                   
 
-                                    <a href="course-detail5.html" class="text-lg hover:text-violet-600 font-medium">Full stack Project in Nextjs Course</a>
+                                    <a href="course-detail5.html" class="text-lg hover:text-violet-600 font-medium">Manual with Selenium Automations</a>
 
-                                    <p class="text-slate-400 mt-2">The phrasal sequence of the is now so many campaign</p>
+                                    <p class="text-slate-400 mt-2">Perform manual testing to thoroughly understand application behavior, identify bugs, then automate repetitive test cases using Selenium WebDriver for reliable, scalable.
+
+</p>
 
                                    
                                 </div>
                             </div>
                         </div><!--end content-->
                     </div><!--end tiny slider-->
-                </div><!--end grid-->
+                </div><!--end grid--><br>
             <div class="container relative md:mt-24 mt-16">
                 <div class="md:flex justify-center">
                     <div class="lg:w-2/3 text-center">
@@ -542,18 +543,17 @@ Back-End Development Course
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="card1.html">Web development</a></li>
-                        <li><a href="card2.html">Mobile App Development</a></li>
-                        <li><a href="card3.html">Cloud & DevOps</a></li>
-
-                        <li><a href="card4.html">AI & Machine Learning</a></li>
-                        <li><a href="card5.html">Cybersecurity</a></li>
-                        <li><a href="card6.html">Automation Testing</a></li>
-                        <li><a href="card7.html">Startup & Business Consulting</a></li>
-                        <li><a href="card8.html">Digital Marketing</a></li>
-                        <li><a href="card9.html">Content & Documentation</a></li>
-                        <li><a href="card10.html">HR & Recruitment</a></li>
-                        <li><a href="card11.html">Legal & Finance</a></li>
+                        <li><a href="web development.html">Web development</a></li>
+                        <li><a href="Mobile app development.html">Mobile App Development</a></li>
+                        <li><a href="cloud & devops.html">Cloud & DevOps</a></li>
+                       <li><a href="Ai & Ml.html">AI & Machine Learning</a></li>
+                        <li><a href="cyber security.html">Cybersecurity</a></li>
+                        <li><a href="software testing.html">Software Testing & QA</a></li>
+                        <li><a href="startup & Business consulting.html">Startup & Business Consulting</a></li>
+                        <li><a href="digital marketing.html">Digital Marketing</a></li>
+                        <li><a href="content and documentation.html">Content & Documentation</a></li>
+                        <li><a href="Hr & recruitment.html">HR & Recruitment</a></li>
+                        <li><a href="Legal & Finance.html">Legal & Finance</a></li>
                     </ul>
                 </div>
 
