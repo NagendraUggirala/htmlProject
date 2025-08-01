@@ -149,7 +149,7 @@
 
 .cta-description {
   font-size: 1.1rem;
-  color: #555;
+  color:white;
   margin-bottom: 20px;
 }
 
@@ -489,6 +489,8 @@ body { overflow-x: hidden; }
     transform: none;
   }
 }
+
+
 
 
   /* cards allignment */
