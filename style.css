@@ -937,3 +937,19 @@ details > summary {
   border-width: none;
 }
 
+
+.nav-icons-container{
+  height: 75px;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-icons-container :hover{
+  color:violet;
+}
+
+.about-ceo-container{
+  margin-right:20px ;
+}
