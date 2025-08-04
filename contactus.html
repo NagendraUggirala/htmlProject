@@ -41,69 +41,46 @@
         </div> -->
   <!-- Loader End -->
   <!-- Start Navbar -->
-  <nav id="topnav" style="background-color:white; height: 85px;" class="defaultscroll is-sticky">
-    <!-- Flex container for full navbar -->
-    <div class="container mx-auto flex items-center justify-between">
+<nav id="topnav" style="background-color:white ; height: 75px;" class="defaultscroll is-sticky">  
+           
+    <div class="container relative">             
+        <!-- Start Logo container-->             
+        <a class="logo" href="home.html">                 
+            <span class="inline-block dark:hidden">                     
+                <img src="assets/images/Logos/LOGO_2_ICON.png" class="l-dark logo-size" height="24" alt="">                     
+                <img src="assets/images/Logos/LOGO_2_ICON.png" class="l-light logo-size" height="24" alt="">                 
+            </span>                 
+            <img src="assets/images/Logos/LOGO_2_ICON.png" height="24" class="hidden dark:inline-block" alt="">             
+        </a>             
+        <!-- End Logo container-->              
 
-      <!-- Logo -->
-      <a class="logo flex items-center" href="home.html">
-        <span class="inline-block dark:hidden">
-          <img src="assets/images/Logos/Techlynx-logo.png" class="l-dark logo-size" style="height: 40px;" alt="">
-          <img src="assets/images/Logos/Techlynx-logo.png" class="l-light " style="height: 85px; width: 120px;"  alt="">
-        </span>
-        <img src="assets/images/logo-light.png" height="40" class="hidden dark:inline-block" alt="">
-      </a>
+        <!-- Start Mobile Toggle -->             
+        <div class="menu-extras">                 
+            <div class="menu-item">                     
+                <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">                         
+                    <div class="lines">                             
+                        <span></span>                             
+                        <span></span>                             
+                        <span></span>                         
+                    </div>                     
+                </a>                 
+            </div>             
+        </div>             
+        <!-- End Mobile Toggle -->              
 
-      <!-- Flex section for nav items and icons -->
-      <div class="flex items-center w-full justify-between ml-10">
-
-        <!-- Navigation Menu -->
-        <ul class="navigation-menu flex gap-3 font-semibold text-black text-lg">
-          <li><a href="home.html" class="sub-menu-item container-nav font-bold font-[Roboto]">Home</a></li>
-          <li><a href="courses.html"
-              class="sub-menu-item container-nav font-bold font-[Roboto] text-purple-600">Courses</a></li>
-          <li><a href="aboutus.html" class="sub-menu-item container-nav font-bold font-[Roboto]">About Us</a></li>
-          <li><a href="core.html" class="sub-menu-item container-nav font-bold font-[Roboto]">My Core</a></li>
-          <li><a href="services.html" class="sub-menu-item container-nav font-bold font-[Roboto]">Services</a></li>
-          <li><a href="contactus.html" class="sub-menu-item container-nav font-bold font-[Roboto]">Contact Us</a></li>
-        </ul>
-
-        <!-- Social Icons aligned right -->
-        <ul class="flex  gap-6  items-center font-semibold text-black ml-auto"> <!-- Adjust ml-10 or use ml-auto -->
-          <li>
-            <a href="https://www.facebook.com/share/16yW5mkdBR/" target="_blank"
-              class="text-black text-xl hover:text-blue-600 transition">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://youtube.com/@techlynxinnovationsprivatelimi?si=PM6yu6NXCnoSN9h2" target="_blank"
-              class="text-black text-xl hover:text-red-600 transition">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/techlynx_innovations?igsh=MTAxYnUxanFwc2Riag==" target="_blank"
-              class="text-black text-xl hover:text-pink-500 transition">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://x.com/TechlynxLimited?t=Ty3Wx5qshDFYvqM1ad0dTw&s=08" target="_blank"
-              class="text-black text-xl hover:text-blue-500 transition">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/share/1BxrW7rUji/" target="_blank"
-              class="text-black text-xl hover:text-blue-500 transition">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+        <div id="navigation">                 
+            <!-- Navigation Menu-->                 
+            <ul class="navigation-menu justify-start">                     
+                <li class="has-submenu parent-parent-menu-item  mobile-Version"><a href="home.html" style="font-weight: bold; font-family: Roboto;">Home</a></li>                     
+                <li class="has-submenu parent-parent-menu-item  mobile-Version"><a href="courses.html" style="font-weight: bold; font-family: Roboto;">Courses</a></li>                     
+                <li class="has-submenu parent-parent-menu-item  mobile-Version"><a href="aboutus.html" class="sub-menu-item" style="font-weight: bold; font-family: Roboto;">About Us</a></li>                     
+                <li class="has-submenu parent-parent-menu-item  mobile-Version"><a href="core.html" class="sub-menu-item my-core" style="font-weight: bold; font-family: Roboto;">My Core</a></li>                     
+                <li class="has-submenu parent-parent-menu-item  mobile-Version"><a href="services.html" class="sub-menu-item my-core" style="font-weight: bold; font-family: Roboto;">Services</a></li>                     
+                <li class="has-submenu parent-parent-menu-item  mobile-Version"><a href="contactus.html" class="sub-menu-item" style="font-weight: bold; font-family: Roboto;">Contact Us</a></li>                   
+            </ul><!--end navigation menu-->             
+        </div><!--end navigation-->         
+    </div><!--end container-->     
+</nav>
   <!--end header-->
 
 
@@ -173,14 +150,14 @@
 
   <!-- Contact Section with Map and Form Side-by-Side -->
   <section class="relative lg:py-24 py-16">
-    <div class="container relative">
+    <div class="container relative" >
       <div class="grid md:grid-cols-2 grid-cols-1 gap-6 items-center">
 
         <!-- Google Map -->
-        <div class="w-full">
+        <div class="w-full" >
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4283.060277547612!2d80.4422311!3d16.306322899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a75ce6fc1d987%3A0x845f554e9989781e!2sCamelq%20Software%20Solutions%20Pvt.%20Ltd.%20-%20Guntur!5e1!3m2!1sen!2sin!4v1753975946188!5m2!1sen!2sin"
-            width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+            width="100%" height="880" style="border:0;" allowfullscreen="" loading="lazy"
             class=" rounded-md shadow"></iframe>
           </iframe>
 
@@ -188,7 +165,7 @@
         </div>
 
         <!-- Contact Form -->
-        <div style="width: 100%; max-width: 700px; margin: 0 auto;">
+        <div style=" width: 100%; max-width: 700px; margin: 0 auto;">
           <div style="
     background: white; 
     border-radius: 12px; 
@@ -405,77 +382,76 @@
 
 
   <!-- Start Footer -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-content">
-        <!-- Support Card -->
-        <div class="support-card">
-          <h3>Talk to Our Support</h3>
-          <div class="support-phone">
-            <div class="headset-icon footer-section"><i class=" color-white mdi mdi-phone text-slate-400"></i></div>
-            <a href="tel:+91 830 9380900" class="phone-number">+91 9989 681812</a>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Support Card -->
+                <div class="support-card">
+                    
+                    <h3>Talk to Our Support</h3>
+                    <div class="support-phone">
+                        <a href="tel:+91 830 9380900" class="phone-number">+91 830 9380900</a>
 
-          </div>
-          <div class="support-location text-center">
-            <h3>Guntur</h3>
-          </div>
-        </div>
+                        
 
-        <!-- Quick Links -->
-        <div class="footer-section">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="aboutus.html">About us</a></li>
-            <li><a href="core.html">My Core</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contactus.html">Contact us</a></li>
-          </ul>
-        </div>
+                    </div>
+                    <div class="support-location">Guntur</div>
+                </div>
 
-        <!-- Services -->
-        <div class="footer-section">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="card1.html">Web development</a></li>
-            <li><a href="card2.html">Mobile App Development</a></li>
-            <li><a href="card3.html">Cloud & DevOps</a></li>
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="core.html">My Core</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                    </ul>
+                </div>
 
-            <li><a href="card4.html">AI & Machine Learning</a></li>
-            <li><a href="card5.html">Cybersecurity</a></li>
-            <li><a href="card6.html">Automation Testing</a></li>
-            <li><a href="card7.html">Startup & Business Consulting</a></li>
-            <li><a href="card8.html">Digital Marketing</a></li>
-            <li><a href="card9.html">Content & Documentation</a></li>
-            <li><a href="card10.html">HR & Recruitment</a></li>
-            <li><a href="card11.html">Legal & Finance</a></li>
-          </ul>
-        </div>
+                <!-- Services -->
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="web development.html">Web development</a></li>
+                        <li><a href="Mobile app development.html">Mobile App Development</a></li>
+                        <li><a href="cloud & devops.html">Cloud & DevOps</a></li>
+                        <li><a href="Ai & Ml.html">AI & Machine Learning</a></li>
+                        <li><a href="cyber security.html">Cybersecurity</a></li>
+                        <li><a href="software testing.html">Software Testing & QA</a></li>
+                        <li><a href="startup & Business consulting.html">Startup & Business Consulting</a></li>
+                        <li><a href="digital marketing.html">Digital Marketing</a></li>
+                        <li><a href="content and documentation.html">Content & Documentation</a></li>
+                        <li><a href="Hr & recruitment.html">HR & Recruitment</a></li>
+                        <li><a href="Legal & Finance.html">Legal & Finance</a></li>
+                    </ul>
+                </div>
 
-        <!-- Our Branches -->
-        <div class="footer-section branch-info">
-          <h4>Our Branches</h4>
-          <div class="branch-location">
-            <h5>Guntur:</h5>
-            <div class="branch-address">
-              10/3, near Tagore chowk, Sali Pet, Arundelpet,
-              Guntur,
-              Andhra Pradesh 522601
+                <!-- Our Branches -->
+                <div class="footer-section branch-info">
+                    <h4>Our Branches</h4>
+                    <div class="branch-location">
+                        <h5>Guntur:</h5>
+                        <div class="branch-address">
+                            10/3, near Tagore chowk, Sali Pet, Arundelpet,
+                            Guntur,
+                            Andhra Pradesh 522601
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Copyright -->
-      <div class="footer-bottom branch-address">
-        <p class="mb-0 text-gray-300 ">CopyRight ©
-          <script>document.write(new Date().getFullYear())</script> Techlynxinnovations. Designed <i
-            class="mdi mdi-develop text-red-600"></i> by <a class="text-reset">Levitica</a>.
-        </p>
-      </div>
-    </div>
-  </footer>
+            <!-- Copyright -->
+            <div class="footer-bottom branch-address">
+                <p class="mb-0 text-gray-300 ">CopyRight ©
+                    <script>document.write(new Date().getFullYear())</script> Techlynxinnovations. Designed <i
+                        class="mdi mdi-develop text-red-600"></i> by <a class="text-reset">Levitica</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
   <!--end footer-->
   <!-- End Footer -->
 
